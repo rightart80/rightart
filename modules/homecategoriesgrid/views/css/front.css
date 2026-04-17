@@ -1,0 +1,70 @@
+.home-categories-grid-wrapper {
+    width: 100%;
+}
+
+.home-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px; /* spacing between images */
+}
+
+.home-categories-grid a {
+    padding: 10px;
+}
+
+
+
+.home-categories-grid__item {
+    display: block;
+    text-decoration: none;
+}
+
+.home-categories-grid__image {
+    width: 100%;
+    display: block;
+    aspect-ratio: 3 / 2; /* approximate 3:2 aspect ratio */
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+@media (max-width: 767.98px) {
+    .home-categories-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.home-categories-grid__item {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;                  /* keeps edges clean */
+    border-radius: 0;                  /* sharp corners */
+    transition: box-shadow 0.2s ease;
+}
+
+.home-categories-grid__image {
+    width: 100%;
+    display: block;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 0;                  /* sharp corners, no curve */
+}
+
+/* Hover: bold red border, no zoom */
+.home-categories-grid__item:hover {
+    box-shadow: 0 0 0 3px rgb(237, 28, 35);
+}
+
+
+
+.home-categories-grid-wrapper .products-section-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;        /* adjust for size (e.g., 32px) */
+  letter-spacing: 2px;    /* adds elegant spacing between letters */
+  color: #222;            /* dark gray text color */
+  margin: 2rem 0 1.5rem;  /* spacing above and below */
+  font-family: 'Poppins', sans-serif; /* modern clean font */
+}

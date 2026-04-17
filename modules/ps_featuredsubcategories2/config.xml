@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>ps_featuredsubcategories2</name>
+    <displayName>Featured subcategories 2</displayName>
+    <version>1.0.0</version>
+    <description>Displays selected subcategories of a chosen parent category (second instance).</description>
+    <author>Custom</author>
+    <tab>front_office_features</tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

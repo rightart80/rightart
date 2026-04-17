@@ -1,0 +1,1307 @@
+// @media (min-width: 768px) {
+
+//     #footer .link-container {
+//         position: relative;
+//         padding-left: 15px;
+//         padding-right: 15px;
+//     }
+
+//     // #footer .footer-container .link-container {
+//     //     background-color: #363738;
+//     //     // padding: 0px;
+//     //     display: flex;
+//     //     flex-wrap: wrap;
+//     //     float: none;
+//     // }
+
+
+
+//     // #footer .footer-container .link-container .company-info {
+//     //     box-sizing: border-box;
+//     //     width: 20%;
+//     //     /* or flex: 0 0 25%; */
+//     //     padding: 10px;
+//     //     order: 1;
+
+
+//     // }
+
+//     // #footer .footer-container .link-container #block_myaccount_infos {
+//     //     box-sizing: border-box;
+//     //     width: 20%;
+//     //     /* or flex: 0 0 25%; */
+//     //     padding: 10px;
+//     //     order: 2;
+
+
+//     // }
+
+//     // #footer .footer-container .link-container .links {
+//     //     box-sizing: border-box;
+//     //     width: 40%;
+//     //     /* or flex: 0 0 25%; */
+//     //     padding: 10px;
+//     //     order: 3;
+
+
+//     // }
+
+
+//     // #footer .footer-container .link-container .block_newsletter {
+//     //     box-sizing: border-box;
+//     //     width: 20%;
+//     //     /* or flex: 0 0 25%; */
+//     //     padding: 10px;
+//     //     // float: right;
+//     //     margin: 0px;
+//     //     background-color: #363738;
+//     //     order: 4;
+
+
+//     // }
+
+
+//     #footer .footer-container .link-container {
+//         display: flex;
+//         flex-wrap: wrap;
+//         // width: 100%;
+//         background-color: #363738;
+//         /* make sure float isn't messing with layout */
+//     }
+
+//     /* Common styles for each column */
+//     #footer .footer-container .link-container .company-info,
+//     #footer .footer-container .link-container #block_myaccount_infos,
+//     #footer .footer-container .link-container .links,
+//     #footer .footer-container .link-container .block_newsletter {
+//         padding: 10px;
+//     }
+
+//     /* =========================
+//    COLUMNS (DESKTOP)
+//    ========================= */
+
+//     /* 20% */
+//     #footer .footer-container .link-container .company-info {
+//         flex: 0 0 20%;
+//         order: 1;
+//     }
+
+//     /* 20% */
+//     #footer .footer-container .link-container #block_myaccount_infos {
+//         flex: 0 0 20%;
+//         order: 2;
+//     }
+
+//     /* 40% */
+//     #footer .footer-container .link-container .links {
+//         flex: 0 0 40%;
+//         order: 3;
+//     }
+
+//     /* 20% */
+//     #footer .footer-container .link-container .block_newsletter {
+//         flex: 0 0 20%;
+//         order: 4;
+//         margin: 0;
+//         background-color: #363738;
+//     }
+
+//     #footer .footer-container .link-container .block_newsletter .row {
+
+//         margin: 0px;
+//         position: relative;
+
+//     }
+
+//     #footer .footer-container .link-container .block_newsletter .row .col-md-7,
+//     #footer .footer-container .link-container .block_newsletter .row .col-md-7 .col-xs-12 {
+
+//         width: 100%;
+//         padding: 0px;
+
+//     }
+
+//     #footer .footer-container .link-container .block_newsletter .row .col-md-7 .btn-primary {
+
+
+//         position: absolute;
+//         top: 170px;
+//         right: 0px;
+//         position: absolute;
+//         top: 170px;
+//         right: 0px;
+
+
+//     }
+
+//     #footer .footer-container .link-container .block_newsletter .row .col-md-7 .input-wrapper {
+
+//         width: 100%;
+//         position: absolute;
+//         top: 120px;
+
+
+//     }
+
+
+//     #footer .footer-container .link-container .block_newsletter #block-newsletter-label {
+//         display: none;
+//     }
+
+
+
+
+//     #footer .footer-container .link-container .footer-email-box {
+//         // display:block;
+//         position: absolute;
+//         max-width: 280px;
+//         top: 0px;
+//         right: 0px;
+//         z-index: 10;
+
+//     }
+
+//     #footer .footer-container .link-container .footer-email-box p {
+
+//         font-family: "Titillium Web", sans-serif;
+//         color: #ebedf2;
+
+//     }
+
+
+//     #footer .footer-container .footer-email-box p.subscribe-header {
+//         margin-bottom: 15px;
+//         font-size: 36px;
+//         line-height: 34px;
+//     }
+
+//     #footer .footer-container .footer-email-box p.email-info {
+//         padding-right: 110px;
+//     }
+
+
+
+
+//     #footer .footer-container .footer-email-box p.subscribe-header strong {
+//         font-weight: 600;
+//         text-transform: uppercase;
+//         letter-spacing: .0625em;
+//         margin-bottom: 11px;
+//     }
+
+
+//     #footer .footer-container .container .h3,
+//     #footer .footer-container .container .h3 a {
+//         // background-color: #363738;
+//         font-weight: 600;
+//         text-transform: uppercase;
+//         letter-spacing: .0625em;
+//         margin-bottom: 11px;
+//         font-family: "Titillium Web", sans-serif;
+//         color: #ebedf2;
+//     }
+
+//     #footer .footer-container .container li a {
+
+//         color: #babbbf;
+//         font-family: "Titillium Web", sans-serif;
+//         letter-spacing: .0525em;
+//     }
+
+
+// }
+
+
+.signup-link{
+  display: block;           /* makes the entire area clickable */
+  text-decoration: none;    /* remove underline */
+  color: inherit;           /* keep text color same */
+}
+
+
+.signup-link:hover .sign-up,
+.signup-link:hover .sign-up p,
+.signup-link:hover .sign-up strong{
+  color: #ec4249;              /* optional: ensures readability */
+}
+
+/* optional: smooth hover */
+.sign-up{
+  transition: background .2s ease, color .2s ease;
+}
+
+
+
+@media (min-width: 768px) {
+
+    /* Let footer container handle horizontal padding, not link-container */
+    #footer .footer-container {
+        position: relative;
+        padding-top:0;
+    }
+
+    /* FLEX PARENT – this was commented out before */
+    #footer .footer-container .link-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-bottom: 30px;
+        background-color: #363738;
+        float: none;
+        position: relative;
+        // padding: 0;
+        /* important: no extra padding here */
+        // margin-bottom: 50px;
+    }
+
+    /* remove or comment this one; it conflicts
+    #footer .link-container {
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    */
+
+    /* Common styles for each column */
+    #footer .footer-container .link-container .company-info,
+    #footer .footer-container .link-container #block_myaccount_infos,
+    #footer .footer-container .link-container .links,
+    #footer .footer-container .link-container .block_newsletter {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* 20% */
+    #footer .footer-container .link-container .company-info {
+        flex: 0 0 20%;
+        order: 1;
+    }
+
+    /* 20% */
+    #footer .footer-container .link-container #block_myaccount_infos {
+        flex: 0 0 20%;
+        order: 2;
+    }
+
+    /* 40% */
+    #footer .footer-container .link-container .links {
+        flex: 0 0 40%;
+        order: 3;
+    }
+
+
+    #footer .footer-container .link-container .links .row {
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    /* 20% */
+    #footer .footer-container .link-container .block_newsletter {
+        flex: 0 0 20%;
+        order: 4;
+        margin: 0;
+        background-color: #363738;
+        position: relative;
+    }
+
+    #footer .footer-container .link-container .block_newsletter .block_newsletter_alert {
+        position: absolute;
+        top: 220px;
+    }
+
+    /* newsletter internals – same as yours, just kept */
+
+    #footer .footer-container .link-container .block_newsletter .row {
+        margin: 0;
+        position: relative;
+    }
+
+    #footer .footer-container .link-container .block_newsletter .row .col-md-7,
+    #footer .footer-container .link-container .block_newsletter .row .col-md-7 .col-xs-12 {
+        width: 100%;
+        padding: 0;
+    }
+
+    #footer .footer-container .link-container .block_newsletter .row .col-md-7 .btn-primary {
+        position: absolute;
+        background-color: rgb(237, 28, 35) !important;
+        top: 170px;
+        right: 0;
+    }
+
+    #footer .footer-container .link-container .block_newsletter .row .col-md-7 .input-wrapper {
+        width: 100%;
+        position: absolute;
+        top: 120px;
+    }
+
+    #footer .footer-container .link-container .block_newsletter #block-newsletter-label {
+        display: none;
+    }
+
+    #footer .footer-container .link-container .footer-email-box {
+        position: absolute;
+        max-width: 280px;
+        top: -5;
+        right: -40px;
+        /* keep it inside, not negative */
+        z-index: 10;
+    }
+
+    #footer .footer-container .link-container .footer-email-box p {
+        font-family: "Titillium Web", sans-serif;
+        color: #ebedf2;
+    }
+
+    #footer .footer-container .footer-email-box p.subscribe-header {
+        margin-bottom: 15px;
+        font-size: 36px;
+        line-height: 34px;
+    }
+
+    #footer .footer-container .footer-email-box p.email-info {
+        padding-right: 110px;
+    }
+
+    #footer .footer-container .footer-email-box p.subscribe-header strong {
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .0625em;
+        margin-bottom: 11px;
+    }
+
+    #footer .footer-container .container .h3,
+    #footer .footer-container .container .h3 a {
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .0625em;
+        margin-bottom: 11px;
+        font-family: "Titillium Web", sans-serif;
+        color: #ebedf2;
+    }
+
+    #footer .footer-container .container li a {
+        color: #babbbf;
+        font-family: "Titillium Web", sans-serif;
+        letter-spacing: .0525em;
+    }
+
+        #footer .footer-container .container li:hover a {
+        color: #ebedf2;
+        font-family: "Titillium Web", sans-serif;
+        letter-spacing: .0525em;
+    }
+
+    .footer-container .company-info {
+        padding: 0 !important;
+        // margin-bottom: 40px;
+
+    }
+
+
+    // .footer-container .company-info #footer-logo
+    // {
+
+    // width: 155px;
+    // height: 63px;
+    // background-position: 0;
+    // margin-bottom: 16px;
+    // display: block;
+    //     text-decoration: none;
+    // color: #babbbf;
+    //       background-image: url('https://rh.rightart.co.uk/images/mini-logo.png')!important;
+
+
+    // background-repeat: no-repeat;
+
+
+    // }
+
+
+
+    .footer-container .company-info #footer-logo #footer-logo-img {
+
+        margin-bottom: 15px;
+        width: 140px;
+        height: auto;
+        display: block;
+
+
+
+    }
+
+    .footer-container .company-info .footer-item-1 {
+        display: block;
+        margin-bottom: 10px;
+        font-family: "Titillium Web", sans-serif;
+        color: #babbbf;
+    }
+
+    .footer-container .company-info .footer-item-2 {
+        display: block;
+        margin-bottom: 10px;
+        color: white;
+        font-family: "Titillium Web", sans-serif;
+    }
+
+
+
+
+
+
+    #footer .social-container {
+        position: relative;
+
+
+    }
+
+
+    #footer .social-container .social-icons {
+
+        width: 220px;
+        padding-left: 6px;
+        margin: 0 auto;
+        clear: both;
+        background-color: #363738;
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    #footer .social-container .social-icons li {
+        float: left;
+        margin-right: 6px;
+        display: block;
+        height: 36px;
+        width: 36px;
+        border-radius: 2px;
+        background-color: #525254;
+        background-image: url('https://rh.rightart.co.uk/images/social-icons-sprite.png');
+        background-repeat: no-repeat;
+        background-size: 80px;
+
+    }
+
+
+    #footer .social-container .social-icons li a {
+        float: left;
+        margin-right: 6px;
+        display: block;
+        height: 36px;
+        width: 36px;
+        border-radius: 2px;
+        background-color: #525254;
+        background-image: url('https://rh.rightart.co.uk/images/social-icons-sprite.png');
+        background-repeat: no-repeat;
+        background-size: 80px;
+
+    }
+
+    #footer .social-container .social-icons li.social-facebook {
+
+        background-position: -2px -2px;
+    }
+
+    #footer .social-container .social-icons .social-facebook a {
+        background-position: -42px -2px;
+        opacity: 0;
+    }
+
+    #footer .social-container .social-icons li a:hover {
+
+        opacity: 1;
+    }
+
+
+    #footer .social-container .social-icons li.social-twitter {
+
+        background-position: -2px -42px;
+    }
+
+    #footer .social-container .social-icons .social-twitter a {
+        background-position: -42px -42px;
+        opacity: 0;
+    }
+
+
+    #footer .social-container .social-icons li.social-pinterest {
+
+        background-position: -2px -162px;
+    }
+
+    #footer .social-container .social-icons .social-pinterest a {
+        background-position: -42px -162px;
+        opacity: 0;
+    }
+
+
+
+    #footer .social-container .social-icons li.social-instagram {
+
+        background-position: -2px -121px;
+    }
+
+    #footer .social-container .social-icons .social-instagram a {
+        background-position: -42px -162px;
+        opacity: 0;
+    }
+
+
+
+    #footer .social-container .social-icons li.social-youtube {
+
+        background-position: -2px -82px;
+    }
+
+    #footer .social-container .social-icons .social-youtube a {
+        background-position: -42px -82px;
+        opacity: 0;
+    }
+
+    #footer .social-container .footer-legal {
+        text-align: center;
+        display: block;
+        clear: both;
+        font-size: 14px;
+        margin: -18px 20px 0;
+        padding: 47px 0 36px;
+        border-top: 2px solid #525254;
+        color: #babbbf;
+        // font-family: "Open Sans", sans-serif;
+        font-family: "Titillium Web", sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    // #footer .social-container .social-icons li a:hover {
+
+    //     opacity: 1;
+    // }
+
+    #footer .footer-before {
+        display: none;
+    }
+
+
+}
+
+
+
+
+// @media (min-width: 768px) {
+
+//     #footer .link-container {
+//         position: relative;
+//         padding-left: 15px;
+//         padding-right: 15px;
+//     }
+
+//     // #footer .footer-container .link-container {
+//     //     background-color: #363738;
+//     //     // padding: 0px;
+//     //     display: flex;
+//     //     flex-wrap: wrap;
+//     //     float: none;
+//     // }
+
+
+
+//     // #footer .footer-container .link-container .company-info {
+//     //     box-sizing: border-box;
+//     //     width: 20%;
+//     //     /* or flex: 0 0 25%; */
+//     //     padding: 10px;
+//     //     order: 1;
+
+
+//     // }
+
+//     // #footer .footer-container .link-container #block_myaccount_infos {
+//     //     box-sizing: border-box;
+//     //     width: 20%;
+//     //     /* or flex: 0 0 25%; */
+//     //     padding: 10px;
+//     //     order: 2;
+
+
+//     // }
+
+//     // #footer .footer-container .link-container .links {
+//     //     box-sizing: border-box;
+//     //     width: 40%;
+//     //     /* or flex: 0 0 25%; */
+//     //     padding: 10px;
+//     //     order: 3;
+
+
+//     // }
+
+
+//     // #footer .footer-container .link-container .block_newsletter {
+//     //     box-sizing: border-box;
+//     //     width: 20%;
+//     //     /* or flex: 0 0 25%; */
+//     //     padding: 10px;
+//     //     // float: right;
+//     //     margin: 0px;
+//     //     background-color: #363738;
+//     //     order: 4;
+
+
+//     // }
+
+
+//     #footer .footer-container .link-container {
+//         display: flex;
+//         flex-wrap: wrap;
+//         // width: 100%;
+//         background-color: #363738;
+//         /* make sure float isn't messing with layout */
+//     }
+
+//     /* Common styles for each column */
+//     #footer .footer-container .link-container .company-info,
+//     #footer .footer-container .link-container #block_myaccount_infos,
+//     #footer .footer-container .link-container .links,
+//     #footer .footer-container .link-container .block_newsletter {
+//         padding: 10px;
+//     }
+
+//     /* =========================
+//    COLUMNS (DESKTOP)
+//    ========================= */
+
+//     /* 20% */
+//     #footer .footer-container .link-container .company-info {
+//         flex: 0 0 20%;
+//         order: 1;
+//     }
+
+//     /* 20% */
+//     #footer .footer-container .link-container #block_myaccount_infos {
+//         flex: 0 0 20%;
+//         order: 2;
+//     }
+
+//     /* 40% */
+//     #footer .footer-container .link-container .links {
+//         flex: 0 0 40%;
+//         order: 3;
+//     }
+
+//     /* 20% */
+//     #footer .footer-container .link-container .block_newsletter {
+//         flex: 0 0 20%;
+//         order: 4;
+//         margin: 0;
+//         background-color: #363738;
+//     }
+
+//     #footer .footer-container .link-container .block_newsletter .row {
+
+//         margin: 0px;
+//         position: relative;
+
+//     }
+
+//     #footer .footer-container .link-container .block_newsletter .row .col-md-7,
+//     #footer .footer-container .link-container .block_newsletter .row .col-md-7 .col-xs-12 {
+
+//         width: 100%;
+//         padding: 0px;
+
+//     }
+
+//     #footer .footer-container .link-container .block_newsletter .row .col-md-7 .btn-primary {
+
+
+//         position: absolute;
+//         top: 170px;
+//         right: 0px;
+//         position: absolute;
+//         top: 170px;
+//         right: 0px;
+
+
+//     }
+
+//     #footer .footer-container .link-container .block_newsletter .row .col-md-7 .input-wrapper {
+
+//         width: 100%;
+//         position: absolute;
+//         top: 120px;
+
+
+//     }
+
+
+//     #footer .footer-container .link-container .block_newsletter #block-newsletter-label {
+//         display: none;
+//     }
+
+
+
+
+//     #footer .footer-container .link-container .footer-email-box {
+//         // display:block;
+//         position: absolute;
+//         max-width: 280px;
+//         top: 0px;
+//         right: 0px;
+//         z-index: 10;
+
+//     }
+
+//     #footer .footer-container .link-container .footer-email-box p {
+
+//         font-family: "Titillium Web", sans-serif;
+//         color: #ebedf2;
+
+//     }
+
+
+//     #footer .footer-container .footer-email-box p.subscribe-header {
+//         margin-bottom: 15px;
+//         font-size: 36px;
+//         line-height: 34px;
+//     }
+
+//     #footer .footer-container .footer-email-box p.email-info {
+//         padding-right: 110px;
+//     }
+
+
+
+
+//     #footer .footer-container .footer-email-box p.subscribe-header strong {
+//         font-weight: 600;
+//         text-transform: uppercase;
+//         letter-spacing: .0625em;
+//         margin-bottom: 11px;
+//     }
+
+
+//     #footer .footer-container .container .h3,
+//     #footer .footer-container .container .h3 a {
+//         // background-color: #363738;
+//         font-weight: 600;
+//         text-transform: uppercase;
+//         letter-spacing: .0625em;
+//         margin-bottom: 11px;
+//         font-family: "Titillium Web", sans-serif;
+//         color: #ebedf2;
+//     }
+
+//     #footer .footer-container .container li a {
+
+//         color: #babbbf;
+//         font-family: "Titillium Web", sans-serif;
+//         letter-spacing: .0525em;
+//     }
+
+
+// }
+
+
+
+@media (max-width: 767px) {
+
+
+    ////////// Id=footer/////////////
+
+    #footer {
+        display: flex;
+        flex-wrap: wrap;
+        /* allows items to move onto new lines */
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+
+        /* stack items vertically */
+
+    }
+
+
+    ////////// class=footer-before/////////////
+
+    #footer .footer-before {
+        // flex: 1;
+        order: 1;
+        width: 100%;
+        /* full width on mobile */
+        text-align: center;
+        padding: 20px;
+    }
+
+    ////////// class=footer-container/////////////
+
+
+    /* Let footer container handle horizontal padding, not link-container */
+    #footer .footer-container {
+        order: 2;
+        width: 100%;
+        max-width: 1230px;
+        /* flex-style */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+
+        /* full width on mobile */
+        position: relative;
+
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 0;
+    }
+
+    ////////// class=link-container/////////////
+
+
+
+    /* FLEX PARENT – this was commented out before */
+    #footer .footer-container .link-container {
+        order: 3;
+        width: 100%;
+        /* flex-style */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        // padding-bottom: 50px;
+        background-color: #363738;
+        float: none;
+        position: relative;
+        padding: 0;
+        /* important: no extra padding here */
+        margin-bottom: 10px;
+    }
+
+    /* Common styles for each column */
+    #footer .footer-container .link-container .company-info,
+    #footer .footer-container .link-container #block_myaccount_infos,
+    #footer .footer-container .link-container .links,
+    #footer .footer-container .link-container .block_newsletter {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+
+    ////////// class=company-info/////////////
+
+    #footer .footer-container .link-container .company-info {
+        order: 1;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* Logo */
+    #footer-logo-img {
+        margin-bottom: 15px;
+        width: 140px;
+        height: auto;
+        display: block;
+    }
+
+    /* Email line */
+    .footer-container .company-info .footer-item-1 {
+        display: block;
+        font-family: "Titillium Web", sans-serif;
+        color: #babbbf;
+    }
+
+    /* Legal / copyright line */
+    .footer-container .company-info .footer-item-2 {
+        display: block;
+        font-family: "Titillium Web", sans-serif;
+        color: #babbbf;
+        font-size: 13px;
+    }
+
+    /* Links inside company-info */
+    .footer-container .company-info a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+
+
+    // #footer .footer-container .link-container .company-info {
+    //     order: 1;
+    //     width: 100%;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     /* centers horizontally */
+    //     justify-content: center;
+    //     /* centers vertically if there's height */
+    //     text-align: center;
+    // }
+
+
+
+
+    // .footer-container .company-info #footer-logo #footer-logo-img {
+
+    //     margin-bottom: 15px;
+    //     width: 140px;
+    //     height: auto;
+    //     display: block;
+
+    // }
+
+    // .footer-container .company-info .footer-item-1 {
+    //     display: block;
+    //     margin-bottom: 10px;
+    //     font-family: "Titillium Web", sans-serif;
+    //     color: #babbbf;
+    // }
+
+    // .footer-container .company-info .footer-item-2 {
+    //     display: block;
+    //     margin-bottom: 10px;
+    //     color: white;
+    //     font-family: "Titillium Web", sans-serif;
+    // }
+
+
+
+
+    ////////// id=block_myaccount_infos/////////////
+
+
+    /* 20% */
+    #footer .footer-container .link-container #block_myaccount_infos {
+        width: 100%;
+        order: 2;
+    }
+
+    ////////// class=links/////////////
+
+
+    /* 40% */
+    #footer .footer-container .link-container .links {
+        width: 100%;
+        order: 3;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    #footer .footer-container .link-container .links .row {
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    ////////// class=block_newsletter/////////////
+
+
+    /* 20% */
+    #footer .footer-container .link-container .block_newsletter {
+        width: 100%;
+        order: 4;
+        margin: 0;
+        padding: 0;
+        background-color: #363738;
+        position: relative;
+    }
+
+    // #footer .footer-container .link-container .block_newsletter .block_newsletter_alert {
+    //     position: absolute;
+    //     top: 220px;
+    // }
+
+    // /* newsletter internals – same as yours, just kept */
+
+    #footer .footer-container .link-container .block_newsletter>.row {
+        display: block;
+        padding-top: 80px;
+        margin: 0;
+        position: relative;
+        text-align: center;
+        /* centers inline/inline-block children */
+    }
+
+    #footer .footer-container .link-container .block_newsletter .row .col-md-7 {
+        float: none;
+        /* 🟢 override Bootstrap float */
+        width: 80%;
+        max-width: 400px;
+        padding: 0;
+        display: block;
+        margin-left: auto;
+        /* center horizontally */
+        margin-right: auto;
+        /* center horizontally */
+        text-align: center;
+        /* center its inline content */
+    }
+
+    #footer .footer-container .link-container .block_newsletter .row .col-md-7 .col-xs-12 {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    #footer .footer-container .link-container .block_newsletter .row .col-md-7 .btn-primary {
+        // position: absolute;
+        background-color: rgb(237, 28, 35) !important;
+
+    }
+
+    // #footer .footer-container .link-container .block_newsletter .row .col-md-7 .input-wrapper {
+    //     width: 100%;
+    //     position: absolute;
+    //     top: 120px;
+    // }
+
+    #footer .footer-container .link-container .block_newsletter #block-newsletter-label {
+        display: none;
+    }
+
+
+    ////////// class=footer-email-box/////////////
+    /// 
+    #footer .footer-container .link-container .sign-up {
+        width: 100%;
+        order: 5;
+        position: relative;
+    }
+
+    #footer .footer-container .link-container .footer-email-box {
+width: 100%;
+        position: absolute;
+        max-width: 280px;
+        top: -115px;
+        left: 43%;
+        /* move reference point to the middle */
+        transform: translateX(-50%);
+        /* pull box back by half its width */
+
+        z-index: 10;
+    }
+
+    #footer .footer-container .link-container .footer-email-box p {
+        font-family: "Titillium Web", sans-serif;
+        color: #ebedf2;
+    }
+
+    #footer .footer-container .footer-email-box p.subscribe-header {
+        margin-bottom: 15px;
+        font-size: 36px;
+        line-height: 34px;
+    }
+
+    #footer .footer-container .footer-email-box p.email-info {
+        padding-right: 110px;
+        // position:relative;
+        position: relative;
+        left: 186px;
+        bottom: 63px;
+    }
+
+    #footer .footer-container .footer-email-box p.subscribe-header strong {
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .0625em;
+        margin-bottom: 11px;
+    }
+
+    #footer .footer-container .container .h3,
+    #footer .footer-container .container .h3 a {
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .0625em;
+        margin-bottom: 11px;
+        font-family: "Titillium Web", sans-serif;
+        color: #ebedf2;
+    }
+
+    #footer .footer-container .container li a {
+        color: #babbbf;
+        font-family: "Titillium Web", sans-serif;
+        letter-spacing: .0525em;
+    }
+
+
+
+
+    // .footer-container .company-info #footer-logo
+    // {
+
+    // width: 155px;
+    // height: 63px;
+    // background-position: 0;
+    // margin-bottom: 16px;
+    // display: block;
+    //     text-decoration: none;
+    // color: #babbbf;
+    //       background-image: url('https://rh.rightart.co.uk/images/mini-logo.png')!important;
+
+
+    // background-repeat: no-repeat;
+
+
+    // }
+
+    ////////// class=social-container/////////////
+
+
+    #footer .social-container {
+
+        width: 100%;
+        order: 3;
+        position: relative;
+        max-width: 1230px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    #footer .social-container .social-icons {
+
+        width: 220px;
+        padding-left: 6px;
+        margin: 0 auto;
+        clear: both;
+        background-color: #363738;
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    #footer .social-container .social-icons li {
+        float: left;
+        margin-right: 6px;
+        display: block;
+        height: 36px;
+        width: 36px;
+        border-radius: 2px;
+        background-color: #525254;
+        background-image: url('https://rh.rightart.co.uk/images/social-icons-sprite.png');
+        background-repeat: no-repeat;
+        background-size: 80px;
+
+    }
+
+
+    #footer .social-container .social-icons li a {
+        float: left;
+        margin-right: 6px;
+        display: block;
+        height: 36px;
+        width: 36px;
+        border-radius: 2px;
+        background-color: #525254;
+        background-image: url('https://rh.rightart.co.uk/images/social-icons-sprite.png');
+        background-repeat: no-repeat;
+        background-size: 80px;
+
+    }
+
+    #footer .social-container .social-icons li.social-facebook {
+
+        background-position: -2px -2px;
+    }
+
+    #footer .social-container .social-icons .social-facebook a {
+        background-position: -42px -2px;
+        opacity: 0;
+    }
+
+    #footer .social-container .social-icons li a:hover {
+
+        opacity: 1;
+    }
+
+
+    #footer .social-container .social-icons li.social-twitter {
+
+        background-position: -2px -42px;
+    }
+
+    #footer .social-container .social-icons .social-twitter a {
+        background-position: -42px -42px;
+        opacity: 0;
+    }
+
+
+    #footer .social-container .social-icons li.social-pinterest {
+
+        background-position: -2px -82px;
+    }
+
+    #footer .social-container .social-icons .social-pinterest a {
+        background-position: -42px -82px;
+        opacity: 0;
+    }
+
+
+
+    #footer .social-container .social-icons li.social-instagram {
+
+        background-position: -2px -121px;
+    }
+
+    #footer .social-container .social-icons .social-instagram a {
+        background-position: -42px -162px;
+        opacity: 0;
+    }
+
+
+
+    #footer .social-container .social-icons li.social-youtube {
+
+        background-position: -2px -2px;
+    }
+
+    #footer .social-container .social-icons .social-youtube a {
+        background-position: -42px -2px;
+        opacity: 0;
+    }
+
+    #footer .social-container .footer-legal {
+        text-align: center;
+        display: block;
+        clear: both;
+        font-size: 14px;
+        margin: -18px 20px 0;
+        padding: 47px 0 36px;
+        border-top: 2px solid #525254;
+        color: #babbbf;
+        // font-family: "Open Sans", sans-serif;
+        font-family: "Titillium Web", sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    // #footer .social-container .social-icons li a:hover {
+
+    //     opacity: 1;
+    // }
+
+    #footer .footer-before {
+        display: none;
+    }
+
+
+}
+
+
+

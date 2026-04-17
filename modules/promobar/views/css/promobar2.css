@@ -1,0 +1,161 @@
+/* Keep page content from hiding under the fixed bar */
+:root { --promo-bar-height: 40px; }
+body { padding-top: var(--promo-bar-height) !important; }
+
+/* Promo bar */
+.promo-bar{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--promo-bar-height);
+  z-index: 9999;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 12px;
+}
+
+.promo-bar__arrow{
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  padding: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.promo-bar__arrow svg{ width: 18px; height: 18px; }
+
+.promo-bar__center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  min-width: 0;
+}
+
+.promo-bar__text{
+  display: inline-block;
+  max-width: 70vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  line-height: 2;
+  
+}
+
+.promo-bar__details{
+  border: 0;
+  background: transparent;
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+}
+
+@media (max-width: 480px){
+  :root { --promo-bar-height: 34px; }
+  .promo-bar__text, .promo-bar__details{ font-size: 12px; }
+  .promo-bar__arrow svg{ width: 14px; height: 14px; }
+}
+
+/* Modal */
+.promo-modal{
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: none;
+}
+.promo-modal.is-open{ display: block; }
+
+.promo-modal__backdrop{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.55);
+}
+
+.promo-modal__panel{
+  position: relative;
+  width: min(600px, calc(100% - 24px));
+  margin: 80px auto 24px;
+  background: #fff;
+  color: #111;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+.promo-modal__title{
+  margin: 0 0 12px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.promo-modal__body{
+  max-height: calc(100vh - 260px);
+  overflow: auto;
+  padding: 10px 2px;
+}
+.promo-modal__body p{ margin: 0 0 10px; }
+
+.promo-modal__footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.promo-modal__close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: #111;
+}
+
+/* CTA button (no Bootstrap) */
+.shop-button{
+  margin-bottom: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: .0625em;
+  font-weight: 600;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  border-width: 0;
+  padding: 7px 14px;
+  -webkit-transition: color 90ms linear, background-color 90ms linear;
+  transition: color 90ms linear, background-color 90ms linear;
+
+  /* sensible defaults */
+  background-color: #ed1c23;
+  color: #111;
+}
+
+.shop-button.active,
+.shop-button:hover,
+.shop-button:focus,
+.shop-button:active{
+  background-color: #ed1c23;
+  color: #fff;
+}
+
+.shop-button:focus{ outline: none; }
+.shop-button:focus-visible{ outline: 2px solid currentColor; outline-offset: 2px; }
+
+
+
+#header #promoModalCta:hover
+{
+    color: #fff;
+    text-decoration: none;
+}

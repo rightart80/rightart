@@ -1,0 +1,981 @@
+//description page and fixed sidebar
+
+@media screen and (min-width: 770px) {
+
+
+    #main.category {
+        border-left: 251px solid #e9ebec;
+        padding-left: 20px;
+        position: relative;
+        display: block;
+
+        #left-col {
+            width: 251px;
+            padding: 0 1 10px;
+            margin-left: -271px;
+            float: left;
+            display: block;
+            unicode-bidi: isolate;
+
+
+        }
+
+        #left-col.fixed {
+
+            top: 50px;
+            height: 327px;
+            float: none;
+            position: fixed;
+            overflow: hidden;
+            // width: 260px;
+            padding: 0 1 10px;
+            margin-left: -271px;
+                    box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.1);
+
+            display: block;
+            unicode-bidi: isolate;
+        }
+
+        .scroll {
+            font-family: "Open Sans", sans-serif;
+            line-height: 1.3333;
+            color: #363738;
+        }
+
+        #left-col.fixed #scroll {
+            bottom: 0;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            -ms-overflow-style: none;
+            width: 110%;
+            height: 100%;
+        }
+
+        #filters {
+            padding: 0 0 10px;
+            width: 251px;
+        }
+
+        #sidebar-squares {
+            padding: 0 0 10px;
+            width: 251px;
+        }
+    }
+
+
+
+
+
+
+    /////////// category header image
+    #js-product-list-header {
+        width: 100%;
+        height: 0;
+        padding: 0 0 44.68085%;
+        margin-bottom: 30px;
+        position: relative;
+
+    }
+
+    #js-product-list-header .cover-image {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        image-rendering: -webkit-optimize-contrast;
+
+
+    }
+}
+
+#js-product-list-header {
+    width: 100%;
+    height: 0;
+    padding: 0 0 44.68085%;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+#js-product-list-header .cover-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    image-rendering: -webkit-optimize-contrast;
+
+
+}
+
+
+//// category header text
+
+#category-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 15;
+    // text-align: right;
+
+     display: flex;
+    justify-content: flex-end;   /* right side */
+    align-items: center;         /* vertical center */
+    text-align: right;
+}
+
+
+#category-header:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#category-header h1 {
+ margin: 0;                   /* remove default h1 top/bottom margin */
+    display: block;
+    padding: 2% 3.5% 2.5%;
+    font-weight: 300;
+    font-family: "Titillium Web", sans-serif;
+    line-height: 1;
+    background-color: rgba(54, 55, 56, .8);
+    color: #fff;
+
+    max-width: 70%;              /* optional: prevents over-stretching */
+    word-break: break-word;      /* optional: safer for very long text */
+
+    span {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #category-header h1 {
+        font-size: 6.2vw;
+
+    }
+}
+
+@media screen and (min-width: 771px) {
+    #category-header h1 {
+        font-size: 4.2vw;
+
+    }
+}
+
+////category description collapse
+
+#main.category #description {
+
+
+    /* Limit to roughly 6 lines */
+    #description-canvas.collapsed {
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+
+}
+
+#left-col.fixed {
+    position: fixed;
+    /* top: header height etc. */
+}
+
+#left-col.bottom-fixed {
+    position: absolute;
+    /* pinned via parent layout */
+}
+
+////////
+/// 
+// .subcategories-list .subcategory-item.is-hidden {
+//     display: none;
+// }
+
+
+.subcategories-list .subcategory-item.is-hidden {
+    display: none;
+}
+
+.is-hidden {
+    display: none !important;
+}
+
+
+//////////// sub category styles
+
+//// subcategory load more button
+/// 
+/// 
+#main.category #subcategories {
+    padding: 0px;
+}
+
+
+.subcategories-list .subcategory-item.is-hidden {
+    display: none;
+}
+
+
+
+
+
+
+#main.category #subcategories h2 {
+
+    font-weight: 600;
+    line-height: 1;
+    padding: 16px 0px;
+    font-family: "Titillium Web", sans-serif;
+    color: inherit;
+}
+
+@media screen and (max-width: 770px) {
+    #category-header h2 {
+
+        font-size: 1.45rem;
+
+    }
+}
+
+@media screen and (min-width: 771px) {
+    #category-header h2 {
+        font-size: 2.25rem;
+
+    }
+}
+
+
+#main.category #subcategories h2 .subcategories-expander.opened,
+#main.category #subcategories h2 .subcategories-expander {
+    margin-left: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+}
+
+#main.category #subcategories h2 .subcategories-expander.opened::after {
+    bottom: 4px;
+    position: absolute;
+    right: -25px;
+    border-color: rgb(0, 0, 0) transparent;
+    border-style: solid;
+    border-width: 16px 8px 0px;
+    content: "";
+}
+
+#main.category #subcategories h2 .subcategories-expander::after {
+    bottom: 4px;
+    position: absolute;
+    right: -25px;
+    border-color: transparent rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 8px 0px 8px 16px;
+    // color: rgb(54, 55, 56);
+    content: "";
+}
+
+
+
+
+
+
+
+///catagories list
+/// 
+#subcategories-list {
+    margin-right: -1px;
+    overflow: hidden;
+
+    .subcategory-item {
+        display: block;
+        float: left;
+        // width: 25%;
+        padding-bottom: 25%;
+        position: relative;
+
+    }
+
+    .subcategory-image {
+        padding: 0px;
+    }
+
+    .subcategory-url {
+        position: absolute;
+        top: -1px;
+        right: 0px;
+        bottom: 0px;
+        left: -1px;
+        border-width: 1px;
+        border-style: solid;
+        padding: opx !important;
+        border-color: rgb(255, 255, 255);
+        border-image: initial;
+    }
+
+
+    .img-fluid {
+        width: 100%;
+        height: 100%;
+        image-rendering: -webkit-optimize-contrast;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+
+    span {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: rgba(54, 55, 56, 0.8);
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        text-align: right;
+        letter-spacing: 0.0625em;
+        transition: background-color 90ms linear;
+        font-size: 18px;
+        padding: 12px 39px 12px 12px;
+    }
+
+    span::after {
+        content: "";
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        height: 42px;
+        width: 40px;
+        background-position: -168px -145px;
+        background-image: url('https://rh.rightart.co.uk/images/common-sprite.png');
+        background-repeat: no-repeat;
+        background-size: 250px;
+
+    }
+
+    .subcategory-url::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 89%;
+    }
+}
+
+#subcategories ul li:hover .subcategory-image a {
+    padding: 0px;
+    border-color: rgb(255, 255, 255) !important;
+}
+
+#subcategories ul li:hover .subcategory-name {
+    background-color: rgb(237, 28, 35);
+    color: #fff !important;
+
+}
+
+
+
+
+/////category sort by 
+
+#js-product-list-top {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#category-count {
+    display: block !important;
+    float: right;
+    font-style: italic;
+    line-height: 36px;
+    padding: 0px;
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+#category-sort {
+
+
+    overflow: hidden;
+
+    .sort {
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 700;
+        line-height: 22px;
+        padding: 7px 0;
+        font-size: 1.375rem;
+        float: left;
+        margin-right: 10px;
+        color: #363738;
+    }
+}
+
+
+/////////
+/// 
+/// 
+/// 
+/// 
+.products-sort-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.shop-button {
+
+    background-color:  #e9ebec;;
+    color: rgb(54, 55, 56);
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.0625em;
+    font-weight: 600;
+    height: auto;
+    cursor: pointer;
+    position: relative;
+    line-height: 22px;
+    text-decoration: none;
+    border-width: 0px;
+    // border-style: initial;
+    // border-color: initial;
+    // border-image: initial;
+    padding: 7px 14px;
+    transition: color 90ms linear, background-color 90ms linear;
+    
+}
+
+.shop-button:hover {
+    background: #e6e6e6;
+    color: rgb(237, 28, 35);
+    text-decoration: none;
+
+}
+
+.shop-button.active {
+    background-color: rgb(237, 28, 35);
+    color: rgb(255, 255, 255);
+}
+
+
+
+////////////////////////
+/// 
+/// 
+/// 
+/// 
+/// 
+/// 
+/// 
+/// category miniture product list
+/// 
+// /// 
+// @media screen and (min-width: 1050px) {
+// #products-mini {
+//     top: 0px;
+//     left: 33.3333%;
+//     width: 36.3333%;
+//     position: absolute;
+//     overflow: visible;
+//     z-index: 45;
+// }
+// }
+
+
+
+// #products-mini {
+// padding-right: 0px;
+//         padding-left: 0px;
+//     //     position: absolute;
+//     // overflow: visible;
+//         font-family: "Titillium Web", sans-serif;
+
+// .product-miniature{
+//     margin: 25px 40px 50px;
+//     position: relative;
+//     transition: margin 90ms 
+// linear;
+// }
+
+//     }
+
+// .product-miniature:before
+// {
+//     //     content: "";
+//     // position: absolute;
+//     top: -25px;
+//     bottom: -25px;
+//     right: -15px;
+//     left: -15px;
+//     border: 1px solid transparent;
+//     z-index: 20;
+//     transition: border 90ms 
+// linear;
+
+// }
+
+
+
+// .product-miniature .thumbnail-container
+// {
+
+//     margin-bottom: 0px!important;
+// }
+
+
+// #art-mini-image {
+
+//     display: block;
+//     text-decoration: none;
+//     position: relative;
+//     z-index: 30;
+//     font-weight: 700;
+//     color: #fff;
+//     font-size: 20px;
+//     letter-spacing: .0625em;
+// }
+
+
+
+#js-product-list .products
+
+{
+    overflow: visible;
+    padding-top: 0;
+        position: relative;
+    -webkit-transform: translateZ(0);
+        margin: 0 -10px;
+    padding-bottom: 50px;
+}
+
+
+#js-product-list .list-product
+{
+padding-right: 0px!important; 
+padding-left: 0px!important;
+overflow: visible;
+font-family: "Titillium Web", sans-serif;
+}
+
+.horizontal .product-miniature.js-product-miniature .thumbnail-container
+{
+position: relative;
+    margin: 25px 10px 20px;
+    transition: margin 90ms linear;
+    display: block;
+    unicode-bidi: isolate;
+
+}
+
+
+.product-miniature.js-product-miniature .thumbnail-container
+{
+position: relative;
+    margin: 25px 20px 20px;
+    transition: margin 90ms linear;
+    display: block;
+    unicode-bidi: isolate;
+
+}
+
+
+.product-miniature.js-product-miniature .thumbnail-container .thumbnail-top picture
+{
+
+      display: flex;
+    justify-content: center;
+}
+
+.js-product.list-product.horizontal .product-miniature.js-product-miniature .thumbnail-container .thumbnail-top picture img
+{
+max-width: 90%;
+}
+.js-product.list-product.vertical .product-miniature.js-product-miniature .thumbnail-container .thumbnail-top picture img
+{
+max-width: 75%;
+}
+.js-product.list-product.square .product-miniature.js-product-miniature .thumbnail-container .thumbnail-top picture img
+{
+max-width: 80%;
+}
+
+.product-miniature .highlighted-informations
+
+{
+        padding: 0.725rem 0;
+}
+
+.js-product.list-product .product-details .product-title
+{
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.js-product.list-product .product-details h3 a
+
+{
+    color: #363738 !important;
+    letter-spacing: normal;
+    margin: 15px 10px 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    position: relative;
+    transition: margin 90ms 
+linear;
+font-family: "Titillium Web", sans-serif;
+text-align: left;
+
+// margin-top: .7rem;
+//     text-align: center;
+//     text-transform: capitalize;
+}
+
+
+.js-product.list-product .product-details #artist-name
+
+{
+        display: block; /* or inline-block */
+
+    margin: 4px 0 0 10px;
+    font-style: italic;
+        font-size: 16px;
+
+    text-decoration: none;
+    z-index: 30;
+    position: relative;
+    transition: margin 90ms 
+linear;
+}
+
+.js-product.list-product .product-details #artist-name a
+
+{
+
+    font-style: italic;
+    text-decoration: none;
+    color: #54bee8;
+        font-size: 16px;
+
+    z-index: 30;
+    position: relative;
+    transition: margin 90ms 
+linear;
+}
+
+#artist-name .artist-link a
+{
+
+font-weight: 300!important;
+    text-transform: capitalize!important;
+
+}
+
+
+
+
+.js-product.list-product .product-details #artist-name .artist-ref
+{
+    display: none
+}
+.js-product.list-product .product-details .av-product
+
+{
+    margin-left: 10px;
+}
+.js-product.list-product .product-details .product-price-and-shipping
+{
+    position: relative;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: .0625em;
+    line-height: 1;
+    z-index: 30;
+    margin-top: 5px;
+    
+    margin-left: 10px;
+    text-align: left;
+        font-family: "Titillium Web", sans-serif;
+}
+
+.js-product.list-product .product-details .product-price-and-shipping .price-container
+
+{
+     float: right;          /* keep if you want prices on the right */
+    text-align: right; 
+}
+
+.js-product.list-product .product-details .product-price-and-shipping .price-container .regular-price
+{
+        display: block;
+
+font-size: 15px;
+    padding: 0 1px;
+    position: relative;
+        text-decoration: none;
+        font-family: "Titillium Web", sans-serif;
+        color: #363738;
+            margin-bottom: 2px;    /* small space above the new price */
+
+
+}
+
+.js-product.list-product .product-details .product-price-and-shipping .price-container .regular-price::after
+   {
+content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    
+    left: 0;
+    background-size: 100% 100%;
+
+            background-image: url('https://rh.rightart.co.uk/images/oblique.png');
+}
+
+
+.js-product.list-product .product-details .product-price-and-shipping .price-container .price
+
+
+{
+        display: block;
+
+font-size: 15px;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+.js-product.list-product .thumbnail-container .thumbnail-top
+.product-flag.discount
+
+
+{
+        position: absolute;
+    /* bottom: 0px; */
+    top: 19rem;
+    left: 12rem;
+
+    color: #fff!important;
+    background-color: red!important;
+    font-weight: 700!important;
+    display: inline-table!important;
+    position: absolute!important;
+        white-space: nowrap !important;     /* ⟵ prevents text from breaking onto 2 lines */
+
+
+    // padding: 4px 9px!important;
+    font-size: 15px!important;
+    letter-spacing: .0625em!important;
+    // line-height: 1!important;
+    transition: margin 90ms 
+linear!important;
+}
+
+
+
+
+// .masonry-scroll-top {
+//     position: absolute;
+//     right: 16px;
+//     bottom: 16px;
+//     z-index: 10;
+//     padding: 8px 12px;
+//     border-radius: 999px;
+//     border: none;
+//     cursor: pointer;
+//     font-size: 14px;
+//     background: rgba(0,0,0,0.7);
+//     color: #fff;
+// }
+
+
+#back-to-top.active {
+    bottom: 0;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: -50px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #daddde;
+    background-position: -123px -268px;
+    opacity: .5;
+    z-index: 95;
+    cursor: pointer;
+    transition: opacity 90ms 
+linear, bottom 180ms 
+linear;
+        background-image: url('https://rh.rightart.co.uk/images/common-sprite.png');
+            background-repeat: no-repeat;
+    background-size: 250px;
+
+}
+
+#back-to-top:hover
+{
+    opacity: 1;
+}
+// .js-product.list-product .thumbnail-container
+// .product-flag
+
+
+// {
+//     top:50px;
+//     float: left;
+//     left: 7px;
+//     color: #fff;
+//     background: #24b9d7;
+//     font-weight: 700;
+//     display: inline-table;
+//     position: absolute;
+//     right: -5px;
+//     padding: 4px 9px;
+//     font-size: 15px;
+//     letter-spacing: .0625em;
+//     line-height: 1;
+//     // bottom: 100px;
+//     transition: margin 90ms 
+// linear;
+// }
+
+
+
+
+// screen and (max-width: 770px) {
+//     .product-list li .list-product {
+//         margin: 15px 15px 25px;
+//     }
+// }
+
+
+// .product-miniature.js-product-miniature .thumbnail-container::before
+// {
+
+//     content: "";
+//     position: absolute;
+//     top: -25px;
+//     bottom: -25px;
+//     right: -15px;
+//     left: -15px;
+//     z-index: 20;
+//     border-width: 1px;
+//     border-style: solid;
+//     border-color: transparent;
+//     border-image: initial;
+//     transition: border 90ms linear;
+// }
+
+// #js-product-list .products-mini:hover
+// .product-miniature.js-product-miniature .thumbnail-container::before
+// {
+//     border-width: 4px;
+//     border-style: solid;
+//     border-color: rgb(237, 28, 35);
+//     border-image: initial;
+//     transition: border 90ms linear 420ms;
+// }
+
+/* Prevent typing/text cursor on the Category H2 */
+#subcategories .subcategory-heading {
+  cursor: default;
+  user-select: none;
+}
+
+/* Only expander is clickable */
+#subcategories .subcategories-expander {
+  cursor: pointer;
+  user-select: none;
+}
+
+
+
+
+////////////////////
+/// 
+/// 
+/// 
+/// 
+
+
+// /* Make heading + icon sit nicely on one line */
+// .subcategory-heading {
+//   display: inline-flex;
+//   align-items: center;
+//   gap: 0.35rem; /* space between text and icon */
+// }
+
+// /* The clickable span for the arrow */
+// .subcategories-expander {
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 1em;
+//   height: 1em;
+//   cursor: pointer;
+//   /* optional: align vertically with text */
+//   vertical-align: middle;
+// }
+
+// /* The arrow itself (default state: "collapsed-ish" → pointing sideways/left/right) */
+// .subcategories-expander::before {
+//   content: "▸";              /* small triangle, similar height to text */
+//   font-size: 1em;            /* same as h2 text size */
+//   line-height: 1;
+//   display: inline-block;
+//   transition: transform 0.2s ease;
+// }
+
+// /*
+//   When fully expanded (all categories visible),
+//   your JS sets aria-expanded="true" and .opened ⇒
+//   turn arrow DOWN
+// */
+// .subcategories-expander[aria-expanded="true"]::before {
+//   transform: rotate(90deg);  /* ► becomes ▼ by rotating */
+// }
+
+// .subcategories-expander::before {
+//   content: "▾";  /* down arrow by default */
+// }
+
+// /* When expanded, rotate it up */
+// .subcategories-expander[aria-expanded="true"]::before {
+//   transform: rotate(180deg); /* down → up */
+// }
+
+#subcategories-expander {
+  display: inline-flex !important;
+}
+
+
+#search #js-product-list-header
+
+{
+    padding: 0px !important;
+    
+}

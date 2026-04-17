@@ -1,0 +1,14 @@
+.af_subtitle {
+	font-size: 1.2em;
+}
+.has-compact-filter #amazzing_filter .title_block {
+	border: 0;
+}
+.has-compact-filter #amazzing_filter .title_block:after {
+	display: none;
+}
+.btn.compact-toggle.external {
+	float: right;
+	margin: 0 0 0 15px;
+}
+/* since 3.3.2 */

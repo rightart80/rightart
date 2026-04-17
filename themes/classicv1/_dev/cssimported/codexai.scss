@@ -1,0 +1,40 @@
+// Custom codexai styles. Keep reusable tweaks here so webpack rebuilds preserve them.
+
+// Pink accent line beneath the header (logo + menu)
+#header.ra-header::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #ff4fa8;
+  // background: rgb(237, 28, 35);
+}
+
+// // Make "Contact us" menu link red on hover/focus to match brand accent
+// .header-nav .contact-link.header-nav-link:hover,
+// .header-nav .contact-link.header-nav-link:focus {
+//   color: rgb(237, 28, 35);
+//   text-decoration: none;
+// }
+
+// // Extra specificity to beat existing menu hover styles
+// #header .header-nav .contact-link.header-nav-link:hover,
+// #header .header-nav .contact-link.header-nav-link:focus {
+//   color: rgb(237, 28, 35);
+//   text-decoration: none;
+// }
+
+// // Also cover the module's #contact-link anchor inside the nav column
+// #header .header-nav #contact-link:hover a,
+// #header .header-nav #contact-link:focus a {
+//   color: rgb(237, 28, 35);
+//   text-decoration: none;
+// }
+
+// // Force the Contact link to stay red in all states (desktop module)
+// #header .header-nav #_desktop_contact_link #contact-link,
+// #header .header-nav #_desktop_contact_link #contact-link:hover,
+// #header .header-nav #_desktop_contact_link #contact-link:focus {
+//   color: rgb(237, 28, 35);
+//   text-decoration: none;
+// }

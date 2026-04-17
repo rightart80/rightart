@@ -1,0 +1,584 @@
+/**
+* 2007-2021 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to theCommercial License!
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2021 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php Commercial License!
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+
+.bootstrap .nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+table.dataTable.no-footer {
+    border-bottom: 1px solid #ddd;
+}
+
+.catalogEI-tab-content .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#schedule_ftp_entities label.required {
+    padding-right: 7px;
+}
+
+.catalogEI-tab-content h3.save_header {
+    margin: 0 -16px 8px !important;
+    padding-left: 16px !important;
+    border-bottom: none !important;
+}
+
+.catalogEI_form .form-wrapper>.tab-content>.tab-pane {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.catalogEI_form .tab-content hr {
+    border-top-color: #dadada;
+    margin-bottom: 7px;
+}
+
+.catalogEI_form .catalogEI_filters h4 {
+    margin: 0 0 10px 0 !important;
+    padding: 5px 0;
+}
+
+.show_selected {
+    width: auto !important;
+    margin-right: 15px;
+}
+
+.refresh_button {
+    margin-bottom: 15px !important;
+}
+
+.dt-checkboxes-cell .dt-checkboxes, .dt-checkboxes-select-all .dt-checkboxes {
+    float: none !important;
+    margin-left: 0 !important;
+    width: 15px;
+    height: 15px;
+}
+
+.catalogEI_filters thead th:not(:first-child) {
+    padding-top: 14px !important;
+    font-weight: bold !important;
+}
+
+.dataTables_length label, .dataTables_filter label {
+    font-weight: normal;
+}
+
+.dataTables_filter input {
+    display: inline-block !important;
+    width: auto !important;
+    margin-bottom: 7px !important;
+    font-weight: normal;
+}
+
+.dataTables_length select {
+    width: 75px !important;
+    display: inline-block !important;
+    width: auto !important;
+    font-weight: normal;
+}
+
+.catalogEI_icon.icon-check {
+    color: #72c279;
+}
+.catalogEI_icon.icon-remove {
+    color: #e08f95;
+}
+
+.catalogEI_form .scrollable ul > li {
+    /*padding: 8px 15px;*/
+    cursor: pointer;
+    border-left: none;
+    border-right: none;
+}
+
+.catalogEI_fields ul > li.list-group-item:first-child {
+    border-radius: 0;
+}
+
+.catalogEI_fields ul > li.list-group-item:last-child {
+    border-radius: 0;
+    margin-bottom: -1px;
+}
+
+.catalogEI_form .scrollable ul > li i.icon-info {
+    color: #4ac7e0;
+}
+
+.catalogEI_form .scrollable button {
+    text-align: left;
+}
+
+.catalogEI_form .scrollable button:focus {
+    outline: none !important;
+    background-color: #fff;
+    border-color: #DEDEDE;
+}
+
+.catalogEI_form .scrollable button i,
+.catalogEI_form .scrollable ul > li i {
+    width: 18px;
+}
+
+.catalogEI_form .scrollable ul > li.selected {
+    background: #F6FBFF;
+    /*F1F6FB*/
+}
+
+.catalogEI_form .scrollable .fields_header {
+    /*background: #f5f5f5;*/
+    border: 1px solid #ddd;
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+    padding: 8px;
+    display: flex;
+}
+
+.clearable {
+    position: relative;
+    flex-grow: 1;
+    margin-left: 50px;
+}
+
+.catalogEI_form .fields_button {
+    padding: 5px 8px;
+}
+
+.catalogEI_form .clearable .fields_search, #template_name {
+    height: auto;
+}
+
+.clearable_clear {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: red;
+}
+
+.scrollable, .catalogEI_product_fields .list-group {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.scrollable ul {
+    max-height: 440px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 0 0 3px 3px;
+    padding-bottom: 1px;
+}
+
+.catalogEI_filters .inline {
+    display: inline !important;
+}
+
+.group_header {
+    border-bottom: 1px solid #eee;
+}
+
+#fader {
+    opacity: .1;
+    background: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 999;
+}
+#spinner{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -140px;
+    display: none;
+    z-index: 998;
+}
+
+p.error {
+    font-size: 14px;
+}
+
+.catalogEI_save_template_btn i,
+.file_download_from_url_btn i,
+.file_download_from_ftp_btn i{
+    font-size: 14px;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+.catalogEI_save .templates {
+    padding-left: 0 !important;
+}
+
+.catalogEI_save ul {
+    max-height: 315px;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.catalogEI_save ul > li:first-child {
+    border-top: none;
+}
+.catalogEI_save ul > li:last-child {
+    border-bottom: none;
+}
+
+.catalogEI_save .apply_span {
+    margin-top: -6px;
+}
+
+.catalogEI_save .apply_span > button  {
+    padding: 5px 10px;
+}
+
+/*.apply_span .icon-trash{
+    cursor: pointer;
+}*/
+
+div.no_template {
+    color: #999;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+li + li span.default_config {
+    margin-right: 46px;
+}
+
+.vomiting{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    box-shadow: 0px 0px 13px -10px rgba(0,0,0,0.75);
+}
+
+table.dataTable tr {
+    height: 37px;
+}
+
+.icon-check.change, .icon-remove.change, .icon-edit.edit_schedule, .icon-trash.delete_schedule {
+    cursor: pointer;
+}
+
+.icon-check.change, .schedule-email .icon-check, .schedule-ftp .icon-check {
+    color: #72c279;
+}
+
+.icon-remove.change, .schedule-email .icon-remove, .schedule-ftp .icon-remove {
+    color: #e08f95;
+}
+
+.catalogEI_fields i.icon-info-circle {
+    color: #00AFF0;
+}
+
+.select_info {
+    padding-left: 15px;
+}
+
+@media (max-width: 991px) {
+    .scrollable.col-md-6.pull-right {
+        float: none !important;
+    }
+}
+
+/*The "Import" styles*/
+.uploader_input {
+    cursor: pointer !important;
+    background: #fff !important;
+}
+
+.file_uploader button.entity_file-selectbutton {
+    color: #fff !important;
+    background: #00AFF0 !important;
+    border-color: #00AFF0 !important;
+    z-index: 2;
+}
+.file_uploader button.entity_file-selectbutton i {
+    color: #fff !important;
+}
+.panel-footer button.entity_file-selectbutton {
+    min-width: 100px;
+}
+
+.catalogEI-import .panel-footer {
+    margin-top: 30px !important;
+    margin-bottom: -35px !important;
+}
+
+.after_upload_success_alert > div.alert {
+    display: table;
+}
+.after_upload_success_alert > div.alert > span {
+    display: table-cell;
+    vertical-align: middle;
+}
+.after_upload_success_alert > div.alert.alert-success:before {
+    top: 12px;
+}
+#import_details_error ul {
+    padding-left: 0;
+}
+.upload_history_table tr {
+    height: 37px;
+}
+.upload_history_table {
+    border-left: none !important;
+    border-right: none !important;
+}
+.upload_history_table thead {
+    display: none;
+}
+.upload_history {
+    margin-bottom: 30px !important;
+}
+.delete_file .icon-trash{
+    color: #c50000 !important;
+}
+.delete_file:hover .icon-trash{
+    color: #fff !important;
+}
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px;
+}
+.range-labels span {
+    width: 12.5%;
+    text-align: center;
+}
+
+label.speed {
+    margin-top: 10px;
+}
+
+input[type=range] {
+    margin: 10px 0;
+    border-radius: 2px;
+    height: 8px;
+    background: linear-gradient(to right, #3586AE 0%, #3586AE 50%, #EFEFEF 50%, #EFEFEF 100%);
+    border: 1px solid #CACACA;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    width: 12px;
+    -webkit-appearance: none;
+    height: 24px;
+    border-radius: 3px;
+    background: #fdfdfd;
+    border: 1px solid #aaa;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 12px;
+    height: 24px;
+    border-radius: 3px;
+    background: #fdfdfd;
+    border: 1px solid #aaa;
+}
+.folder_to_import_from, .folder_to_export_to {
+    border-radius: 3px !important;
+}
+
+.field-select-warning {
+    border-color: orange !important;
+}
+.delete_entities {
+    color: #c50000 !important;
+    background-color: #fbeded !important;
+}
+
+.bootstrap label.control-label span.label-tooltip {
+    color: #3586AE;
+    background-color: #edf7fb;
+}
+
+.insert_options, .update_options {
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    margin-bottom: 18px;
+}
+
+.insert_options h4, .update_options h4 {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.ignore-fields, .save-apply-fields {
+    margin-right: 10px;
+}
+
+input[name="skip"] {
+    display: inline !important;
+}
+
+.bootstrap .form-horizontal .form-wrapper {
+    max-width: 100%;
+}
+
+.paginate {
+    margin-top: 16px;
+    margin-bottom: -16px;
+}
+
+.paginate button {
+    width: 32px;
+    padding: 6px 8px !important;
+}
+
+.paginate span {
+    display: inline-block;
+    width: 32px;
+}
+
+.paginate span.dynamic_buttons {
+    display: inline;
+}
+
+.paginate button.activated {
+    font-weight: bold !important;
+    color: #006FAC;
+    border-color: #006FAC;
+}
+
+.paginate button.activated:hover {
+    cursor: initial !important;
+    color: #006FAC !important;
+    border-color: #006FAC !important;
+    background-color: initial !important;
+}
+
+hr.open_hr {
+    border-top-color: #e5e5e5;
+}
+
+.block-company {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+    padding-bottom: 16px;
+}
+.block-company span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.block-company img {
+    height: 60px;
+}
+.block-partner, .block-creator {
+    display: inline-block;
+    margin-right: 3px;
+}
+.block-partner img, .block-creator img {
+    height: 70px;
+}
+span.partner {
+    width: 115px;
+    margin: 18px 0 0 13px;
+    position: absolute;
+    font-weight: 600;
+}
+.module-block {
+    border: 1px solid #d2d2d2;
+    border-radius: 4px;
+}
+.module-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    margin-top: 16px !important;
+    margin-bottom: 32px !important;
+    min-height: 60px;
+}
+.module-block a {
+    display: block;
+    padding: 16px;
+}
+.module-block:hover {
+    box-shadow: 0 4px 8px 1px #ece9e9;
+}
+.bootstrap a.btn.btn-default.our-modules:hover,
+.bootstrap a.btn.btn-default.our-modules:focus,
+.bootstrap a.btn.btn-default.our-modules:active,
+.bootstrap .module-block button.btn.btn-default:hover,
+.bootstrap .module-block button.btn.btn-default:focus,
+.bootstrap .module-block button.btn.btn-default:active {
+    color: #fff !important;
+    border-color: #51954B !important;
+    background: #51954B !important;
+    box-shadow: none !important;
+}
+.module-block a:hover, .module-block a:focus {
+    text-decoration: none;
+}
+.bootstrap a.btn.btn-default.our-modules {
+    margin-top: 100px;
+}
+
+@media (max-width: 1600px) {
+    span.partner {
+        position: relative;
+        display: block;
+        width: auto;
+        margin: 10px 0 0 0;
+    }
+}
+
+@media (max-width: 1199px) {
+    .company-logo {
+        text-align: center;
+    }
+    span.partner {
+        margin-bottom: 25px;
+    }
+    .block-partner, .block-creator {
+        margin-left: 3px;
+    }
+}
+
+.icon-download:before {
+    content: "";
+}

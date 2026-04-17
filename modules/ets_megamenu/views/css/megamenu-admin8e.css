@@ -1,0 +1,29 @@
+@media (min-width: 1200px) {
+  .bootstrap .mm_forms .form-group,
+  .bootstrap .mm_config_form .form-group {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+
+  .mm_forms .input-group[class*="col-"],
+  .mm_config_form  .input-group[class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .mm_forms .input-group[class*="col-"],
+  .mm_config_form  .input-group[class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .mm_forms .translatable-field > [class*="col-"]:first-child,
+  .mm_config_form .translatable-field > [class*="col-"]:first-child {
+    padding-left: 0;
+  }
+
+  .mm_forms .translatable-field > [class*="col-"]:last-child,
+  .mm_config_form .translatable-field > [class*="col-"]:last-child {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,1488 @@
+/* stylelint-disable */
+@import "~bourbon/app/assets/stylesheets/bourbon";
+@import "partials/_variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css";
+@import "partials/_mixins";
+@import "partials/_fonts";
+@import "partials/_commons";
+@import "components/alert";
+@import "components/drop-down";
+@import "components/search-widget";
+@import "components/mainmenu";
+@import "components/checkout";
+@import "components/customer";
+@import "components/forgotten-password";
+@import "components/renew-password";
+@import "components/imageslider";
+@import "components/featuredproducts";
+@import "components/custom-text";
+@import "components/categories";
+@import "components/subcategories";
+@import "components/products";
+@import "components/cart";
+@import "components/block-reassurance";
+@import "components/quickview";
+@import "components/stores";
+@import "components/footer";
+@import "components/contact";
+@import "components/errors";
+@import "components/customization-modal";
+@import "components/sitemap";
+@import "components/newsletter";
+@import "components/brands";
+@import "components/suppliers";
+@import "components/header";
+@import "components/wrapper";
+@import "components/main";
+@import "components/notifications";
+@import "components/progressbar";
+//// New
+@import "customcode";
+@import "product_page";
+@import "product_page_dynamic";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+
+/* stylelint-enable */
+
+// base styles
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.container {
+  background-color: #fff; /* Set the background color */
+  background-clip: content-box; /* Clip the background to the content box */
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1230px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1230px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 1230px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 1230px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 1230px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 1230px;
+    max-width: 100%;
+  }
+}
+
+// Product Main
+#product-main {
+  background-color: $white;
+}
+#product-Options {
+  background-color: $white;
+}
+
+#product-images {
+  background-color: red;
+}
+
+#product-large-image {
+  background-color: $white;
+}
+
+#product-thumbnails {
+  background-color: rebeccapurple;
+}
+
+#product-images {
+  background-color: red;
+}
+
+/* Desktop Styles */
+@media (min-width: 761px) {
+  #product-main {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  #product-Options {
+    width: 360px;
+    order: 2;
+    margin-left: 20px;
+  }
+
+  #product-images {
+    flex: 1;
+    order: 1;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 760px) {
+  #product-main {
+    display: block;
+  }
+
+  #product-images,
+  #product-Options {
+    width: 100%;
+  }
+
+  // #product-images {
+  //   margin-bottom: 20px; /* Optional spacing */
+  // }
+}
+
+//thumbnails
+
+// noissue
+
+// Thumbail Image
+// images code raa-001
+
+//////////////// Layout Setting ///////////////////////
+/// /////////////////////////////////////////////////////////
+///
+// 1. Product image layout setting
+//   1.1 Product large image layout setting
+
+#product-large-image {
+  width: 83.3333%;
+  padding: 0 0 62.5%;
+  position: relative;
+  float: right;
+  background-color: $white;
+}
+
+@media screen and (max-width: 870px) {
+  #product-large-image {
+    width: 100%;
+    padding-bottom: 75%;
+  }
+}
+
+#product-large-image .room {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#product-large-image .room {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+//   1.2 Product thumbnail layout setting
+
+#product-thumbnails {
+  width: 16.6666%;
+  order: 1;
+  overflow: hidden;
+  float: left;
+}
+@media screen and (max-width: 870px) {
+  #product-thumbnails {
+    width: 100%;
+  }
+}
+
+#product-thumbnails section {
+  display: block;
+  padding: 0 0 75%;
+  height: 0;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 870px) {
+  #product-thumbnails section {
+    float: left;
+    width: 20%;
+    padding: 0 0 15%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+#product-thumbnails section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// 2. Product option layout setting
+
+//////////////// Dynamic Content Setting/////////////////////
+/// /////////////////////////////////////////////////////////
+///
+///
+///
+// 1. Product image dynamic content setting
+//   1.1 Product large image dynamic content setting
+//
+//   1.2 Product thumbnail dynamic content setting
+//
+// 2. Product option dynamic content setting
+
+//test-fixed
+
+////on off
+///
+///
+//large image
+#product-images #product-large-image .canvas {
+  display: block;
+}
+#product-images.room #product-large-image .canvas {
+  display: none;
+}
+
+#product-images.room #product-large-image .room {
+  display: block;
+}
+#product-images #product-large-image .room {
+  display: none;
+}
+
+// Square Image
+//position
+#product-thumbnails .room .room-art-position,
+#product-images
+  #product-large-image
+  .room
+  .room-art-position {
+  position: absolute;
+  aspect-ratio: 3 / 2; /* Forces a square box (1:1 ratio) */
+}
+
+
+#product-images.type-fine-art-paper #product-large-image .canvas .image-1
+  {
+     display: None!important;
+  }
+
+  #product-images.type-fine-art-paper #product-large-image .canvas .image-2
+  {
+     display: block!important;
+  }
+
+  #product-images.type-canvas #product-large-image .canvas .image-1
+  {
+     display: block!important;
+  }
+
+  #product-images.type-canvas #product-large-image .canvas .image-2
+  {
+     display: None!important;
+  }
+
+/////////
+
+#product-images.type-fine-art-paper #product-thumbnails .canvas .image-1
+  {
+     display: None!important;
+  }
+
+  #product-images.type-fine-art-paper #product-thumbnails .canvas .image-2
+  {
+     display: block!important;
+  }
+
+  #product-images.type-canvas #product-thumbnails .canvas .image-1
+  {
+     display: block!important;
+  }
+
+  #product-images.type-canvas #product-thumbnails .canvas .image-2
+  {
+     display: None!important;
+  }
+
+// #product-thumbnails .square.position-02 .room-art-position,
+// #product-images.square.position-02
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   position: absolute;
+
+//   aspect-ratio: 1 / 1; /* Forces a square box (1:1 ratio) */
+// }
+// #product-thumbnails .square.position-03 .room-art-position,
+// #product-images.square.position-03
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   position: absolute;
+
+//   aspect-ratio: 1 / 1; /* Forces a square box (1:1 ratio) */
+// }
+// #product-thumbnails .square.position-04 .room-art-position,
+// #product-images.square.position-04
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   position: absolute;
+
+//   aspect-ratio: 1 / 1; /* Forces a square box (1:1 ratio) */
+// }
+
+// // Vertical Image
+// //position
+// #product-thumbnails .vertical.position-01 .room-art-position,
+// #product-images.vertical.position-01
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   position: absolute;
+//   aspect-ratio: 2 / 3; /* Forces a square box (1:1 ratio) */
+// }
+
+// #product-thumbnails .vertical.position-02 .room-art-position,
+// #product-images.vertical.position-02
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   position: absolute;
+
+//   aspect-ratio: 2 / 3; /* Forces a square box (1:1 ratio) */
+// }
+// #product-thumbnails .vertical.position-03 .room-art-position,
+// #product-images.vertical.position-03
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   position: absolute;
+
+//   aspect-ratio: 2 / 3; /* Forces a square box (1:1 ratio) */
+// }
+// #product-thumbnails .vertical.position-04 .room-art-position,
+// #product-images.vertical.position-04
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   position: absolute;
+
+//   aspect-ratio: 2 / 3; /* Forces a square box (1:1 ratio) */
+// }
+
+// // Horizontal Image
+// //position
+
+// #product-thumbnails .horizontal.position-01 .room-art-position,
+// #product-images.horizontal.position-01
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   position: absolute;
+
+//   aspect-ratio: 3 / 2; /* Forces a square box (1:1 ratio) */
+// }
+
+// #product-thumbnails .horizontal.position-02 .room-art-position,
+// #product-images.horizontal.position-02
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   position: absolute;
+
+//   aspect-ratio: 3 / 2; /* Forces a square box (1:1 ratio) */
+// }
+// #product-thumbnails .horizontal.position-03 .room-art-position,
+// #product-images.horizontal.position-03
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   position: absolute;
+
+//   aspect-ratio: 3 / 2; /* Forces a square box (1:1 ratio) */
+// }
+// #product-thumbnails .horizontal.position-04 .room-art-position,
+// #product-images.horizontal.position-04
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   position: absolute;
+
+//   aspect-ratio: 3 / 2; /* Forces a square box (1:1 ratio) */
+// }
+
+// #product-large-image .room-art-position {
+//   position: absolute;
+//   top: 14%;
+//   left: 36.7%;
+//   width: 30.643%; /* Set width as percentage */
+//   aspect-ratio: 1 / 1; /* Forces a square box (1:1 ratio) */
+// }
+
+////design
+
+///
+/// large image
+
+//////
+///
+///
+///
+///
+
+#product-large-image .big-canvas {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+#product-large-image .canvas::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+// #product-thumbnails .canvas {
+//   display: block;
+// }
+
+#product-thumbnails .canvas::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: -1px;
+  // border-bottom: 1px solid #fff;
+  // border-right: 1px solid #fff;
+  z-index: 30;
+}
+
+#product-thumbnails .small-canvas {
+  display: block;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+}
+
+#product-thumbnails .canvas::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+//
+//
+//
+//
+
+////
+/// room- art
+/// large image
+
+#product-images.room #product-large-image .room-art-position .room-art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 80%;
+  aspect-ratio: 3 / 2; /* Forces a square box (1:1 ratio) */
+  left: 10%;
+  top: 11%;
+}
+
+#product-images.room.square .room-art-position .room-art .art-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // border-radius: 1px;
+// background-image: url('https://rh.rightart.co.uk/images/39.jpg')!important;
+  z-index: 10;
+}
+
+
+#product-images.room.square .room-art-position .room-art .art-image .artwork{
+width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills the frame without stretching */
+  display: block;
+  border-radius: 1px;
+}
+
+
+
+#product-images.room.square .room-art-position .room-art .art-frame {
+  position: absolute;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1px;
+  top: -0.4%;
+  bottom: -0.4%;
+  left: -0.4%;
+  right: -0.4%;
+  // background-image: url('https://rh.rightart.co.uk/images/square-frame-f-f-nw-Canvas.jpg')!important;
+  z-index: 12;
+}
+
+
+
+/// room- art
+/// Thumbnail image
+#product-images #product-thumbnails .room .room-art-position .room-art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 80%;
+  aspect-ratio: 3 / 2; /* Forces a square box (1:1 ratio) */
+  left: 10%;
+  top: 11%;
+}
+
+#product-images
+  #product-thumbnails
+  .room.square
+  .room-art-position
+  .room-art
+  .art-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // border-radius: 1px;
+// background-image: url('https://rh.rightart.co.uk/images/39.jpg')!important;
+  z-index: 10;
+}
+
+
+#product-images
+  #product-thumbnails
+  .room.square
+  .room-art-position
+  .room-art
+  .art-image .artwork{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills the frame without stretching */
+  display: block;
+  border-radius: 1px;
+}
+
+
+
+#product-images
+  #product-thumbnails
+  .room.square
+  .room-art-position
+  .room-art
+  .art-frame
+  {
+  position: absolute;
+
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  
+  border-radius: 1px;
+  // background-image: url('https://rh.rightart.co.uk/images/square-frame-f-f-nw-Canvas.jpg')!important;
+  z-index: 14;
+}
+
+
+
+// #product-large-image .room-art .art-image::after {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   border: 1px solid rgba(0, 0, 0, 0.2);
+//   border-color: rgba(0, 0, 0, 0.2) rgba(255, 255, 255, 0.5)
+//     rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0.3);
+// }
+
+////
+/// room
+/// vertical
+// #product-images #product-thumbnails .room.vertical .room-art-position .room-art,
+// #product-images.room.vertical .room-art-position .room-art {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: absolute;
+//   width: 61.6666%;
+//   aspect-ratio: 1 / 1; /* Forces a square box (1:1 ratio) */
+//   left: 19.1666%;
+//   top: 19.1666%;
+// }
+
+// #product-images
+//   #product-thumbnails
+//   .room.vertical
+//   .room-art-position
+//   .room-art
+//   .art-image,
+// #product-images.room.vertical .room-art-position .room-art .art-image {
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   display: block;
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   border-radius: 1px;
+
+//   z-index: 12;
+// }
+
+// ////
+// /// room
+// /// horizontal
+// // #product-images
+// //   #product-thumbnails
+// //   .room.horizontal
+// //   .room-art-position
+// //   .room-art,
+// // #product-images.room.horizontal .room-art-position .room-art {
+// //   display: flex;
+// //   justify-content: center;
+// //   align-items: center;
+// //   position: absolute;
+// //   width: 61.6666%;
+// //   aspect-ratio: 1 / 1; /* Forces a square box (1:1 ratio) */
+// //   left: 19.1666%;
+// //   top: 19.1666%;
+// // }
+
+// #product-images
+//   #product-thumbnails
+//   .room.horizontal
+//   .room-art-position
+//   .room-art
+//   .art-image,
+// #product-images.room.horizontal .room-art-position .room-art .art-image {
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   display: block;
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   border-radius: 1px;
+
+//   z-index: 12;
+// }
+
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+//test-dynamic
+
+///
+// Square Image/
+
+// #product-thumbnails .square.position-01 .room-art-position,
+// #product-images.square.position-01
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   top: 5%;
+//   left: 34.7%;
+//   width: 32.643%; /* Set width as percentage */
+// }
+
+// #product-thumbnails .square.position-02 .room-art-position,
+// #product-images.square.position-02
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   top: 5%;
+//   left: 34.7%;
+//   width: 32.643%; /* Set width as percentage */
+// }
+// #product-thumbnails .square.position-03 .room-art-position,
+// #product-images.square.position-03
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   top: 5%;
+//   left: 34.7%;
+//   width: 32.643%; /* Set width as percentage */
+// }
+// #product-thumbnails .square.position-04 .room-art-position,
+// #product-images.square.position-04
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   top: 5%;
+//   left: 34.7%;
+//   width: 32.643%; /* Set width as percentage */
+// }
+
+// // Vertical Image
+
+// #product-thumbnails .vertical.position-01 .room-art-position,
+// #product-images.vertical.position-01
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   top: 5%;
+//   left: 34.7%;
+//   width: 32.643%; /* Set width as percentage */
+// }
+
+// #product-thumbnails .vertical.position-02 .room-art-position,
+// #product-images.vertical.position-02
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   top: 5%;
+//   left: 34.7%;
+//   width: 32.643%; /* Set width as percentage */
+// }
+// #product-thumbnails .vertical.position-03 .room-art-position,
+// #product-images.vertical.position-03
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   top: 5%;
+//   left: 34.7%;
+//   width: 32.643%; /* Set width as percentage */
+// }
+// #product-thumbnails .vertical.position-04 .room-art-position,
+// #product-images.vertical.position-04
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   top: 5%;
+//   left: 34.7%;
+//   width: 32.643%; /* Set width as percentage */
+// }
+
+// // Horizontal Image
+
+// #product-thumbnails .horizontal.position-01 .room-art-position,
+// #product-images.horizontal.position-01
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   top: 5%;
+//   left: 34.7%;
+//   width: 50.643%; /* Set width as percentage */
+// }
+
+// #product-thumbnails .horizontal.position-02 .room-art-position,
+// #product-images.horizontal.position-02
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   top: 5%;
+//   left: 34.7%;
+//   width: 50.643%; /* Set width as percentage */
+// }
+// #product-thumbnails .horizontal.position-03 .room-art-position,
+// #product-images.horizontal.position-03
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   top: 5%;
+//   left: 34.7%;
+//   width: 50.643%; /* Set width as percentage */
+// }
+// #product-thumbnails .horizontal.position-04 .room-art-position,
+// #product-images.horizontal.position-04
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   top: 5%;
+//   left: 34.7%;
+//   width: 50.643%; /* Set width as percentage */
+// }
+
+// ///
+// /// large image
+
+// //////
+// ///
+// ///
+// ///
+// ///
+
+// #product-images #product-large-image .canvas::after,
+// #product-thumbnails .canvas::after {
+//   background-image: url(https://a.icanvas.com/images/square-fg-frame-floating.png);
+// }
+
+// //
+// //
+// //
+// //
+// //
+// //
+
+// // square
+// #product-thumbnails .square.position-01,
+// #product-images.square.position-01 #product-large-image .room {
+//   background-image: url(https://a.icanvas.com/images/rooms/103.jpg);
+// }
+
+// // images code raa-002
+// #product-thumbnails .square.position-02,
+// #product-images.square.position-02 #product-large-image .room {
+//   background-image: url(https://a.icanvas.com/images/rooms/41.jpg);
+// }
+
+// // images code raa-003
+// #product-thumbnails .square.position-03,
+// #product-images.square.position-03 #product-large-image .room {
+//   background-image: url(https://a.icanvas.com/images/rooms/81.jpg);
+// }
+
+// // images code raa-004
+// #product-thumbnails .square.position-04,
+// #product-images.square.position-04 #product-large-image .room {
+//   background-image: url(https://a.icanvas.com/images/rooms/104.jpg);
+// }
+
+// //vertical
+// #product-thumbnails .vertical.position-01,
+// #product-images.vertical.position-01 #product-large-image .room {
+//   background-image: url(https://a.icanvas.com/images/rooms/103.jpg);
+// }
+
+// // images code raa-002
+// #product-thumbnails .vertical.position-02,
+// #product-images.vertical.position-02 #product-large-image .room {
+//   background-image: url(https://a.icanvas.com/images/rooms/41.jpg);
+// }
+
+// // images code raa-003
+// #product-thumbnails .vertical.position-03,
+// #product-images.vertical.position-03 #product-large-image .room {
+//   background-image: url(https://a.icanvas.com/images/rooms/81.jpg);
+// }
+
+// // images code raa-004
+// #product-thumbnails .vertical.position-04,
+// #product-images.vertical.position-04 #product-large-image .room {
+//   background-image: url(https://a.icanvas.com/images/rooms/104.jpg);
+// }
+
+// //horizontal
+// #product-thumbnails .horizontal.position-01,
+// #product-images.horizontal.position-01 #product-large-image .room {
+//   background-image: url(https://a.icanvas.com/images/rooms/103.jpg);
+// }
+
+// // images code raa-002
+// #product-thumbnails .horizontal.position-02,
+// #product-images.horizontal.position-02 #product-large-image .room {
+//   background-image: url(https://a.icanvas.com/images/rooms/41.jpg);
+// }
+
+// // images code raa-003
+// #product-thumbnails .horizontal.position-03,
+// #product-images.horizontal.position-03 #product-large-image .room {
+//   background-image: url(https://a.icanvas.com/images/rooms/81.jpg);
+// }
+
+// // images code raa-004
+// #product-thumbnails .horizontal.position-04,
+// #product-images.horizontal.position-04 #product-large-image .room {
+//   background-image: url(https://a.icanvas.com/images/rooms/104.jpg);
+// }
+
+// ////
+// /// room
+// /// square
+
+// #product-images
+//   #product-thumbnails
+//   .room.square
+//   .room-art-position
+//   .room-art
+//   .art-frame,
+// #product-images.room.square .room-art-position .room-art .art-frame {
+//   position: absolute;
+
+//   display: block;
+//   z-index: 3;
+//   background-repeat: no-repeat;
+//   background-color: #d7c28e;
+
+//   top: -5%;
+//   bottom: -5%;
+//   left: -5%;
+//   right: -5%;
+// }
+
+// #product-images
+//   #product-thumbnails
+//   .room.square
+//   .room-art-position
+//   .room-art
+//   .art-space,
+// #product-images.room.square .room-art-position .room-art .art-space {
+//   background-color: black;
+//   position: absolute;
+//   top: -2.2%;
+//   bottom: -2.2%;
+//   left: -2.2%;
+//   right: -2.2%;
+//   display: block;
+//   z-index: 5;
+//   background-repeat: no-repeat;
+//   // border-radius: 1px;
+//   z-index: 10;
+// }
+
+// #product-images
+//   #product-thumbnails
+//   .room.square
+//   .room-art-position
+//   .room-art
+//   .art-image,
+// #product-images.room.square .room-art-position .room-art .art-image {
+//   background-image: url(https://i.icanvas.com/SNH209?d=2&sh=s&s=s&p=1&bg=g&t=1732145651);
+// }
+
+// #product-large-image .room-art .art-image::after {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   border: 1px solid rgba(0, 0, 0, 0.2);
+//   border-color: rgba(0, 0, 0, 0.2) rgba(255, 255, 255, 0.5)
+//     rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0.3);
+// }
+
+// #product-images
+//   #product-thumbnails
+//   .room.square
+//   .room-art-position
+//   .room-art
+//   .art-shadow,
+// #product-images.room.square .room-art-position .room-art .art-shadow {
+//   bottom: -10%;
+//   left: -12%;
+//   display: block;
+//   position: absolute;
+//   width: 120%;
+
+//   height: 120%;
+
+//   opacity: 0.8;
+//   background-blend-mode: soft-light;
+//   background-size: cover;
+//   z-index: 2;
+//   background-size: 108%;
+//   background-position: center 0.75%;
+//   background-image: url(https://a.icanvas.com/images/room-shadow/square.png);
+// }
+
+// ////
+// /// room
+// /// vertical
+
+// #product-images
+//   #product-thumbnails
+//   .room.vertical
+//   .room-art-position
+//   .room-art
+//   .art-frame,
+// #product-images.room.vertical .room-art-position .room-art .art-frame {
+//   position: absolute;
+
+//   display: block;
+//   z-index: 3;
+//   background-repeat: no-repeat;
+//   background-color: #d7c28e;
+
+//   top: -5%;
+//   bottom: -5%;
+//   left: -5%;
+//   right: -5%;
+// }
+
+// #product-images
+//   #product-thumbnails
+//   .room.vertical
+//   .room-art-position
+//   .room-art
+//   .art-space,
+// #product-images.room.vertical .room-art-position .room-art .art-space {
+//   background-color: black;
+//   position: absolute;
+//   top: -2.2%;
+//   bottom: -2.2%;
+//   left: -2.2%;
+//   right: -2.2%;
+//   display: block;
+//   z-index: 5;
+//   background-repeat: no-repeat;
+//   // border-radius: 1px;
+//   z-index: 10;
+// }
+
+// #product-images
+//   #product-thumbnails
+//   .room.vertical
+//   .room-art-position
+//   .room-art
+//   .art-image,
+// #product-images.room.vertical .room-art-position .room-art .art-image {
+//   background-image: url(https://i.icanvas.com/SNH209?d=2&sh=s&s=s&p=1&bg=g&t=1732145651);
+// }
+
+// #product-images
+//   #product-thumbnails
+//   .room.vertical
+//   .room-art-position
+//   .room-art
+//   .art-shadow,
+// #product-images.room.vertical .room-art-position .room-art .art-shadow {
+//   bottom: -10%;
+//   left: -12%;
+//   display: block;
+//   position: absolute;
+//   width: 120%;
+//   height: 120%;
+//   opacity: 0.8;
+//   background-blend-mode: soft-light;
+//   background-size: cover;
+//   z-index: 2;
+//   background-size: 108%;
+//   background-position: center 0.75%;
+//   background-image: url(https://a.icanvas.com/images/room-shadow/square.png);
+// }
+
+// ////
+// /// room
+// /// horizontal
+
+// #product-images
+//   #product-thumbnails
+//   .room.horizontal
+//   .room-art-position
+//   .room-art
+//   .art-frame,
+// #product-images.room.horizontal .room-art-position .room-art .art-frame {
+//   position: absolute;
+
+//   display: block;
+//   z-index: 3;
+//   background-repeat: no-repeat;
+//   background-color: #d7c28e;
+
+//   top: -5%;
+//   bottom: -5%;
+//   left: -5%;
+//   right: -5%;
+// }
+
+// #product-images
+//   #product-thumbnails
+//   .room.horizontal
+//   .room-art-position
+//   .room-art
+//   .art-space,
+// #product-images.room.horizontal .room-art-position .room-art .art-space {
+//   background-color: black;
+//   position: absolute;
+//   top: -2.2%;
+//   bottom: -2.2%;
+//   left: -2.2%;
+//   right: -2.2%;
+//   display: block;
+//   z-index: 5;
+//   background-repeat: no-repeat;
+//   // border-radius: 1px;
+//   z-index: 10;
+// }
+
+// #product-images
+//   #product-thumbnails
+//   .room.horizontal
+//   .room-art-position
+//   .room-art
+//   .art-image,
+// #product-images.room.horizontal .room-art-position .room-art .art-image {
+//   background-image: url(https://i.icanvas.com/SNH209?d=2&sh=s&s=s&p=1&bg=g&t=1732145651);
+// }
+
+// #product-images
+//   #product-thumbnails
+//   .room.horizontal
+//   .room-art-position
+//   .room-art
+//   .art-shadow,
+// #product-images.room.horizontal .room-art-position .room-art .art-shadow {
+//   bottom: -10%;
+//   left: -12%;
+//   display: block;
+//   position: absolute;
+//   width: 120%;
+
+//   height: 120%;
+
+//   opacity: 0.8;
+//   background-blend-mode: soft-light;
+//   background-size: cover;
+//   z-index: 2;
+//   background-size: 108%;
+//   background-position: center 0.75%;
+//   background-image: url(https://a.icanvas.com/images/room-shadow/square.png);
+// }
+
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+// //Sample Variants
+
+
+// /* *********************************************************************
+
+//    Custom CSS Styles for Art Variants:
+//    ----------------------------------------------------------------------
+//    This section handles:
+//    1. Main Image Canvas Background and Frame.
+//    2. Setting different room background images for each mockup.
+//    3. Defining the precise position of the artwork in the room for each mockup.
+//    4. Adjusting the positioning of the art within the room images using top, left, and width values.
+//    5. Custom CSS styles for additional art designs and layout tweaks.
+//    ----------------------------------------------------------------------
+
+// ********************************************************************* */
+
+// /* -------------------------------------------------------------
+//    Main Image Canvas Background and Frame
+// ------------------------------------------------------------- */
+
+// #product-large-image .canvas::after,
+// #product-thumbnails .canvas::after {
+//   background-image: url(https://a.icanvas.com/images/square-fg-frame-floating.png);
+// }
+
+// /* -------------------------------------------------------------
+//    Background Image of the Room
+// ------------------------------------------------------------- */
+// #product-thumbnails .square.position-01,
+// #product-images.square.position-01 #product-large-image .room {
+//   background-image: url(https://a.icanvas.com/images/rooms/103.jpg);
+// }
+
+// // images code raa-002
+// #product-thumbnails .square.position-02,
+// #product-images.square.position-02 #product-large-image .room {
+//   background-image: url(https://a.icanvas.com/images/rooms/41.jpg);
+// }
+
+// // images code raa-003
+// #product-thumbnails .square.position-03,
+// #product-images.square.position-03 #product-large-image .room {
+//   background-image: url(https://a.icanvas.com/images/rooms/81.jpg);
+// }
+
+// // images code raa-004
+// #product-thumbnails .square.position-04,
+// #product-images.square.position-04 #product-large-image .room {
+//   background-image: url(https://a.icanvas.com/images/rooms/104.jpg);
+// }
+
+// //
+// //
+// //
+// //
+// //
+// //
+// /* -------------------------------------------------------------
+//    Position of the Art in the Rooms
+// ------------------------------------------------------------- */
+
+// #product-thumbnails .square.position-01 .room-art-position,
+// #product-images.square.position-01
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   top: 5%;
+//   left: 34.7%;
+//   width: 32.643%; /* Set width as percentage */
+// }
+
+// #product-thumbnails .square.position-02 .room-art-position,
+// #product-images.square.position-02
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   top: 5%;
+//   left: 34.7%;
+//   width: 32.643%; /* Set width as percentage */
+// }
+// #product-thumbnails .square.position-03 .room-art-position,
+// #product-images.square.position-03
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   top: 5%;
+//   left: 34.7%;
+//   width: 32.643%; /* Set width as percentage */
+// }
+// #product-thumbnails .square.position-04 .room-art-position,
+// #product-images.square.position-04
+//   #product-large-image
+//   .room
+//   .room-art-position {
+//   top: 5%;
+//   left: 34.7%;
+//   width: 32.643%; /* Set width as percentage */
+// }
+
+// /* -------------------------------------------------------------
+//    Art Design Customization Section (Future Designs).
+// ------------------------------------------------------------- */
+
+// #product-thumbnails .room.square .room-art-position .room-art .art-frame,
+// #product-large-image .room .room-art-position .room-art .art-frame {
+//   position: absolute;
+
+//   display: block;
+//   z-index: 3;
+//   background-repeat: no-repeat;
+//   background-color: #d7c28e;
+
+//   top: -5%;
+//   bottom: -5%;
+//   left: -5%;
+//   right: -5%;
+// }
+
+// #product-thumbnails .room.square .room-art-position .room-art .art-space,
+// #product-large-image .room .room-art-position .room-art .art-space {
+//   background-color: black;
+//   position: absolute;
+//   top: -2.2%;
+//   bottom: -2.2%;
+//   left: -2.2%;
+//   right: -2.2%;
+//   display: block;
+//   z-index: 5;
+//   background-repeat: no-repeat;
+//   // border-radius: 1px;
+//   z-index: 10;
+// }
+
+// #product-thumbnails .room.square .room-art-position .room-art .art-shadow,
+// #product-large-image .room .room-art-position .room-art .art-shadow {
+//   bottom: -10%;
+//   left: -12%;
+//   display: block;
+//   position: absolute;
+//   width: 120%;
+
+//   height: 120%;
+
+//   opacity: 0.8;
+//   background-blend-mode: soft-light;
+//   background-size: cover;
+//   z-index: 2;
+//   background-size: 108%;
+//   background-position: center 0.75%;
+//   background-image: url(https://a.icanvas.com/images/room-shadow/square.png);
+// }
+
+///
+///
+///
+///
+///
+///
+///
+///
+///
+///
+///
+///
+///
+///
+///
+///
+///
+//////
+///
+///
+///
+///
+///
+///
+///
+//////
+///
+///
+///
+///
+///
+///
+///
+//////
+///
+///
+///
+///
+///
+///
+///
+//////
+///
+///
+///
+///
+///
+///
+///
+//////
+///
+///
+///
+///
+///
+///
+///
+//////
+///
+///
+///
+///
+///
+///
+///
+///
+/// 
+/// 
+
+// #product-thumbnails .room.square .room-art-position .room-art .art-image,
+// #product-large-image .room .room-art-position .room-art .art-image {
+//   background-image: url(https://i.icanvas.com/SNH209?d=2&sh=s&s=s&p=1&bg=g&t=1732145651);
+// }
+
+

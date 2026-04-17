@@ -1,0 +1,49 @@
+  #header #header-container #header-search-icon {
+
+
+    z-index: 90;
+    opacity: 0;
+    width: 0;
+
+    background-position: -85px -55px;
+    cursor: pointer;
+    right: 125px;
+
+    background-image: $shop-icone;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    position: absolute;
+    display: block;
+    // top: 35px;
+    height: 45px;
+    // width: 40px;
+    transition: top 180ms linear;
+    padding: 5px 0;
+    background-clip: content-box;
+  }
+
+
+#header #header-container #header-search-icon {
+
+
+    z-index: 90;
+    opacity: 1;
+    top: 4px;
+    background-position: -85px -55px;
+    cursor: pointer;
+    right: 100px;
+
+    background-image: $shop-icone;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    position: absolute;
+    display: block;
+    // top: 35px;
+    height: 45px;
+    width: 40px;
+    transition: top 180ms linear;
+    padding: 5px 0;
+    background-clip: content-box;
+  }
+
+  

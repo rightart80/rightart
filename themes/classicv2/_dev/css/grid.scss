@@ -1,0 +1,331 @@
+// /********************************************
+//  * Grid categories block (module)
+//  * Fully scoped under #gc-gridcategories
+//  ********************************************/
+
+// /* Container section */
+// #gc-gridcategories.gc-gridcategories-wrapper {
+//   padding: 0;
+// }
+
+// /* Heading inside the block */
+// #gc-gridcategories .gc-gridcategories-title {
+//   font-weight: 600;
+//   line-height: 1;
+//   padding: 16px 0;
+//   font-family: "Titillium Web", sans-serif;
+//   color: inherit;
+// }
+
+// /********************************************
+//  * Grid layout for gc-gridcategories-list
+//  ********************************************/
+
+// #gc-gridcategories .gc-gridcategories-list {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr); /* 3 per row */
+//   grid-column-gap: 2.5rem;
+//   grid-row-gap: 2.5rem;
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// #gc-gridcategories .gc-gridcategories-item {
+//   width: 100%;
+// }
+
+// /* Responsive: 2 per row on tablets */
+// @media (max-width: 992px) {
+//   #gc-gridcategories .gc-gridcategories-list {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }
+
+// /* Responsive: 1 per row on phones */
+// @media (max-width: 576px) {
+//   #gc-gridcategories .gc-gridcategories-list {
+//     grid-template-columns: 1fr;
+//   }
+// }
+
+// /********************************************
+//  * Image container and image behaviour
+//  ********************************************/
+
+// #gc-gridcategories .gc-gridcategories-image {
+//   height: 220px;
+//   overflow: hidden;
+//   position: relative;
+// }
+
+// #gc-gridcategories .gc-gridcategories-link {
+//   display: block;
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   border-width: 1px;
+//   border-style: solid;
+//   border-color: #ffffff;
+//   text-decoration: none;
+// }
+
+// #gc-gridcategories .gc-gridcategories-img {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   image-rendering: -webkit-optimize-contrast;
+// }
+
+// /********************************************
+//  * Name overlay + arrow sprite
+//  ********************************************/
+
+// #gc-gridcategories .gc-gridcategories-name {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   background-color: rgba(54, 55, 56, 0.8);
+//   color: #fff;
+//   font-weight: 600;
+//   line-height: 1;
+//   text-transform: uppercase;
+//   text-align: right;
+//   letter-spacing: 0.0625em;
+//   transition: background-color 90ms linear;
+//   font-size: 18px;
+//   padding: 12px 39px 12px 12px;
+// }
+
+// /* Arrow sprite overlay on name bar */
+// #gc-gridcategories .gc-gridcategories-name::after {
+//   content: "";
+//   position: absolute;
+//   right: 0;
+//   bottom: 0;
+//   height: 42px;
+//   width: 40px;
+//   background-position: -168px -145px;
+//   background-image: url('https://rh.rightart.co.uk/images/common-sprite.png');
+//   background-repeat: no-repeat;
+//   background-size: 250px;
+// }
+
+// /* Transparent overlay to expand hover/click area */
+// #gc-gridcategories .gc-gridcategories-link::after {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 89%;
+// }
+
+// /********************************************
+//  * Hover effects
+//  ********************************************/
+
+// #gc-gridcategories .gc-gridcategories-item:hover .gc-gridcategories-link {
+//   border-color: #ffffff !important;
+// }
+
+// #gc-gridcategories .gc-gridcategories-item:hover .gc-gridcategories-name {
+//   background-color: rgb(237, 28, 35);
+//   color: #ffffff !important;
+// }
+
+// /********************************************
+//  * Description text below each tile
+//  ********************************************/
+
+// #gc-gridcategories .gc-gridcategories-desc {
+//   margin-top: 10px;
+//   font-size: 0.9375rem;
+//   line-height: 1.4;
+// }
+
+
+// ///
+// /// 
+// /* Make the UL a flex container */
+// .gc-gridcategories-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
+
+// /* Default: mobile (small screens) = 1 per row */
+// .gc-gridcategories-item {
+//   width: 100%;
+// }
+
+// /* From small / tablet upwards: 2 per row */
+// @media (min-width: 576px) {
+//   .gc-gridcategories-item {
+//     width: 50%;
+//   }
+// }
+
+// /* If you want to be extra sure to override any old 33.33% rules: */
+// @media (min-width: 768px) {
+//   .gc-gridcategories-item {
+//     width: 50% !important; /* ensures 2 columns even if something else says 33.33% */
+//   }
+// }
+
+
+
+
+/********************************************
+ * Grid categories block (module)
+ * Fully scoped under #gc-gridcategories
+ ********************************************/
+
+/* Container section */
+#gc-gridcategories.gc-gridcategories-wrapper {
+  padding: 0;
+}
+
+/* Heading inside the block */
+#gc-gridcategories .gc-gridcategories-title {
+  font-weight: 600;
+  line-height: 1;
+  padding: 16px 0;
+  font-family: "Titillium Web", sans-serif;
+  color: inherit;
+}
+
+/********************************************
+ * Grid layout for gc-gridcategories-list
+ ********************************************/
+
+/* Default: 2 per row on larger screens */
+#gc-gridcategories .gc-gridcategories-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 per row */
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#gc-gridcategories .gc-gridcategories-item {
+  width: 100%;
+}
+
+/* Responsive: 1 per row on phones */
+@media (max-width: 576px) {
+  #gc-gridcategories .gc-gridcategories-list {
+    grid-template-columns: 1fr;
+    /* 1 per row */
+  }
+}
+
+/********************************************
+ * Image container and image behaviour
+ ********************************************/
+
+#gc-gridcategories .gc-gridcategories-image {
+ position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;   /* square box */
+}
+
+#gc-gridcategories .gc-gridcategories-link {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff;
+  text-decoration: none;
+}
+
+#gc-gridcategories .gc-gridcategories-img {
+  width: 100%;
+  height: 100%;           /* fill the box */
+  display: block;
+  object-fit: contain;      /* “spread” / cover box, cropping if needed */
+  -o-object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/********************************************
+ * Name overlay + arrow sprite
+ ********************************************/
+
+#gc-gridcategories .gc-gridcategories-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(54, 55, 56, 0.8);
+  color: #fff;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 0.0625em;
+  transition: background-color 90ms linear;
+  font-size: 18px;
+  padding: 12px 39px 12px 12px;
+}
+
+/* Arrow sprite overlay on name bar */
+#gc-gridcategories .gc-gridcategories-name::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 42px;
+  width: 40px;
+  background-position: -168px -145px;
+  background-image: url('https://rh.rightart.co.uk/images/common-sprite.png');
+  background-repeat: no-repeat;
+  background-size: 250px;
+}
+
+/* Transparent overlay to expand hover/click area */
+#gc-gridcategories .gc-gridcategories-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 89%;
+}
+
+/********************************************
+ * Hover effects
+ ********************************************/
+
+#gc-gridcategories .gc-gridcategories-item:hover .gc-gridcategories-link {
+  border-color: #ffffff !important;
+}
+
+#gc-gridcategories .gc-gridcategories-item:hover .gc-gridcategories-name {
+  background-color: rgb(237, 28, 35);
+  color: #ffffff !important;
+}
+
+/********************************************
+ * Description text below each tile
+ ********************************************/
+
+#gc-gridcategories .gc-gridcategories-desc {
+  margin-top: 10px;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+}
+
+.gc-gridcategories-title.text-uppercase {
+  display: none;
+}

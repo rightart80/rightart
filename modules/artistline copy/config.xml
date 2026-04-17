@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>artistline</name>
+    <displayName><![CDATA[Artist Line]]></displayName>
+    <version><![CDATA[1.0.3]]></version>
+    <description><![CDATA[Expose artist category (child of &quot;Artist&quot;) on product page.]]></description>
+    <author><![CDATA[you]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>1</need_instance>
+</module>

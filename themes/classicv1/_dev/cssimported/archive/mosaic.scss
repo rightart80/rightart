@@ -1,0 +1,27 @@
+.mosaic-grid {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.mosaic-item {
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+/* Fallback layout when JS not applied */
+.mosaic-item { width: 100%; }
+
+@media (min-width: 576px) {
+    .mosaic-item { width: 50%; }
+}
+
+@media (min-width: 1200px) {
+    .mosaic-item { width: 33.3333%; }
+}
+
+.mosaic-grid.is-masonry .mosaic-item {
+    /* JS overrides: position, width, top, left */
+    overflow: visible;
+}

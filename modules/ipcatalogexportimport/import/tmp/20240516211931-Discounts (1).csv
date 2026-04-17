@@ -1,0 +1,5 @@
+"Catalog Price Rule ID";"Product ID";"Product Reference";"Reduction";"Reduction Type";"Reduction Tax (0 = No, 1 = Yes)";"Price";"From Quantity";"Is Rule"
+"0";"40";"VCDS-1.5/0.5-0-R";"0";"amount";"0";"70";"2";"0"
+"0";"42";"RNF-3000-1.5/0.5-0-SP";"0";"amount";"0";"80";"2";"0"
+"0";"77";"Expando TCP-V0 5-0/111";"0";"amount";"0";"120";"3";"0"
+"0";"77";"Expando TCP-V0 5-0/111";"0";"amount";"0";"110";"5";"0"

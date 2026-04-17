@@ -1,0 +1,852 @@
+// /* the list itself: optional but nicer layout than floats */
+// #filter-type {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 10px;
+//   padding: 0;
+//   list-style: none;
+// }
+
+// /* the card for each option */
+// #filter-type > li.input-container {
+//   position: relative;      /* ← key: make THIS the containing block */
+//   display: inline-block;
+//   /* if you must keep floats, keep float and still add position:relative */
+//   /* float: left; */
+// }
+
+// /* clickable overlay */
+// .input-radio {
+//   position: absolute;
+//   inset: 0;                /* top:0; right:0; bottom:0; left:0 */
+//   margin: 0;
+//   opacity: 0;
+//   cursor: pointer;
+//   z-index: 2;              /* ensure it sits above the cover */
+// }
+
+// /* the visible card content */
+// #filter-type .option-cover {
+//   pointer-events: none;    /* so clicks go to the hidden input */
+// }
+
+
+
+
+// #product-Options .product-variants .select-filter-type #filter-type li img
+//  {
+
+
+//     max-width: 100%;
+//     height: auto;
+//     display: inline-block;
+// }
+
+
+
+// #product-Options .product-variants .select-filter-type #filter-type li 
+//  {
+
+
+//     width: 97px;
+//     padding: 7px 3px 5px;
+// }
+
+// /* reset/default */
+// #filter-type .option-cover span{
+//      color: $footer-black;
+//     font-size: 12px;
+// }
+
+// #filter-type #option-box.selected
+// .option-cover span{
+//      color: $white;
+//      }
+// #filter-type li
+//  {
+//     display: block;
+//      overflow: hidden; /* try adding this */
+
+//     width: 97px;
+//     padding: 7px 3px 5px;
+//     float: left;
+//     margin: 9px 10px 1px 0;
+//     text-align: center;
+//     font-size: 12px;
+//     line-height: 14px;
+//     position: relative;
+//     border-radius: 3px;
+//     border: 1px solid #c5c6c7;
+//     background-color: #fff;
+//  }
+//   #filter-type li.selected{
+//          background-color: #ed1c23;
+
+
+//     }
+
+
+// #filter-type li img
+//  {
+//     max-width: 100%;
+//     height: auto;
+//     display: inline-block;
+//  }
+
+
+////////////////////////////////
+/// ///////////////////////////////
+/// ////////////////////////////////
+// /// 
+
+
+
+/* -------- Containers / Headings -------- */
+.product-variants section#filter-box {
+  display: flow-root;
+}
+
+/* modern clearfix */
+.product-variants .filter-title {
+  clear: both;
+}
+
+#filter-box {
+  margin: 12px auto 20px;
+}
+
+#filter-box h3 {
+  margin: 0;
+}
+
+#filter-box.shape {
+  margin: 0;
+}
+
+/* ========= TYPE (image cards) ========= */
+#filter-type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#filter-type li {
+  position: relative;
+  /* containing block for overlay */
+  display: inline-block;
+  width: 120px;
+  padding: 7px 3px 5px;
+  margin: 9px 10px 1px 0;
+  text-align: center;
+  font: 12px/14px inherit;
+  border: 1px solid #c5c6c7;
+  border-radius: 3px;
+  background: #fff;
+  overflow: hidden;
+}
+#filter-type li.selected .option-cover span
+{
+font-size: 16px;
+    font-style: oblique;
+
+}
+#filter-type li.selected {
+  background: #ed1c23;
+}
+
+#filter-type li.selected .option-cover span {
+  color: #fff;
+}
+
+#filter-type li img {
+  max-width: 100%;
+  height: auto;
+  // display: inline-block;
+}
+#filter-type li .option-cover img {
+//  transform: scale(1.43); /* 13% bigger */
+    transform-origin: center; /* zoom from center */
+    display: block;
+}
+/* Clickable overlay on the whole card */
+#filter-type .input-radio {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+  /* above .option-cover */
+}
+
+
+
+// #filter-type li .option-cover::after {
+
+// background-image: url(https://rh.rightart.co.uk/images/portrait-art-frame-f-m-nw-room.png) !important;
+
+//     content: "";
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position: center;
+
+//     display: block;
+//     position: absolute;
+//     width: 90%;
+//     height: 90%;
+//     top: 0;
+//     bottom: 0;
+// }
+
+
+
+
+/* Visible content */
+#filter-type .option-cover {
+  pointer-events: none;
+    overflow: hidden;
+}
+
+#filter-type .option-cover span {
+  color: #222;
+  /* was $footer-black */
+  font-size: 12px;
+}
+
+/* ========= SIZE (text pills) ========= */
+#filter-size {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#filter-size li {
+  position: relative;
+  display: inline-block;
+  width: 65px;
+  padding: 7px 0 5px;
+  margin: 9px 10px 1px 0;
+  text-align: center;
+  font: 12px/14px inherit;
+  border: 1px solid #c5c6c7;
+  border-radius: 3px;
+  background: #fff;
+  overflow: hidden;
+}
+
+#filter-size li.selected {
+  background: #ed1c23;
+}
+
+#filter-size li.selected span {
+  color: #fff;
+}
+
+#filter-size .input-radio {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#filter-size span {
+  color: #222;
+  /* was $footer-black */
+  font-size: 12px;
+}
+
+/* ========= FRAME (color swatches) ========= */
+#filter-frame {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#filter-frame li {
+  position: relative;
+  /* containing block for .input-color */
+  display: inline-block;
+  width: 85px;
+  padding: 5px 0;
+  margin: 9px 0 1px;
+  text-align: center;
+  font: 12px/14px inherit;
+  background: #fff;
+  overflow: hidden;
+  /* prevent overlay spill */
+  vertical-align: top;
+}
+
+
+
+
+/* Full-card invisible overlay for color radios */
+#filter-frame li>input.input-color[type="radio"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* cover the whole card */
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  /* kill UA margins */
+  padding: 0;
+  z-index: 2;
+  opacity: 0;
+  /* invisible but clickable */
+  cursor: pointer;
+
+  /* prevent the native 20×20 radio from rendering */
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  display: block;
+  /* avoid inline gaps */
+}
+
+
+
+/* Swatch box */
+#filter-frame .option-cover {
+
+  margin: 0 auto;
+  border-radius: 14px;
+  width: 38px;
+  height: 38px;
+  border: 5px solid gray;
+
+  background-size: cover;
+  background-position: center;
+
+  pointer-events: none;
+  box-sizing: border-box;
+  /* ✅ Add this */
+
+}
+
+#filter-frame #option-box:first-child .option-cover {
+  border-radius: 25px;
+}
+
+
+
+#filter-frame li.selected .option-cover {
+
+
+  border: 4px solid#ed1c23;
+
+}
+
+
+
+/* Label under the swatch (your markup uses .frame-label > span) */
+#filter-frame .frame-label {
+  min-height: 28px;
+}
+
+#filter-frame span {
+  margin-top: 5px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+
+  display: inline-block;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+
+
+//////preview option box style///////
+/// 
+#product-Options .PreviewOptions {
+  position: relative;
+  margin: 12px auto 20px;
+  overflow: hidden;
+}
+
+#product-Options .PreviewOptions .Preview-container {
+  display: none;
+  width: 148px;
+  padding: 0 0 5px;
+  text-align: left;
+  float: left;
+
+  margin: 9px 10px 1px 0;
+  font-size: 12px;
+  line-height: 14px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #c5c6c7;
+  background-color: #ed1c23;
+  cursor: pointer;
+  text-align: left;
+
+}
+
+
+#product-Options .PreviewOptions .Preview-container div::before {
+  content: "";
+  display: block;
+  /* or inline-block, depending on layout */
+  height: 0;
+  padding: 0 0 80%;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 top;
+  background-color: #ed1c23;
+  z-index: 12;
+
+}
+
+#product-Options .PreviewOptions .Preview-container.frame-f-f-cb,
+#product-Options .PreviewOptions .Preview-container.frame-f-m-nw {
+
+  display: block !important;
+}
+
+
+
+
+#product-Options .PreviewOptions .Preview-container span {
+
+  color: #fff;
+  padding: 0 5px;
+  width: 100%;
+
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  display: block;
+
+}
+
+
+#product-Options .product-discount {
+  background-color: #f4f5f6;
+  overflow: hidden;
+  padding: 15px 7px 10px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+
+
+
+#product-Options .PreviewOptions .Preview-container.frame-f-f-cb div::before,
+#product-Options .PreviewOptions .Preview-container.frame-f-m-nw div::before {
+  background-image: url('https://rh.rightart.co.uk/images/frame-floating-wood-c.png') !important;
+
+}
+
+
+
+#product-Options .product-discount .reg {
+  font-size: 16px;
+  display: inline-block;
+  font-weight: 600;
+  color: #232323;
+
+}
+
+
+
+//  #product-Options .product-discount .regular-price::after{
+
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     background-size: 100% 100%;
+//     background-image: url('https://rh.rightart.co.uk/images/cross.png') !important;
+
+//   }
+
+
+/* The regular price text */
+.product-discount .regular-price {
+  position: relative;
+  /* anchors ::after */
+  display: inline-block;
+  /* ensures width fits text */
+  color: #8e8f90;
+  text-decoration: none;
+  /* remove built-in line-through */
+  margin-left: 4px;
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+/* Cross overlay image */
+.product-discount .regular-price::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://rh.rightart.co.uk/images/cross.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* fit exactly inside */
+  pointer-events: none;
+  /* prevent blocking clicks */
+  z-index: 1;
+}
+
+#product-Options .product-discount .discount {
+
+
+  color: #ed1c23;
+  padding: 0 0 0 5px;
+  display: inline-block;
+  position: static;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: inherit;
+}
+
+
+#product-Options .final-price {
+  background-color: #f4f5f6;
+  overflow: hidden;
+  padding: 15px 7px 10px;
+  position: relative;
+  margin-bottom: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* space between price and wishlist button */
+
+}
+
+
+#product-Options .final-price .current-price {
+
+  color: #ed1c23;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0px;
+
+
+}
+
+#product-Options .product-quantity {
+
+  background-color: #f4f5f6;
+  overflow: hidden;
+  padding: 0 7px 10px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+
+#product-Options .wishlist-button-add {
+  display: inline-flex;
+  align-items: center;
+}
+
+#product-Options .wishlist-button-add:hover {
+  background-color: #ed1c23;
+}
+
+#product-Options .btn-primary {
+
+  background-color: #00c697;
+  color: #fff;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#product-Options .btn-primary:hover {
+  background-color: #00a87f;
+  /* slightly darker */
+}
+
+/* Inset white box effect (appears inside border on hover) */
+#product-Options .btn-primary:hover::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  /* match button shape */
+}
+
+
+#product-Options .sideway-sale {
+
+  background-color: #f4f5f6;
+  overflow: hidden;
+  padding: 0 7px 10px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+#product-Options .sideway-sale .notice {
+  background-color: #fff;
+  margin-top: 8px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 22px;
+  clear: both;
+  border: 2px dashed #ed1c23;
+  text-align: center;
+}
+
+#product-Options .sideway-sale .notice span {
+  font: "Titillium Web", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: .0625em;
+}
+
+#product-Options .sideway-sale .notice strong {
+  font: "Titillium Web", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: .0625em;
+  color: #ed1c23;
+}
+
+
+
+#product-Options .product-trust {
+
+  background-color: #f4f5f6;
+  overflow: hidden;
+  padding: 0 7px 10px;
+  position: relative;
+  margin-bottom: 0;
+  position: relative;
+  padding-bottom: 1.5em;
+  text-align: center;
+}
+
+#product-Options .product-trust .free-ship-banner {
+
+  float: left;
+  clear: unset;
+  width: 49%;
+  display: block;
+  padding: 3.2em 0;
+  border: 0;
+  text-align: center;
+}
+
+#product-Options .product-trust .free-ship-banner:before {
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-position: -205px -44px;
+  transform: scale(2);
+  top: -38px;
+  left: 46px;
+  background-image: url('https://rh.rightart.co.uk/images/common-sprite.png');
+
+  background-size: 250px;
+  background-repeat: no-repeat;
+  content: '';
+  position: relative;
+}
+
+#product-Options .product-trust .free-ship-banner p.caps {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 0;
+  text-align: center;
+
+}
+
+#product-Options .product-trust .free-ship-banner p.caps strong {
+  text-transform: uppercase;
+  letter-spacing: .0625em;
+
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #ed1c23;
+  font-weight: bolder;
+
+}
+
+#product-Options .product-trust .copy-return {
+  float: right;
+  position: relative;
+  margin: 0;
+  width: 49%;
+  display: block;
+  padding: 1em 0;
+  border: 0;
+  clear: unset;
+  text-align: center;
+}
+
+
+#product-Options .product-trust .copy-return:before {
+
+  background-position: -158px -430px;
+  width: 120px;
+  height: 80px;
+  display: inline-block;
+  left: 32px;
+  top: 5px;
+  background-image: url('https://rh.rightart.co.uk/images/common-sprite.png');
+  background-size: 250px;
+  background-repeat: no-repeat;
+  content: '';
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#product-Options .product-trust .copy-return .span.h3 {
+  text-align: center;
+  padding: 0;
+  font-family: inherit;
+  line-height: inherit;
+  text-transform: uppercase;
+  letter-spacing: .0625em;
+  font-size: 16px;
+  display: block;
+  font-weight: 700;
+}
+
+#product-Options .product-trust .copy-return .span p {
+  text-align: center;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: .66em 0;
+}
+
+
+#product-Options .product-trust .copy-return .span p a {
+  position: relative;
+  bottom: 0;
+  font-size: 12px;
+}
+
+
+
+#product-Options .product-actions .product-additional-info .social-sharing
+{
+display: inline-block;
+background: #fff 0 0;
+    overflow: hidden;
+    padding: 15px 10px 10px;
+    position: relative;
+    margin: 0px;
+
+}
+
+#product-Options .product-actions .product-additional-info .social-sharing span
+{
+float: left;
+    padding: 5px 10px 5px 0;
+        font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+   font-size: 1.17em;
+
+}
+
+
+#product-Options .product-actions .product-additional-info .social-sharing ul
+{
+  margin-left: -6px;
+    overflow: hidden;
+    display: inline-block;
+
+
+    
+}
+
+#product-Options .product-actions .product-additional-info .social-sharing ul li
+{
+float: left;
+    background: 0 0;
+    margin-left: 6px;
+    display: block;
+    height: 36px;
+    width: 36px;
+    border-radius: 2px;
+}
+
+#product-Options .product-actions .product-additional-info .social-sharing ul .facebook:before,
+#product-Options .product-actions .product-additional-info .social-sharing ul .twitter:before,
+#product-Options .product-actions .product-additional-info .social-sharing ul .pinterest:before
+{
+display:none;
+}
+
+#product-Options .product-actions .product-additional-info .social-sharing ul a {
+
+  opacity: 1;
+    transition: opacity 90ms 
+linear;
+display: block;
+    height: 36px;
+    width: 36px;
+    border-radius: 2px;
+    background-color: #525254;
+             background-image: url('https://rh.rightart.co.uk/images/social-icons-sprite.png');
+// background-repeat: no-repeat;
+    background-size: 80px;
+
+
+}
+
+
+#product-Options .product-actions .product-additional-info .social-sharing ul .facebook a {
+
+  background-position: -42px -2px;
+}
+
+
+#product-Options .product-actions .product-additional-info .social-sharing ul .twitter a {
+
+  background-position: 42px -42px;
+}
+
+
+
+
+#product-Options .product-actions .product-additional-info .social-sharing ul .pinterest a {
+
+  background-position: 42px -162px;
+}
+
+
+
+
+

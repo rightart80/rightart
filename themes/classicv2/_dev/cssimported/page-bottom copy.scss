@@ -1,0 +1,162 @@
+
+
+
+/* PAGE BOTTOM LAYOUT */
+#page-bottom.page-bottom-container {
+    padding: 40px 0;
+}
+
+#page-bottom .product-extra {
+    position: relative;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Each article (box) */
+#page-bottom .product-extra article {
+    position: relative;
+    float: left;
+    width: 25%;
+    padding: 120px 20px 20px; /* extra top padding to make room for the icon */
+    box-sizing: border-box;
+}
+
+/* Headings */
+#page-bottom .product-extra h3 {
+    text-transform: uppercase;
+    letter-spacing: .0625em;
+    font-size: 16px;
+    padding: 0 0 5px;
+    text-align: left;
+    font-family: "Titillium Web", sans-serif;
+}
+
+/* Paragraphs */
+#page-bottom .product-extra p {
+    font-size: 14px;
+    line-height: 1.6667;
+    padding: 0;
+    text-align: left;
+    font-family: "Titillium Web", sans-serif;
+}
+
+/* ICON – only on the first article (.like-guarantee) */
+#page-bottom .product-extra article:before {
+    content: "";
+    position: absolute;
+    top: 20px;              /* distance from top of article */
+    left: 50%;              /* center horizontally */
+    transform: translateX(-50%);
+    width: 120px;
+    height: 80px;
+    display: block;
+
+    background-image: url(https://rh.rightart.co.uk/images/trust-icon.png) !important;
+    background-repeat: no-repeat;
+    background-size: 1950px;
+
+}
+
+
+#page-bottom .product-extra article.like-guarantee::before {
+        background-position: -15px 0; 
+}
+
+
+#page-bottom .product-extra article.life-time-guarantee::before {
+        background-position: -180px 0; 
+}
+
+#page-bottom .product-extra article.Handcrafted::before {
+        background-position: -300px 0; 
+}
+
+#page-bottom .product-extra article.wodden-frame::before {
+        background-position: -475px 0; 
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+
+    #page-bottom .product-extra article {
+        width: 50%;
+    }
+
+    #page-bottom .product-extra article:nth-of-type(2n+1) {
+        clear: left;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    #page-bottom .product-extra article {
+        width: 100%;
+        clear: none;
+    }
+}
+
+//////////
+
+.product-quality
+{
+    overflow: hidden;
+    padding: 20px 10px;
+    position: relative;
+    overflow: hidden
+}
+
+
+.product-quality article
+{
+width: 33.3333%;
+    float: left;
+    padding: 20px 0;
+}
+
+.product-quality header
+{
+padding: 0 20px;
+}
+
+.product-quality img
+
+{
+    width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+
+}
+
+
+.product-quality h3
+
+{
+
+        padding: 15px 0 5px;
+        text-transform: uppercase;
+    letter-spacing: .0625em;
+    font-size: 16px;
+    text-align: left;
+}
+
+
+.product-quality p
+
+{
+    font-size: 14px;
+    line-height: 1.6667;
+    padding: 0 21px;
+    text-align: left;
+}
+
+
+.product-extra h2,
+.product-quality h2 {
+  font-size: 36px;
+  padding: 12px 0;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  text-transform: capitalize;
+}
+

@@ -1,0 +1,139 @@
+/* *********************************************************************
+   
+   Custom CSS Styles for Art Variants:#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw 
+   ----------------------------------------------------------------------
+   This section handles:
+   1. Main Image Canvas Background and Frame.
+   2. Setting different room background images for each mockup.
+   3. Defining the precise position of the artwork in the room for each mockup.
+   4. Adjusting the positioning of the art within the room images using top, left, and width values.
+   5. Custom CSS styles for additional art designs and layout tweaks.
+   ----------------------------------------------------------------------
+   
+********************************************************************* */
+
+/* -------------------------------------------------------------
+   Main Image Frame
+------------------------------------------------------------- */
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw
+  #product-large-image
+  .canvas::after,
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw
+  #product-thumbnails
+  .canvas::after {
+ background-image: url('https://rh.rightart.co.uk/images/square-frame-f-f-nw-Canvas.png')!important;
+}
+
+/* -------------------------------------------------------------
+   Background Image of the Room
+------------------------------------------------------------- */
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw
+  #product-thumbnails
+  .position-01,
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw.position-01
+  #product-large-image
+  .room {
+  background-image: url('https://rh.rightart.co.uk/images/76.jpg')!important;
+}
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw
+  #product-thumbnails
+  .position-02,
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw.position-02
+  #product-large-image
+  .room {
+  background-image: url('https://rh.rightart.co.uk/images/104.jpg')!important;
+}
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw
+  #product-thumbnails
+  .position-03,
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw.position-03
+  #product-large-image
+  .room {
+  background-image: url('https://rh.rightart.co.uk/images/81.jpg')!important;
+}
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw
+  #product-thumbnails
+  .position-04,
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw.position-04
+  #product-large-image
+  .room {
+  background-image: url('https://rh.rightart.co.uk/images/41.jpg')!important;
+}
+
+/* -------------------------------------------------------------
+   Position of the Art in the Rooms
+------------------------------------------------------------- */
+
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw
+  #product-thumbnails
+  .position-01
+  .room-art-position,
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw.position-01
+  #product-large-image
+  .room
+  .room-art-position {
+  top:  5% !important;
+  left:  32.7% !important;
+  width:  32.64% !important; /* Set width as percentage */
+}
+
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw
+  #product-thumbnails
+  .position-02
+  .room-art-position,
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw.position-02
+  #product-large-image
+  .room
+  .room-art-position {
+  top:  5%;
+  left:  32.7%;
+  width:  32.64%; /* Set width as percentage */
+}
+
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw
+  #product-thumbnails
+  .position-03
+  .room-art-position,
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw.position-03
+  #product-large-image
+  .room
+  .room-art-position {
+  top:  5%;
+  left:  32.7%;
+  width:  32.64%; /* Set width as percentage */
+}
+
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw
+  #product-thumbnails
+  .position-04
+  .room-art-position,
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw.position-04
+  #product-large-image
+  .room
+  .room-art-position {
+  top:  5%;
+  left:  32.7%;
+  width:  32.64%; /* Set width as percentage */
+}
+
+
+
+/* -------------------------------------------------------------
+   Art Frame 
+------------------------------------------------------------- */
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw
+  #product-thumbnails
+  .room
+  .room-art-position
+  .room-art
+  .art-frame,
+#product-images.shape-square.type-canvas.size-11x11.frame-f-f-nw
+  #product-large-image
+  .room
+  .room-art-position
+  .room-art
+  .art-frame {
+
+  background-image: url('https://rh.rightart.co.uk/images/square-frame-f-f-nw-room.png')!important;
+
+}

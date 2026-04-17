@@ -1,0 +1,16 @@
+"Product ID";"Artikel-Nr.";"Name";"MPN";"Category Names (x,y,z...)";"Default Category Name";"Summary";"Beschreibung";"Price (Tax Excluded)";"Unit Price";"Unity";"Image URLs (x,y,z...)";"Brand Name";"Features (Name~Value~Custom) (x,y,z...)";"Menge";"Attachment Names (x,y,z...)";"Attachment URLs (x,y,z...)";"Related Product IDs (x,y,z...)";"Label When in Stock";"Label When Backorder Allowed"
+"40";"VCDS-1.5/0.5-0-R";"VCDS-1.5/0.5-0-R";"";"VCDS Schrumpfschlauch Polyolefin";"VCDS Schrumpfschlauch Polyolefin";"<p>123Der VCDS ist ein Polyolefin-Universalschlauch für eine Vielzahl von Anwendungen. Er kann zur Isolierung, mechanischen Zugentlastung, Kabelbündelung, Farbkennzeichnung sowie zur Kennzeichnung von Leitungen, Kabel, Rohren, elektrischen und elektronischen Bauteilen und auch zum mechanischen Schutz eingesetzt werden.</p>
+<h3>Eigenschaften und Nutzen</h3>
+<ul>
+<li>3 zu 1 Schrumpfverhältnis</li>
+<li>Flammwidrig</li>
+<li>Universalschrumpfschlauch</li>
+<li>Dünnwandig</li>
+<li>Hohe Flexibilität</li>
+</ul>
+<p></p>";"<h3>123Spezifikationen und Zulassungen</h3>
+<ul>
+<li>UL 224 125°C VW-1 600V</li>
+<li>CSA</li>
+<li>Erfüllt: RoHS</li>
+</ul>";"72";"75";"Pro Spule à 50m";"http://ray.com.dedi4095.your-server.de/img/p/1/4/6/6/1466.jpg";"Raytronics AG";"Material~vernetztes Polyolefin~1,Funktionsweise~Schrumpfschlauch~1,Gewicht~auf Anfrage~1,Halogenfrei~Nein~1,Flammwidrig~Ja~1,Bahnzulassung~Nein~1,Hersteller~Raytronics AG~1,Abriebschutz~Ja~1,Alias~VCDS~1,Serie~VCDS~1,Min. Schrumpftemperatur~+70°C~1,UL~Ja~0,EN 45545-2~Nein~1,Innendurchmesser nach Schrumpfung~0.5 mm~1,Innendurchmesser bei Lieferung~1.5 mm~1,Min. Temperatur zur vollständigen Schrumpfung~+100°C~1,Wandstärke nach vollständiger Schrumpfung~1234560.45 mm (min.)~1,Betriebstemperatur min. ~-55°C~1,Betriebstemperatur max.~+125°C~1,Preiseinheit~Pro Meter~1,Schrumpfrate~3 zu 1~1,MIL~Nein~1,CSA~Ja~0,UL 225 125°C VW-1 600V~1~0,UL 225 125°C VW-1 600V~17~0,1934614~33~0,1934614~1~0,1934614~37~0";"200123";"Datenblatt VCDS 3 zu 1,Sicherheitsdatenblatt";"http://ray.com.dedi4095.your-server.de/de/module/ipcatalogexportimport/getAttachment?id_attachment=4,http://ray.com.dedi4095.your-server.de/de/module/ipcatalogexportimport/getAttachment?id_attachment=6";"42";"Sofort lieferbar";"Text nicht auf lager"

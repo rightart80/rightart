@@ -1,0 +1,387 @@
+@media (min-width: 769px) {
+  #product-header .h1 {
+    font-size: 38px;
+    color: $footer-black;
+    text-transform: none;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0;
+    font-family: "Titillium Web", sans-serif;
+
+    #title-postfix {
+      color: gray;
+    }
+  }
+
+  #artist-name {
+    font-style: italic;
+    margin-top: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #555;
+    margin-left: 55px;
+    margin-bottom: 8px;
+
+  }
+
+  .artist-link a {
+    color: #54bee8;
+    text-decoration: none;
+    font-weight: 600;
+
+  }
+
+  .artist-link a:hover {
+    color: #ff2800;
+    text-decoration: underline;
+  }
+
+
+
+  // * Title row container */
+  #product-header .product-titlebar {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    /* space between icon and title */
+    // margin-left: 3rem;     /* keep your existing left spacing */
+  }
+
+  #product-header, .category {
+
+    // Wish icon area */
+    .product-titlebar .wishicon {
+      display: inline-flex;
+      align-items: center;
+      /* Optional: nudge size if your hook outputs a small button */
+      line-height: 1;
+    }
+
+    /* If the hook outputs a button/link, make it compact */
+    .product-titlebar .wishicon :is(button, a) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 36px;
+      min-height: 36px;
+      padding: 6px 10px;
+      /* tweak as needed */
+      border-radius: 999px;
+      /* pill/circle look */
+    }
+
+
+
+    .breadcrumb {
+      padding: 0;
+      background: transparent;
+      margin-left: 3rem;
+
+      &[data-depth="1"] {
+        display: none;
+      }
+
+      ol {
+        padding-left: 0;
+        margin-bottom: 0;
+        padding: 2px 0 !important;
+      }
+
+      li {
+        display: inline;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $gray;
+        font-size: 17px;
+
+        &::after {
+          margin: 0.3125rem;
+          color: $gray;
+          content: ">";
+        }
+
+        &:last-child {
+          margin: 0;
+          color: $footer-black;
+
+          &::after {
+            content: "";
+          }
+        }
+
+        a {
+          color: $gray;
+          text-decoration: underline;
+          position: relative;
+          transition: color .3s ease;
+
+          &:hover,
+          &:focus {
+            color: #ff2800;
+          }
+
+          /* dash reacts to link hover */
+          &:hover .icon-dash,
+          &:focus .icon-dash {
+            background-color: #ff2800;
+          }
+        }
+
+        &.homelink a {
+          text-decoration: none;
+        }
+
+        /* ✅ Color the sprite *shape* only */
+        &.homelink a::before {
+          content: "";
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          transform: scale(1.23);
+          /* Use the sprite as a mask instead of a background */
+          -webkit-mask: url("../img/common-sprite.svg") no-repeat -142px -430px;
+          mask: url("../img/common-sprite.svg") no-repeat -142px -430px;
+          -webkit-mask-size: 250px auto;
+          /* match your sprite sheet size */
+          mask-size: 250px auto;
+          background-color: currentColor;
+          /* take color from the link */
+          margin-right: .35rem;
+          vertical-align: -1px;
+        }
+
+        /* On hover, only the masked pixels (icon) change to red */
+        &.homelink a:hover::before,
+        &.homelink a:focus::before {
+          background-color: #ff2800;
+        }
+
+        .icon-dash {
+          background-color: $gray;
+          height: 2px;
+          width: 14px;
+          bottom: 0px;
+          left: 0;
+          position: absolute;
+        }
+      }
+    }
+
+
+    /* Mobile: stack icon above title if space is tight */
+    @media (max-width: 576px) {
+      .product-titlebar {
+        flex-wrap: wrap;
+        gap: .5rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+
+
+  #product-header .wishlist-button-product {
+
+    margin-left: 0 !important;
+  }
+
+  #product-header {
+    padding-left: 0;
+  }
+
+  #wrapper #product-header .breadcrumb {
+
+    margin-left: 55px;
+    margin-bottom: 16px;
+  }
+}
+
+#wrapper .category .breadcrumb
+{
+  margin-left: 0px;
+  margin-top: 10px;
+      margin-bottom: 16px;
+
+}
+
+//////////////////////////////////////////
+
+@media (max-width: 768px) {
+  #product-header .h1 {
+    font-size: 32px;
+    color: $footer-black;
+    text-transform: none;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0;
+    font-family: "Titillium Web", sans-serif;
+
+    #title-postfix {
+      color: gray;
+    }
+  }
+
+  #artist-name {
+    font-style: italic;
+    margin-top: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #555;
+    margin-left: 0;
+    margin-bottom: 5px;
+
+  }
+
+  .artist-link .a {
+    color: #54bee8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color .2s ease;
+  }
+
+  .artist-link a:hover {
+    color: #ff2800;
+    text-decoration: underline;
+  }
+
+
+
+  // * Title row container */
+  #product-header .product-titlebar {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    /* space between icon and title */
+    // margin-left: 3rem;     /* keep your existing left spacing */
+  }
+
+  #product-header, .category {
+
+    // Wish icon area */
+    .product-titlebar .wishicon {
+      display: none;
+    }
+
+
+
+    .breadcrumb {
+      padding: 0;
+      background: transparent;
+      margin-left: 3rem;
+
+      &[data-depth="1"] {
+        display: none;
+      }
+
+      ol {
+        padding-left: 0;
+        margin-bottom: 0;
+        padding: 2px 0 !important;
+      }
+
+      li {
+        display: inline;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $gray;
+        font-size: 12px;
+
+        &::after {
+          margin: 0.3125rem;
+          color: $gray;
+          content: ">";
+        }
+
+        &:last-child {
+          margin: 0;
+          color: $footer-black;
+
+          &::after {
+            content: "";
+          }
+        }
+
+        a {
+          color: $gray;
+          text-decoration: underline;
+          position: relative;
+          transition: color .3s ease;
+
+          &:hover,
+          &:focus {
+            color: #ff2800;
+          }
+
+          /* dash reacts to link hover */
+          &:hover .icon-dash,
+          &:focus .icon-dash {
+            background-color: #ff2800;
+          }
+        }
+
+        &.homelink a {
+          text-decoration: none;
+        }
+
+        /* ✅ Color the sprite *shape* only */
+        &.homelink a::before {
+          content: "";
+          display: inline-block;
+          width: 13px;
+          height: 13px;
+          /* Use the sprite as a mask instead of a background */
+          -webkit-mask: url("../img/common-sprite.svg") no-repeat -142px -430px;
+          mask: url("../img/common-sprite.svg") no-repeat -142px -430px;
+          -webkit-mask-size: 250px auto;
+          /* match your sprite sheet size */
+          mask-size: 250px auto;
+          background-color: currentColor;
+          /* take color from the link */
+          margin-right: .35rem;
+          vertical-align: -1px;
+        }
+
+        /* On hover, only the masked pixels (icon) change to red */
+        &.homelink a:hover::before,
+        &.homelink a:focus::before {
+          background-color: #ff2800;
+        }
+
+        .icon-dash {
+          background-color: $gray;
+          height: 2px;
+          width: 14px;
+          bottom: 0px;
+          left: 0;
+          position: absolute;
+        }
+      }
+    }
+
+
+    /* Mobile: stack icon above title if space is tight */
+    @media (max-width: 576px) {
+      .product-titlebar {
+        flex-wrap: wrap;
+        gap: .5rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+
+
+  #product-header .wishlist-button-product {
+
+    margin-left: 0 !important;
+  }
+
+  #product-header {
+    padding-left: 0;
+  }
+
+  #wrapper #product-header .breadcrumb,
+  #wrapper .category .breadcrumb {
+
+    margin-left: 0;
+        margin-bottom: 0;
+  }
+}

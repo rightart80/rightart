@@ -1,0 +1,503 @@
+// @media screen and (max-width: 1024px) {
+
+//   /* Header-top container as flex */
+//   .header-top > .container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     flex-wrap: nowrap;
+//     position: relative;
+//   }
+
+//   /* Menu block: LEFT (40%) */
+//   #menue-row {
+//     flex: 0 0 40%;
+//     max-width: 40%;
+//     display: flex;
+//     justify-content: flex-start; /* align menu to left */
+//     align-items: center;
+//     order: 1;
+//     position: relative;
+//     z-index: 5;
+//   }
+
+//   /* Icon block: RIGHT (60%) */
+//   .icone-block-ra {
+//     flex: 0 0 60%;
+//     max-width: 60%;
+//     display: flex;
+//     justify-content: flex-end; /* move icons to right */
+//     align-items: center;
+//     order: 2;
+//     position: relative;
+//     z-index: 5;
+//   }
+
+//   /* Logo inside icon block */
+//   .icone-block-ra .logo-block-ra {
+//     flex: 0 0 auto;
+//     display: flex;
+//     justify-content: flex-start;
+//     margin-right: 10px;
+//   }
+
+//   /* Hide search row */
+//   #search-row {
+//     display: none;
+//   }
+
+//   /* Mini logo */
+//   #header #header-container .header-right-col #header-mini-logo {
+//     position: relative;
+//     display: flex;
+//     left: 0;
+//     top: 0;
+//     width: 40px;
+//     height: 45px;
+//     z-index: 1001;
+//     overflow: hidden;
+//   }
+
+//   /* Fix overlapping wishlist link */
+//   #header-favorites-icon-full > a {
+//     position: relative;
+//     width: auto;
+//     height: auto;
+//     display: inline-block;
+//   }
+
+// }
+
+
+
+// @media screen and (max-width: 1024px) {
+
+//   /* Main header row */
+//   .header-top > .container {
+//     display: flex !important;
+//     flex-direction: row !important;
+//     flex-wrap: nowrap !important;
+//     justify-content: space-between !important;
+//     align-items: center !important;
+//     width: 100% !important;
+//     position: relative;
+//   }
+
+//   /* Reset common row/column issues */
+//   .header-top > .container > * {
+//     box-sizing: border-box;
+//     min-width: 0;
+//   }
+
+//   /* MENU BLOCK - LEFT - 40% */
+//   #menue-row {
+//     display: flex !important;
+//     flex: 0 0 40% !important;
+//     max-width: 40% !important;
+//     width: 40% !important;
+//     justify-content: flex-start !important;
+//     align-items: center !important;
+//     order: 1 !important;
+//     position: relative;
+//     z-index: 5;
+//     float: none !important;
+//     clear: none !important;
+//     margin: 0 !important;
+//     padding: 0 !important;
+//   }
+
+//   /* ICON BLOCK - RIGHT - 60% */
+//   .icone-block-ra {
+//     display: flex !important;
+//     flex: 0 0 60% !important;
+//     max-width: 60% !important;
+//     width: 60% !important;
+//     justify-content: flex-end !important;
+//     align-items: center !important;
+//     order: 2 !important;
+//     position: relative;
+//     z-index: 5;
+//     float: none !important;
+//     clear: none !important;
+//     margin: 0 !important;
+//     padding: 0 !important;
+//   }
+
+//   /* Logo inside icon block */
+//   .icone-block-ra .logo-block-ra {
+//     display: flex !important;
+//     flex: 0 0 auto !important;
+//     justify-content: flex-start !important;
+//     align-items: center !important;
+//     margin-right: 10px !important;
+//     max-width: none !important;
+//     width: auto !important;
+//   }
+
+//   /* If icons container exists inside right block */
+//   .icone-block-ra .icons-block,
+//   .icone-block-ra .icon-block,
+//   .icone-block-ra .header-icons,
+//   .icone-block-ra .right-icons {
+//     display: flex !important;
+//     align-items: center !important;
+//     justify-content: flex-end !important;
+//     flex-wrap: nowrap !important;
+//   }
+
+//   /* Hide search row */
+//   #search-row {
+//     display: none !important;
+//   }
+
+//   /* Mini logo */
+//   #header #header-container .header-right-col #header-mini-logo {
+//     position: relative !important;
+//     display: flex !important;
+//     left: 0 !important;
+//     top: 0 !important;
+//     width: 40px !important;
+//     height: 45px !important;
+//     z-index: 1001 !important;
+//     overflow: hidden !important;
+//     margin: 0 !important;
+//   }
+
+//   /* Wishlist/favorite icon fix */
+//   #header-favorites-icon-full > a {
+//     position: relative !important;
+//     width: auto !important;
+//     height: auto !important;
+//     display: inline-flex !important;
+//     align-items: center !important;
+//   }
+
+//   /* Prevent internal Bootstrap/grid elements from breaking row */
+//   #menue-row.row,
+//   .icone-block-ra.row {
+//     display: flex !important;
+//     flex-wrap: nowrap !important;
+//     margin-left: 0 !important;
+//     margin-right: 0 !important;
+//   }
+
+//   #menue-row[class*="col-"],
+//   .icone-block-ra[class*="col-"] {
+//     float: none !important;
+//   }
+
+//   /* Remove full-width behavior from direct children */
+//   #menue-row > *,
+//   .icone-block-ra > * {
+//     max-width: 100%;
+//     min-width: 0;
+//   }
+// }
+
+
+@media screen and (max-width: 1024px) {
+
+  /* Main header wrapper */
+  .header-top,
+  .header-top > .container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+  }
+
+  /* Force ALL direct children into one row */
+  .header-top > .container > * {
+    float: none !important;
+    clear: none !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    box-sizing: border-box !important;
+    min-width: 0 !important;
+  }
+
+  /* LEFT: menu block 40% */
+  #menue-row {
+    order: 1 !important;
+    flex: 0 0 40% !important;
+    width: 40% !important;
+    max-width: 40% !important;
+    min-width: 40% !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    float: none !important;
+    clear: none !important;
+    position: relative !important;
+    z-index: 5 !important;
+  }
+
+  /* RIGHT: icon block 60% */
+  .icone-block-ra {
+    order: 2 !important;
+    flex: 0 0 60% !important;
+    width: 60% !important;
+    max-width: 60% !important;
+    min-width: 60% !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    float: none !important;
+    clear: none !important;
+    position: relative !important;
+    z-index: 5 !important;
+  }
+
+  /* Prevent bootstrap/grid children from becoming full width */
+  #menue-row *,
+  .icone-block-ra * {
+    box-sizing: border-box !important;
+  }
+
+  #menue-row > *,
+  .icone-block-ra > * {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* Keep icon items in one line */
+  .icone-block-ra,
+  .icone-block-ra .logo-block-ra,
+  .icone-block-ra .icons-block,
+  .icone-block-ra .icon-block,
+  .icone-block-ra .header-icons,
+  .icone-block-ra .right-icons {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+  }
+
+  .icone-block-ra .logo-block-ra {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    max-width: none !important;
+    margin-right: 10px !important;
+    justify-content: flex-start !important;
+  }
+
+  /* Menu content align left */
+  #menue-row,
+  #menue-row .menu,
+  #menue-row .menu-block,
+  #menue-row .navbar,
+  #menue-row .nav {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+  }
+
+  /* Hide search */
+  #search-row {
+    display: none !important;
+  }
+
+  /* Mini logo reset */
+  #header #header-container .header-right-col #header-mini-logo {
+    position: relative !important;
+    display: flex !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 40px !important;
+    height: 45px !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    z-index: 1001 !important;
+  }
+
+  /* Wishlist anchor */
+  #header-favorites-icon-full > a {
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  /* Kill common row/col behavior if present */
+  .row,
+  [class*="col-"] {
+    float: none;
+  }
+
+  #menue-row.row,
+  .icone-block-ra.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+
+// @media screen and (max-width: 1024px) {
+
+//   /* Header-top container as flex */
+//   .header-top > .container {
+//     display: flex;
+//     justify-content: space-between; /* left & right blocks */
+//     align-items: center;
+//     flex-wrap: nowrap; /* keep them in same line */
+//     position: relative;
+//   }
+
+//   /* Icon block: 60%, extreme left */
+//   .icone-block-ra {
+//     flex: 0 0 60%;
+//     max-width: 60%;
+//     display: flex;
+//     justify-content: flex-start; /* align logo and icons to left */
+//     align-items: center;
+//     position: relative;
+//     z-index: 5;
+//   }
+
+//   /* Logo inside icon block: extreme left */
+//   .icone-block-ra .logo-block-ra {
+//     flex: 0 0 auto;
+//     display: flex;
+//     justify-content: flex-start;
+//     margin-right: 10px; /* spacing between logo and icons */
+//   }
+
+//   /* Menu block: 40%, extreme right */
+//   #menue-row {
+//     flex: 0 0 40%;
+//     max-width: 40%;
+//     display: flex;
+//     justify-content: flex-end; /* align menu items to right edge */
+//     align-items: center;
+//     position: relative;
+//     z-index: 5;
+//   }
+
+//   /* Hide search row */
+//   #search-row {
+//     display: none;
+//   }
+
+//   /* Make mini logo relative inside flex (not absolute) */
+//   #header #header-container .header-right-col #header-mini-logo {
+//     position: relative; /* so it stays in flow and doesn't overlap menu */
+//     display: flex;
+//     left: 0;
+//     top: 0;
+//     width: 40px;
+//     height: 45px;
+//     z-index: 1001;
+//     overflow: hidden;
+//   }
+
+//   /* Fix overlapping wishlist link */
+//   #header-favorites-icon-full > a {
+//     position: relative;
+//     width: auto;
+//     height: auto;
+//     display: inline-block;
+//   }
+
+// }
+
+//     #header #header-container .header-right-col #header-mini-logo {
+//     text-decoration: none;
+//     position: absolute;
+//     display: block;
+//     left: 18px;
+//     top: 4px;
+//     width: 40px;
+//     height: 45px;
+//     z-index: 1001;
+//     overflow: hidden;
+//   }
+
+
+
+
+//   #header #header-container #header-search-icon {
+
+
+//     z-index: 1001;
+//     opacity: 1;
+//     top: 4px;
+//     background-position: -85px -55px;
+//     cursor: pointer;
+//     right: 100px;
+
+//     background-image: $shop-icone;
+//     background-repeat: no-repeat;
+//     background-size: 250px;
+//     position: absolute;
+//     display: block;
+//     // top: 35px;
+//     height: 45px;
+//     width: 40px;
+//     transition: top 180ms linear;
+//     padding: 5px 0;
+//     background-clip: content-box;
+//   }
+
+  
+//   #header #header-container #header-favorites-icon {
+//     text-decoration: none;
+//     z-index: 1001;
+//     right: 60px;
+//     top: 4px;
+//     background-position: -43px -226px;
+//     cursor: pointer;
+//     transform: scale(.7);
+//     background-image: $shop-icone;
+//     background-repeat: no-repeat;
+//     background-size: 250px;
+//     position: absolute;
+//     display: block;
+//     height: 50px;
+//     width: 40px;
+//     transition: top 180ms linear;
+//     padding: 5px 0;
+//     background-clip: content-box;
+//   }
+
+
+
+//   #header #header-container #header-cart-icon {
+
+
+//     right: 18px;
+
+//     text-decoration: none;
+//     z-index: 1001;
+//     opacity: 1;
+
+//     background-position: -40px -56px;
+//     cursor: pointer;
+
+//     // transform: scale(.7); ///
+//     background-image: $shop-icone;
+
+//     background-repeat: no-repeat;
+//     background-size: 250px;
+
+// top: 5px;
+
+//     position: absolute;
+//     display: block;
+//     // top: 35px;
+//     height: 50px;
+//     width: 40px;
+//     transition: top 180ms linear;
+//     padding: 5px 0;
+//     background-clip: content-box;
+
+
+//   }

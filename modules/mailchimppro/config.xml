@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>mailchimppro</name>
+    <displayName><![CDATA[Mailchimp]]></displayName>
+    <version><![CDATA[3.0.34]]></version>
+    <description><![CDATA[Official Mailchimp integration for PrestaShop]]></description>
+    <author><![CDATA[Mailchimp]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+</module>

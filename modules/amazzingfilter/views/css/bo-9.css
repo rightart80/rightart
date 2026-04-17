@@ -1,0 +1,75 @@
+#af,
+#af .btn,
+#af input[type="text"],
+#af select,
+#af label,
+#af .input-group-addon {
+	font-family: "Open Sans", Helvetica, Arial, Sans-serif;
+	font-size: 12px;
+}
+#af .template-footer .btn,
+#af .panel-footer .btn {
+	display: inline-block;
+	font-size: 14px;
+}
+#af .process-icon-save {
+	display: block;
+	width: 30px;
+	height: 30px;
+	font-size: 28px;
+	margin: 0 auto;
+}
+#af .btn.dropdown-toggle {
+	border: 1px solid #DDD;
+}
+#af .dropdown-menu {
+	font-size: 12px;
+	margin-top: 2px;
+	padding: 0;
+	border: 1px solid #DDD;
+}
+#af .input-group-addon:last-child {
+	border-left: 0;
+}
+#af .module_col_actions .btn {
+	border: 1px solid #DDD;
+}
+#af .dropdown-menu i {
+	font-size: 14px;
+}
+#af .clearCache {
+	background: #FFF;
+}
+.tab-title,
+.tab-title .btn-add,
+.af_template,
+.selected-options-inline,
+.template-tab-content,
+.af_template .template-tab-option,
+.template_settings .filter,
+#af .filter-group a.filter-group-item,
+.template-actions .extra,
+.available-options,
+.options-footer,
+.selected-sorting-option,
+.dynamic-sorting-options,
+.merged-row,
+.af-tagify,
+.t-item,
+.custom-code-content,
+.cron-block,
+.bootstrap .close-cron,
+#dynamic-popup .form-footer {
+	border-radius: 0;
+}
+#growls .growl.growl-notice {
+	background: #72C279;
+	color: #FFF;
+	border: 0;
+}
+#growls .growl.growl-error {
+	background: #E08F95;
+	color: #FFF;
+	border: 0;
+}
+/* since 3.3.2 */

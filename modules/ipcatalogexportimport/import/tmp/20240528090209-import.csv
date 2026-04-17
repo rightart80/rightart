@@ -1,0 +1,123 @@
+"Product ID";"Artikel-Nr.";"Name";"MPN";"Category Names (x,y,z...)";"Default Category Name";"Summary";"Beschreibung";"Price (Tax Excluded)";"Unit Price";"Unity";"Image URLs (x,y,z...)";"Brand Name";"Features (Name~Value~Custom) (x,y,z...)";"Menge";"Attachment Names (x,y,z...)";"Attachment URLs (x,y,z...)";"Related Product IDs (x,y,z...)";"Label When in Stock";"Label When Backorder Allowed"
+"40";"VCDS-1.5/0.5-0-R";"VCDS-1.5/0.5-0-R";"";"VCDS Schrumpfschlauch Polyolefin";"VCDS Schrumpfschlauch Polyolefin";"<p>123Der VCDS ist ein Polyolefin-Universalschlauch für eine Vielzahl von Anwendungen. Er kann zur Isolierung, mechanischen Zugentlastung, Kabelbündelung, Farbkennzeichnung sowie zur Kennzeichnung von Leitungen, Kabel, Rohren, elektrischen und elektronischen Bauteilen und auch zum mechanischen Schutz eingesetzt werden.</p>
+<h3>Eigenschaften und Nutzen</h3>
+<ul>
+<li>3 zu 1 Schrumpfverhältnis</li>
+<li>Flammwidrig</li>
+<li>Universalschrumpfschlauch</li>
+<li>Dünnwandig</li>
+<li>Hohe Flexibilität</li>
+</ul>
+<p></p>";"<h3>123Spezifikationen und Zulassungen</h3>
+<ul>
+<li>UL 224 125°C VW-1 600V</li>
+<li>CSA</li>
+<li>Erfüllt: RoHS</li>
+</ul>";"72";"75";"Pro Spule à 50m";"http://ray.com.dedi4095.your-server.de/img/p/1/4/6/6/1466.jpg";"Raytronics AG";"Material~vernetztes Polyolefin~1,Funktionsweise~Schrumpfschlauch~1,Gewicht~auf Anfrage~1,Halogenfrei~Nein~1,Flammwidrig~Ja~1,Bahnzulassung~Nein~1,Hersteller~Raytronics AG~1,Abriebschutz~Ja~1,Alias~VCDS~1,Serie~VCDS~1,Min. Schrumpftemperatur~+70°C~1,UL~Ja~0,EN 45545-2~Nein~1,Innendurchmesser nach Schrumpfung~0.5 mm~1,Innendurchmesser bei Lieferung~1.5 mm~1,Min. Temperatur zur vollständigen Schrumpfung~+100°C~1,Wandstärke nach vollständiger Schrumpfung~0.45 mm (min.)~1,Betriebstemperatur min. ~-55°C~1,Betriebstemperatur max.~+125°C~1,Preiseinheit~Pro Meter~1,Schrumpfrate~3 zu 1~1,MIL~Nein~1,CSA~Ja~0,UL 225 125°C VW-1 600V~1~0,UL 225 125°C VW-1 600V~17~0,1934614~1~0,1934614~37~0,1934614~33~0";"200123";"Datenblatt VCDS 3 zu 1,Sicherheitsdatenblatt";"http://ray.com.dedi4095.your-server.de/de/module/ipcatalogexportimport/getAttachment?id_attachment=4,http://ray.com.dedi4095.your-server.de/de/module/ipcatalogexportimport/getAttachment?id_attachment=6";"42";"Sofort lieferbar";"Text nicht auf lager"
+"42";"RNF-3000-1.5/0.5-0-SP";"RNF-3000-1.5/0.5-0-SP";"2-1194493-3";"Alle Produkte,Schrumpfschläuche ohne Kleber,RNF-3000 Polyolefin";"Alle Produkte";"<p><strong>Schrumpfschlauch, Polyolefin, Schwarz</strong></p>
+<p>Dieser Schrumpfschlauch wird im militärischen sowie im kommerziellen Bereich eingesetzt. Der RNF-3000 kann als Universalschlauch äusserst vielfältig eingesetzt werden, zum Beispiel zur Erstellung von leichten Kabelbäumen, zur Farbkennzeichnung von Isolierungen, zur Identifizierung, zum Schutz gegen Abrieb und Lösungsmittel und viele mehr.</p>
+<p>Schrumpfbereich: 1.5mm bis 0.5mm</p>";"<h3>Eigenschaften und Nutzen</h3>
+<ul>
+<li>3 zu 1 Schrumpfverhältnis</li>
+<li>Flammwidrig (farbige Schläuche)</li>
+<li>Widerstandsfähig gegen Säuren, Laugen und Lösungsmittel</li>
+<li>Flexibel</li>
+</ul>
+<p></p>
+<h3>Spezifikationen und Zulassungen</h3>
+<ul>
+<li>UL 600V +125°C</li>
+<li>CSA 600V +125°C</li>
+<li>Def Stan. 59-97 Type 2B</li>
+<li>VG95343 Pt 5 Type A (color)</li>
+<li>VG95343 Pt 5 Type B (clear)</li>
+<li>VDE 0341 Pt 9005 Type A und B</li>
+</ul>";"85";"75.000022";"Pro Spule à 50m";"http://ray.com.dedi4095.your-server.de/img/p/1/4/6/8/1468.jpg";"TE connectivity";"Material~vernetztes Polyolefin~1,Funktionsweise~Schrumpfschlauch~1,Gewicht~1.54 Gr/m~1,Halogenfrei~Nein~1,Flammwidrig~Ja~1,Bahnzulassung~Nein~1,Hersteller~TE Connectivity~1,Abriebschutz~Ja~1,Alias~5677554004~1,Serie~RNF-3000~1,Selbstverlöschend~Ja~1,Min. Schrumpftemperatur~+80°C~1,UL~Ja~0,EN 45545-2~Nein~1,Innendurchmesser nach Schrumpfung~0.5 mm~1,Innendurchmesser bei Lieferung~1.5 mm~1,Min. Temperatur zur vollständigen Schrumpfung~+120°C~1,Wandstärke nach vollständiger Schrumpfung~0.45 mm (+/-0.1mm)~1,Betriebstemperatur min. ~-55°C~1,Betriebstemperatur max.~+135°C~1,Preiseinheit~Pro Meter~1,Schrumpfrate~3 zu 1~1,MIL~Def. Stan + VG 95343~1,CSA~Ja~0,600V 125°C~1~0,600V 125°C~17~0,LR31929 600V 125°C~33~0,LR31929 600V 125°C~37~0,LR31929 600V 125°C~1~0";"1000";"Datenblatt RNF-3000";"http://ray.com.dedi4095.your-server.de/de/module/ipcatalogexportimport/getAttachment?id_attachment=5";"40";"";""
+"43";"301A011-25-0";"301A011-25-0";"820091-000";"1 zu 2 (T-Abzweigung)";"1 zu 2 (T-Abzweigung)";"<p>Wärmeschrumpfende Formteile bieten Zugentlastung und Abriebschutz für Stecker, Kabel und Litzen. Die T-Abzweigungen schützen Kabelabzweigungen zuverlässig. Die Formteile 301A011-25-0 besitzen einen Eingang sowie zwei Ausgänge. Diese Version ist aus strahlenvernetztem Elastomer gefertigt und passt zur -25-Serie von TE Connectivity.</p>";"<p>Eigenschaften und Nutzen</p>
+<p>Zugentlastung Abriebschutz sehr gute Flüssigkeitsbeständigkeit Hitzebeständig</p>";"100";"0";"";"http://ray.com.dedi4095.your-server.de/img/p/1/4/6/9/1469.jpg,http://ray.com.dedi4095.your-server.de/img/p/1/4/7/0/1470.jpg,http://ray.com.dedi4095.your-server.de/img/p/1/4/7/1/1471.jpg";"TE connectivity";"Betriebstemperatur~-75°C bis +150°C~1,Farbe~Schwarz~1,Material~Elastomer~1,Funktionsweise~Formteil~1,Gewicht~2 g~1,Hersteller~TE Connectivity~1,Alias~820091-000~1,J (geliefert)~6.6 mm~1,J (geschrumpft)~3.6 mm~1,H (geliefert)~6.6 mm~1,H (geschrumpft)~3.6 mm~1,K (geliefert)~6.6 mm~1,K (geschrumpft)~3.6 mm~1,P~29.7 mm (+/-10%)~1,R~14.7 mm (+/-10%)~1,S~15.1 mm (+/-10%)~1,W~1 mm (+/-30%)~1";"2";"Datenblatt";"http://ray.com.dedi4095.your-server.de/de/module/ipcatalogexportimport/getAttachment?id_attachment=7";"";"";""
+"44";"D-SCE-2.4-50-4";"D-SCE-2.4-50-4";"1-1191765-8";"Rail zertifiziert";"Rail zertifiziert";"<p>Die D-SCE-Tüllen werden zur Kennzeichnung von Leitungen und Kabeln verwendet, die langfristig organischen Flüssigkeiten, besonders Ölen, und hohen Temperaturen ausgesetzt sind.</p>";"<h3>Eigenschaften und Nutzen</h3>
+<ul>
+<li>3 zu 1 Schrumpfverhältnis</li>
+<li>beidseitig bedruckbar</li>
+<li>Bedruckung entspricht MIL-Standard</li>
+<li>hervorragende Beständigkeit gegen heisse Flüssigkeiten</li>
+<li>Auf Anfrage nach Kundenwunsch bedruckt erhältlich</li>
+</ul>
+<h3>Spezifikationen und Zulassungen</h3>
+<ul>
+<li>EN 45545-2 R23 HL1</li>
+<li>EN 45545-2 R24 HL3</li>
+<li>NFPA130</li>
+<li>NF F 00 608 type H</li>
+<li>SAE-AMS-DTL-23053/6</li>
+<li>MIL-STD-202 Method 215</li>
+</ul>";"0";"0";"";"http://ray.com.dedi4095.your-server.de/img/p/1/4/7/2/1472.jpg";"";"Betriebstemperatur~-75°C bis +135°C~1,Farbe~Gelb~1,Material~Strahlenvernetztes Polymer~1,Funktionsweise~Kennzeichnungstülle~1,Halogenfrei~Nein~1,Flammwidrig~Ja~1,Bahnzulassung~Ja~0,Hersteller~TE Connectivity~1,Alias~240205-000~1,Serie~D-SCE~1,UL~Ja~0,EN 45545-2~R23 HL1~0,Innendurchmesser nach Schrumpfung~0.8 mm~1,Innendurchmesser bei Lieferung~2.4 mm~1,MIL~MIL-STD-202~0,Perforiert / unterteilt~Nein~1,Tüllenlänge~50 mm~1,Einsatzbereich~0.8 mm bis 1.9 mm~1,NFPA130~10~0,NFPA130~1~0,R24 HL3~19~0,R24 HL3~18~0,R24 HL3~1~0,SAE-AMS-DTL-23053/6~32~0,SAE-AMS-DTL-23053/6~30~0,SAE-AMS-DTL-23053/6~1~0";"500";"Datenblatt";"http://ray.com.dedi4095.your-server.de/de/module/ipcatalogexportimport/getAttachment?id_attachment=9";"";"";""
+"47";"D-SCE-2.4-50-3";"D-SCE-2.4-50-4-1";"1-1191765-8-1";"Rail zertifiziert";"Rail zertifiziert";"<p>Die D-SCE-Tüllen werden zur Kennzeichnung von Leitungen und Kabeln verwendet, die langfristig organischen Flüssigkeiten, besonders Ölen, und hohen Temperaturen ausgesetzt sind.</p>";"<h3>Eigenschaften und Nutzen</h3>
+<ul>
+<li>3 zu 1 Schrumpfverhältnis</li>
+<li>beidseitig bedruckbar</li>
+<li>Bedruckung entspricht MIL-Standard</li>
+<li>hervorragende Beständigkeit gegen heisse Flüssigkeiten</li>
+<li>Auf Anfrage nach Kundenwunsch bedruckt erhältlich</li>
+</ul>
+<h3>Spezifikationen und Zulassungen</h3>
+<ul>
+<li>EN 45545-2 R23 HL1</li>
+<li>EN 45545-2 R24 HL3</li>
+<li>NFPA130</li>
+<li>NF F 00 608 type H</li>
+<li>SAE-AMS-DTL-23053/6</li>
+<li>MIL-STD-202 Method 215</li>
+</ul>";"0";"0";"";"";"";"Betriebstemperatur~-75°C bis +135°C~1,Farbe~Gelb~1,Material~Strahlenvernetztes Polymer~1,Funktionsweise~Kennzeichnungstülle~1,Halogenfrei~Nein~1,Flammwidrig~Ja~1,Bahnzulassung~Ja~0,Hersteller~TE Connectivity~1,Alias~240205-000~1,Serie~D-SCE~1,UL~Ja~0,EN 45545-2~R23 HL1~0,Innendurchmesser nach Schrumpfung~0.8 mm~1,Innendurchmesser bei Lieferung~2.4 mm~1,MIL~MIL-STD-202~0,Perforiert / unterteilt~Nein~1,Tüllenlänge~50 mm~1,Einsatzbereich~0.8 mm bis 1.9 mm~1";"500";"";"";"";"";""
+"77";"Expando TCP-V0 5-0/8";"Expando TCP-V0 5-0/8";"5081000538";"Expando TCP-V0";"Expando TCP-V0";"<p style=""text-align:justify;"">Expando TCP-V0 ist ein flexibler und stauchbarer Geflechtschlauch aus modifiziertem Polyester. Expando TCP-V0 eignet sich bestens als mechanischer Schutz und zur Bündelung von Kabelbäumen, Schläuchen und Leitungen. Das Rohmaterial ist nach Norm UL 94 klassifiziert und bietet hervorragende flammwidrige Eigenschaften.</p>
+<p style=""text-align:justify;"">Die hohe Stauchbarkeit des Geflechts garantiert einfachste Montage, auch über schon montierte Steckverbinder. Neben vielen weiteren Einsatzmöglichkeiten eignet sich der TCP-V0 Geflechtschlauch dank EN 45545-2 auch für Bahnanwendungen.</p>";"<h3>Eigenschaften und Nutzen</h3>
+<ul>
+<li>Aufdehnbarkeit 1:2</li>
+<li>Temperaturbereich: -50°C bis +150°C</li>
+<li>Schützt vor Abrieb</li>
+<li>EN 45545-2</li>
+<li>ASTM E-162 / E-662</li>
+<li>UL 94 V0 (Rohmaterial)</li>
+<li>Flexibel</li>
+<li>Halogenfrei</li>
+<li>flammwidrig</li>
+</ul>";"160";"120";"Pro 50m";"http://ray.com.dedi4095.your-server.de/img/p/1/4/8/1/1481.jpg,http://ray.com.dedi4095.your-server.de/img/p/1/4/8/2/1482.jpg,http://ray.com.dedi4095.your-server.de/img/p/1/4/8/3/1483.jpg";"Federal Mogul - Systems Protection - Bentley Harris";"Durchmesser minimum~4mm~0,Durchmesser maximum~8mm~0,Betriebstemperatur~-50°C bis +150°C~0,Farbe~Schwarz mit grauem Kennfaden~0,Material~Polyester (modifiziert)~0,Funktionsweise~Geflechtschlauch aufdehnbar~0,Gewicht~auf Anfrage~0,Halogenfrei~Ja~0,Flammwidrig~Ja~0,Aufdehnbarkeit~1 zu 2~0,Bahnzulassung~Ja - EN 45545-2~0,Hersteller~Federal Mogul - Systems Protection~0,Abriebschutz~Ja~0,Alias~5081000538~1,Serie~Expando TCP-V0~0,UL~Ja - UL 94 V0 (Rohmaterial)~0,EN 45545-2~Ja~0";"120";"Datenblatt TCP-V0";"http://ray.com.dedi4095.your-server.de/de/module/ipcatalogexportimport/getAttachment?id_attachment=12";"";"ab Lager verfügbar";"Lieferfrist: 11-12 Wochen"
+"78";"Expando TCP-V0 6-0/8";"Expando TCP-V0 6-0/8";"5081000638";"Expando TCP-V0";"Expando TCP-V0";"<p style=""text-align:justify;"">Expando TCP-V0 ist ein flexibler und stauchbarer Geflechtschlauch aus modifiziertem Polyester. Expando TCP-V0 eignet sich bestens als mechanischer Schutz und zur Bündelung von Kabelbäumen, Schläuchen und Leitungen. Das Rohmaterial ist nach Norm UL 94 klassifiziert und bietet hervorragende flammwidrige Eigenschaften.</p>
+<p style=""text-align:justify;"">Die hohe Stauchbarkeit des Geflechts garantiert einfachste Montage, auch über schon montierte Steckverbinder. Neben vielen weiteren Einsatzmöglichkeiten eignet sich der TCP-V0 Geflechtschlauch dank EN 45545-2 auch für Bahnanwendungen.</p>";"<h3>Eigenschaften und Nutzen</h3>
+<ul>
+<li>Aufdehnbarkeit 1:2</li>
+<li>Temperaturbereich: -50°C bis +150°C</li>
+<li>Schützt vor Abrieb</li>
+<li>EN 45545-2</li>
+<li>ASTM E-162 / E-662</li>
+<li>UL 94 V0 (Rohmaterial)</li>
+<li>Flexibel</li>
+<li>Halogenfrei</li>
+<li>flammwidrig</li>
+</ul>";"170";"130";"Pro 50m";"http://ray.com.dedi4095.your-server.de/img/p/1/4/8/1/1481.jpg,http://ray.com.dedi4095.your-server.de/img/p/1/4/8/2/1482.jpg,http://ray.com.dedi4095.your-server.de/img/p/1/4/8/3/1483.jpg";"Federal Mogul - Systems Protection - Bentley Harris";"Durchmesser minimum~5mm~0,Durchmesser maximum~9mm~0,Betriebstemperatur~-50°C bis +150°C~0,Farbe~Schwarz mit grauem Kennfaden~0,Material~Polyester (modifiziert)~0,Funktionsweise~Geflechtschlauch aufdehnbar~0,Gewicht~auf Anfrage~0,Halogenfrei~Ja~0,Flammwidrig~Ja~0,Aufdehnbarkeit~1 zu 2~0,Bahnzulassung~Ja - EN 45545-2~0,Hersteller~Federal Mogul - Systems Protection~0,Abriebschutz~Ja~0,Alias~5081000638~1,Serie~Expando TCP-V0~0,UL~Ja - UL 94 V0 (Rohmaterial)~0,EN 45545-2~Ja~0";"140";"Datenblatt TCP-V0";"http://ray.com.dedi4095.your-server.de/de/module/ipcatalogexportimport/getAttachment?id_attachment=12";"";"ab Lager verfügbar";"Lieferfrist: 11-12 Wochen"
+"79";"Expando TCP-V0 8-0/8";"Expando TCP-V0 8-0/8";"5081000838";"Expando TCP-V0";"Expando TCP-V0";"<p style=""text-align:justify;"">Expando TCP-V0 ist ein flexibler und stauchbarer Geflechtschlauch aus modifiziertem Polyester. Expando TCP-V0 eignet sich bestens als mechanischer Schutz und zur Bündelung von Kabelbäumen, Schläuchen und Leitungen. Das Rohmaterial ist nach Norm UL 94 klassifiziert und bietet hervorragende flammwidrige Eigenschaften.</p>
+<p style=""text-align:justify;"">Die hohe Stauchbarkeit des Geflechts garantiert einfachste Montage, auch über schon montierte Steckverbinder. Neben vielen weiteren Einsatzmöglichkeiten eignet sich der TCP-V0 Geflechtschlauch dank EN 45545-2 auch für Bahnanwendungen.</p>";"<h3>Eigenschaften und Nutzen</h3>
+<ul>
+<li>Aufdehnbarkeit 1:2</li>
+<li>Temperaturbereich: -50°C bis +150°C</li>
+<li>Schützt vor Abrieb</li>
+<li>EN 45545-2</li>
+<li>ASTM E-162 / E-662</li>
+<li>UL 94 V0 (Rohmaterial)</li>
+<li>Flexibel</li>
+<li>Halogenfrei</li>
+<li>flammwidrig</li>
+</ul>";"180";"140";"Pro 50m";"http://ray.com.dedi4095.your-server.de/img/p/1/4/8/1/1481.jpg,http://ray.com.dedi4095.your-server.de/img/p/1/4/8/2/1482.jpg,http://ray.com.dedi4095.your-server.de/img/p/1/4/8/3/1483.jpg";"Federal Mogul - Systems Protection - Bentley Harris";"Durchmesser minimum~6mm~0,Durchmesser maximum~12mm~0,Betriebstemperatur~-50°C bis +150°C~0,Farbe~Schwarz mit grauem Kennfaden~0,Material~Polyester (modifiziert)~0,Funktionsweise~Geflechtschlauch aufdehnbar~0,Gewicht~auf Anfrage~0,Halogenfrei~Ja~0,Flammwidrig~Ja~0,Aufdehnbarkeit~1 zu 2~0,Bahnzulassung~Ja - EN 45545-2~0,Hersteller~Federal Mogul - Systems Protection~0,Abriebschutz~Ja~0,Alias~5081000838~1,Serie~Expando TCP-V0~0,UL~Ja - UL 94 V0 (Rohmaterial)~0,EN 45545-2~Ja~0";"160";"Datenblatt TCP-V0";"http://ray.com.dedi4095.your-server.de/de/module/ipcatalogexportimport/getAttachment?id_attachment=12";"";"ab Lager verfügbar";"Lieferfrist: 11-12 Wochen"
+"80";"Expando TCP-V0 88-0/88";"Expando TCP-V0 88-0/88";"5081000888";"Expando TCP-V0";"Expando TCP-V0";"<p style=""text-align:justify;"">Expando TCP-V0 ist ein flexibler und stauchbarer Geflechtschlauch aus modifiziertem Polyester. Expando TCP-V0 eignet sich bestens als mechanischer Schutz und zur Bündelung von Kabelbäumen, Schläuchen und Leitungen. Das Rohmaterial ist nach Norm UL 94 klassifiziert und bietet hervorragende flammwidrige Eigenschaften.</p>
+<p style=""text-align:justify;"">Die hohe Stauchbarkeit des Geflechts garantiert einfachste Montage, auch über schon montierte Steckverbinder. Neben vielen weiteren Einsatzmöglichkeiten eignet sich der TCP-V0 Geflechtschlauch dank EN 45545-2 auch für Bahnanwendungen.</p>";"<h3>Eigenschaften und Nutzen</h3>
+<ul>
+<li>Aufdehnbarkeit 1:2</li>
+<li>Temperaturbereich: -50°C bis +150°C</li>
+<li>Schützt vor Abrieb</li>
+<li>EN 45545-2</li>
+<li>ASTM E-162 / E-662</li>
+<li>UL 94 V0 (Rohmaterial)</li>
+<li>Flexibel</li>
+<li>Halogenfrei</li>
+<li>flammwidrig</li>
+</ul>";"180";"140";"Pro 50m";"http://ray.com.dedi4095.your-server.de/img/p/1/4/8/1/1481.jpg,http://ray.com.dedi4095.your-server.de/img/p/1/4/8/2/1482.jpg,http://ray.com.dedi4095.your-server.de/img/p/1/4/8/3/1483.jpg";"Federal Mogul - Systems Protection - Bentley Harris";"Durchmesser minimum~88mm~0,Durchmesser maximum~12mm~0,Betriebstemperatur~-50°C bis +150°C~0,Farbe~Schwarz mit grauem Kennfaden~0,Material~Polyester (modifiziert)~0,Funktionsweise~Geflechtschlauch aufdehnbar~0,Gewicht~auf Anfrage~0,Halogenfrei~Ja~0,Flammwidrig~Ja~0,Aufdehnbarkeit~1 zu 2~0,Bahnzulassung~Ja - EN 45545-2~0,Hersteller~Federal Mogul - Systems Protection~0,Abriebschutz~Ja~0,Alias~5081000838~1,Serie~Expando TCP-V0~0,UL~Ja - UL 94 V0 (Rohmaterial)~0,EN 45545-2~Ja~0";"160";"Datenblatt TCP-V0";"http://ray.com.dedi4095.your-server.de/de/module/ipcatalogexportimport/getAttachment?id_attachment=12";"";"ab Lager verfügbar";"Lieferfrist: 11-12 Wochen"

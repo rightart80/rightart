@@ -1,0 +1,18 @@
+#queue-jobs p {
+	padding: 5px 35px 5px 10px;
+	font-size: 1rem;
+    margin-bottom: 10px;
+}
+#queue-jobs p:before {
+    right: 5px;
+    left: unset;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.queue-action-buttons-container .btn.btn-primary {
+    text-transform: initial;
+}
+.queue-action-buttons-container i {
+	margin-right: 5px;
+}

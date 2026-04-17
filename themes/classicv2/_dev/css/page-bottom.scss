@@ -1,0 +1,654 @@
+#page-bottom.page-bottom-container {
+    padding: 40px 0;
+}
+
+
+
+
+#page-bottom .product-extra {
+  background-color: #f4f5f6;
+  text-align: center;
+  overflow: hidden;
+}
+
+#page-bottom .product-extra article {
+  float: left;
+  width: 25%;
+  padding: 20px 0;
+}
+
+
+#page-bottom .product-extra article:before {
+    content: '';
+    width: 120px;
+    height: 80px;
+    display: inline-block;
+        background-repeat: no-repeat;
+    background-size: 1950px;
+    background-image: url(https://rh.rightart.co.uk/images/trust-icon.png) !important;
+
+
+}
+
+
+#page-bottom .product-extra article.like-guarantee::before {
+        background-position: -15px 0; 
+}
+
+
+#page-bottom .product-extra article.life-time-guarantee::before {
+        background-position: -180px 0; 
+}
+
+#page-bottom .product-extra article.Handcrafted::before {
+        background-position: -300px 0; 
+}
+
+#page-bottom .product-extra article.wodden-frame::before {
+        background-position: -475px 0; 
+}
+
+#page-bottom .product-extra article h3
+
+{
+text-transform: uppercase;
+    letter-spacing: .0625em;
+    font-size: 16px;
+    padding: 15px 20px 5px;
+    text-align: left;
+}
+#page-bottom .product-extra article p
+{
+font-size: 14px;
+    line-height: 1.6667;
+    padding: 0 21px;
+    text-align: left;
+}
+@media screen and (max-width: 760px) {
+  #page-bottom .product-extra article:nth-of-type(2n+1) {
+    clear: left;
+
+  }
+#page-bottom .product-extra article {
+ 
+  width: 50%;
+}
+
+}
+
+
+.product-extra h2,
+.product-quality h2 {
+  font-size: 36px;
+  padding: 12px 0;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
+////////////
+/// 
+/// 
+/// 
+/// 
+
+
+
+#page-bottom .product-quality
+{
+    overflow: hidden;
+    padding: 20px 10px;
+    position: relative;
+    overflow: hidden;
+    background-color: #f4f5f6;
+
+}
+
+
+#page-bottom .product-quality article
+{
+width: 33.3333%;
+    float: left;
+    padding: 20px 0;
+}
+
+#page-bottom .product-quality header
+{
+padding: 0 20px;
+}
+
+#page-bottom .product-quality img
+
+{
+    width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+
+}
+
+
+#page-bottom .product-quality h3
+
+{
+
+        padding: 15px 0 5px;
+        text-transform: uppercase;
+    letter-spacing: .0625em;
+    font-size: 16px;
+    text-align: left;
+}
+
+
+#page-bottom .product-quality p
+
+{
+    font-size: 14px;
+    line-height: 1.6667;
+    padding: 0 21px;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 570px) {
+    #page-bottom .product-quality article {
+
+        width: 100%;
+    }
+}
+
+
+
+:root{
+  --ra-red:#e31c23;
+  --ra-pink:#ff2aa3;
+  --ra-text:#363738;
+  --ra-dark:#111;
+  --ra-muted:#6b6f76;
+  --ra-line:#e9ecef;
+  --ra-card:#ffffff;
+  --ra-radius:10px;
+  --ra-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+/* ---------- Typography ---------- */
+.ra-title{
+  font-size: 38px;
+  color: var(--ra-text);
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.ra-h2{
+  font-size: 36px;
+  padding: 12px 0;
+  font-weight: 600;
+  line-height: 1.1;
+  font-family: "Titillium Web", sans-serif;
+  margin: 14px 0 10px 0;
+  position: relative;
+  color: inherit;
+}
+
+.ra-h2::after{
+  content:"";
+  display:block;
+  width:110px;
+  height:4px;
+  background: var(--ra-pink);
+  margin-top:10px;
+  border-radius:2px;
+}
+
+.ra-lead{
+  color: var(--ra-muted);
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 14px 0;
+  max-width: 900px;
+}
+
+.ra-text{
+  color: var(--ra-muted);
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+  max-width: 900px;
+}
+
+.ra-strong{
+  font-weight: 700;
+  color: #333;
+}
+
+.ra-list{
+  margin: 6px 0 14px;
+  padding-left: 18px;
+  color: var(--ra-muted);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.ra-divider{
+  border: 0;
+  border-top: 1px solid var(--ra-line);
+  margin: 18px 0;
+}
+
+/* ---------- Buttons ---------- */
+.ra-btn{
+  display:inline-block;
+  background: var(--ra-dark);
+  color:#fff !important;
+  text-decoration:none !important;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+.ra-btn:hover{ opacity:.92; }
+
+/* ---------- Card grids (class-based, not tag-based) ---------- */
+.product-extra,
+.product-quality{
+  margin: 10px 0 18px;
+  padding: 0;
+  list-style: none;
+}
+
+/* Grid helper */
+.ra-cards{
+  display: grid;
+  gap: 18px;
+}
+
+/* Layout variants */
+.ra-cards.ra-4{ grid-template-columns: repeat(4, 1fr); }
+.ra-cards.ra-3{ grid-template-columns: repeat(3, 1fr); }
+
+/* Card */
+.ra-card{
+  background: var(--ra-card);
+  border: 1px solid var(--ra-line);
+  border-radius: var(--ra-radius);
+  padding: 18px;
+  box-shadow: var(--ra-shadow);
+}
+
+/* Card heading (works even if editor changes structure) */
+.ra-card h3{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: var(--ra-dark);
+  position: relative;
+  padding-left: 12px;
+}
+.ra-card h3::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:3px;
+  width:4px;
+  height:18px;
+  background: var(--ra-red);
+  border-radius: 2px;
+}
+
+/* Card paragraphs */
+.ra-card p{
+  margin: 0;
+  color: var(--ra-muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Hover */
+.ra-card:hover{
+  border-color: rgba(227,28,35,.35);
+  transform: translateY(-2px);
+  transition: all .18s ease;
+}
+
+/* ---------- BIG IMAGES (make product-quality images large like screenshot) ---------- */
+
+/* Big image inside Art Options cards */
+.product-quality .ra-card img,
+.product-quality img{
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+
+  border: 1px solid var(--ra-line);
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+  box-shadow: var(--ra-shadow);
+}
+
+/* Give the image area a consistent height like your screenshot */
+.product-quality .ra-card img{
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+/* Remove line-height shrinking if image is inside first <p> */
+.product-quality .ra-card > p:first-child{
+  margin: 0 0 14px 0 !important;
+  line-height: normal !important;
+}
+
+/* Make the titles look closer to your screenshot style */
+.product-quality .ra-card h3{
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  font-weight: 800;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1100px){
+  .ra-cards.ra-4{ grid-template-columns: repeat(2, 1fr); }
+  .ra-cards.ra-3{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 680px){
+  .ra-title{ font-size: 30px; }
+  .ra-h2{ font-size: 28px; }
+  .ra-cards.ra-4,
+  .ra-cards.ra-3{ grid-template-columns: 1fr; }
+
+  .product-quality .ra-card img{
+    aspect-ratio: 4 / 3;
+  }
+}
+
+header.page-header h1{
+  display: none;
+}
+
+/* ==============================
+   Right Art — Artist Partnerships
+   PrestaShop-friendly (no JS)
+   ============================== */
+
+:root{
+  --ra-red:#e31c23;
+  --ra-pink:#ff2aa3;
+  --ra-text:#363738;
+  --ra-dark:#111;
+  --ra-muted:#6b6f76;
+  --ra-line:#e9ecef;
+  --ra-card:#ffffff;
+  --ra-radius:12px;
+  --ra-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+html{ scroll-behavior:smooth; }
+
+.ra-ap-wrap{
+  font-family: "Titillium Web", Arial, sans-serif;
+  color: var(--ra-text);
+  line-height: 1.6;
+}
+
+.ra-ap-kicker{
+  color: var(--ra-muted);
+  font-size: 14px;
+  margin: 0 0 6px 0;
+  letter-spacing: .2px;
+}
+
+.ra-ap-title{
+  font-size: 38px;
+  line-height: 1.15;
+  margin: 0 0 10px 0;
+  color: var(--ra-dark);
+  font-weight: 700;
+}
+
+.ra-ap-sub{
+  margin: 0 0 14px 0;
+  color: var(--ra-text);
+  font-size: 16px;
+}
+
+.ra-ap-note{
+  margin: 8px 0 0 0;
+  color: var(--ra-muted);
+  font-size: 13px;
+}
+
+.ra-ap-hero{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid rgba(227,28,35,.15);
+  border-radius: var(--ra-radius);
+  overflow: hidden;
+  box-shadow: var(--ra-shadow);
+  background:
+    radial-gradient(900px 300px at 0% 0%, rgba(255,42,163,.18), transparent 60%),
+    radial-gradient(900px 300px at 100% 0%, rgba(227,28,35,.18), transparent 60%),
+    linear-gradient(180deg, #fff, #fff);
+  margin: 0 0 18px 0;
+}
+
+.ra-ap-hero td{ padding: 18px; }
+
+.ra-ap-actions{ margin-top: 12px; }
+.ra-ap-actions a{ text-decoration: none; }
+
+.ra-btn{
+  display: inline-block;
+  padding: 11px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.ra-btn-primary{
+  background: linear-gradient(90deg, var(--ra-red), var(--ra-pink));
+  color: #fff !important;
+  box-shadow: 0 10px 24px rgba(227,28,35,.18);
+}
+
+.ra-btn-ghost{
+  background: #fff;
+  color: var(--ra-dark) !important;
+  border-color: rgba(17,17,17,.12);
+}
+
+.ra-btn:hover{ transform: translateY(-1px); box-shadow: 0 14px 30px rgba(0,0,0,.10); }
+.ra-btn:active{ transform: translateY(0px); opacity: .95; }
+
+.ra-chips{ margin: 10px 0 0 0; }
+.ra-chip{
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(17,17,17,.10);
+  background: rgba(255,255,255,.85);
+  font-size: 13px;
+  margin: 0 6px 8px 0;
+  color: var(--ra-dark);
+}
+
+.ra-ap-grid{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 14px;
+  margin: 0 0 6px 0;
+}
+
+.ra-ap-card{
+  background: var(--ra-card);
+  border: 1px solid var(--ra-line);
+  border-radius: var(--ra-radius);
+  box-shadow: 0 10px 25px rgba(0,0,0,.05);
+  padding: 16px;
+  vertical-align: top;
+}
+
+.ra-ap-h3{
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  color: var(--ra-dark);
+  font-weight: 800;
+}
+
+.ra-ap-list{
+  margin: 0;
+  padding-left: 18px;
+  color: var(--ra-text);
+}
+
+.ra-ap-list li{ margin: 8px 0; }
+
+.ra-ap-steps{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 14px;
+  margin: 0 0 6px 0;
+}
+
+.ra-step{
+  background:
+    radial-gradient(600px 220px at 0% 0%, rgba(255,42,163,.12), transparent 55%),
+    linear-gradient(180deg, #fff, #fff);
+  border: 1px solid rgba(17,17,17,.10);
+  border-radius: var(--ra-radius);
+  padding: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.04);
+  vertical-align: top;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.ra-step:hover{ transform: translateY(-2px); box-shadow: 0 16px 34px rgba(0,0,0,.08); }
+
+.ra-step-num{
+  display: inline-block;
+  min-width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--ra-red), var(--ra-pink));
+  color: #fff;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.ra-step-title{
+  margin: 0 0 6px 0;
+  font-weight: 900;
+  color: var(--ra-dark);
+  font-size: 16px;
+}
+
+.ra-step-text{
+  margin: 0;
+  color: var(--ra-muted);
+  font-size: 14px;
+}
+
+.ra-ap-apply{
+  background:
+    radial-gradient(800px 240px at 100% 0%, rgba(227,28,35,.10), transparent 60%),
+    linear-gradient(180deg, #fff, #fff);
+}
+
+.ra-codebox{
+  border: 1px dashed rgba(17,17,17,.22);
+  background: rgba(17,17,17,.03);
+  border-radius: var(--ra-radius);
+  padding: 12px 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 12.5px;
+  color: var(--ra-dark);
+}
+
+.ra-codebox strong{ font-family: "Titillium Web", Arial, sans-serif; }
+
+.ra-ap-link{
+  color: var(--ra-red);
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(227,28,35,.25);
+}
+.ra-ap-link:hover{ border-bottom-color: rgba(227,28,35,.55); }
+
+.ra-ap-faq{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ra-faq-q{
+  display: block;
+  padding: 12px 14px;
+  border: 1px solid var(--ra-line);
+  border-radius: var(--ra-radius);
+  text-decoration: none;
+  color: var(--ra-dark);
+  font-weight: 900;
+  background: #fff;
+  margin: 0 0 10px 0;
+  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+}
+
+.ra-faq-q:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(0,0,0,.06);
+  border-color: rgba(227,28,35,.20);
+}
+
+.ra-faq-a{
+  display: none;
+  margin: -4px 0 12px 0;
+  padding: 12px 14px;
+  border-left: 4px solid var(--ra-red);
+  background: rgba(227,28,35,.04);
+  border-radius: var(--ra-radius);
+  color: var(--ra-text);
+}
+
+.ra-faq-a:target{ display: block; }
+
+.ra-faq-close{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(17,17,17,.12);
+  text-decoration: none;
+  color: var(--ra-dark);
+  background: #fff;
+  font-weight: 800;
+}
+
+.ra-ap-mini{
+  color: var(--ra-muted);
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Responsive: stack tables on smaller screens */
+@media (max-width: 820px){
+  .ra-ap-grid, .ra-ap-steps{ border-spacing: 10px; }
+}
+@media (max-width: 700px){
+  .ra-ap-grid, .ra-ap-steps{ border-spacing: 10px; }
+  .ra-ap-grid, .ra-ap-grid tbody, .ra-ap-grid tr, .ra-ap-grid td,
+  .ra-ap-steps, .ra-ap-steps tbody, .ra-ap-steps tr, .ra-ap-steps td{
+    display: block;
+    width: 100% !important;
+  }
+  .ra-ap-hero td{ padding: 16px; }
+}

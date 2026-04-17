@@ -1,0 +1,30 @@
+.ets-dir-ltr.layout_layout2 .mm_menus_ul > li {
+    border-right: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.layout_layout2 .mm_menus_li:nth-child(2) {
+    border-left: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.ets-dir-ltr.layout_layout2 .mm_menus_ul > li.mm_no_border {
+    border-left: none;
+}
+.ets-dir-ltr.layout_layout2 .mm_menus_ul > li:last-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.26);
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+    .changestatus.layout_layout2 .ybc-menu-toggle {
+        color: #fff;
+    }
+
+    .changestatus.layout_layout2 .ybc-menu-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .ets-dir-ltr.layout_layout2.changestatus .mm_menus_ul > li {
+        border-right: 1px solid #e7e7e7;
+    }
+
+    .changestatus.ets-dir-ltr.layout_layout2 .mm_menus_ul > li.mm_no_border {
+        border-left: 1px solid #e7e7e7;
+    }
+}

@@ -1,0 +1,330 @@
+.d-inline-block {
+    display: inline-block;
+}
+.d-block {
+    display: block;
+}
+.d-flex {
+    display: flex;
+}
+.d-inline-flex {
+    display: inline-flex;
+}
+.align-items-center {
+    align-items: center;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-end {
+    justify-content: end;
+}
+.flex-grow-1 {
+    flex-grow: 1;
+}
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-column {
+    flex-direction: column;
+}
+.gap-0-5 {
+    gap: .5rem;
+}
+.position-initial {
+    position: initial !important;
+}
+.m-0 {
+    margin: 0 !important;
+}
+.mb-3 {
+    margin-bottom: 1rem;
+}
+.mt-3 {
+    margin-top: 1rem;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.p-0 {
+    padding: 0 !important;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-decoration-underline {
+    text-decoration: underline !important;
+}
+.fw-600 {
+    font-weight: 600 !important;
+}
+.fw-700 {
+    font-weight: 700 !important;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+#mailchimp-dashboard-section {
+    color: #241c15;
+}
+#mailchimp-dashboard-section .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+img.contrast-on-hover {
+    transition: filter 0.5s ease;
+}
+img.contrast-on-hover:hover {
+    filter: contrast(1.05);
+}
+
+.mailchimp-dashboard-section-body {
+    padding: 20px;
+    background: white;
+    border-left: 8px solid rgb(255, 224, 27);
+}
+
+
+.create-journey-container {
+    gap: 1rem 4rem;
+}
+.create-journey-content {
+    flex: 2 0 0;
+    min-width: 50%;
+}
+.create-journey-content-title {
+    margin-top: 0 !important;
+    font-size: 1rem !important;
+}
+.create-journey-content-text {
+    line-height: 1.75;
+}
+.create-journey-content-text .link-mc:not(:hover) {
+    color: inherit;
+}
+.campaign-image-link {
+    flex: 1 0 0;
+    min-width: min(200px, 100%);
+}
+
+.link-mc2 {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 3px;
+    background: #ffe01b !important;
+    color: #241c15 !important;
+    padding: .15rem 0.75rem;
+    border: 1px solid;
+    border-radius: 2em;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+    -webkit-box-shadow: 0 0 0 0 #241c15;
+    box-shadow: 0 0 0 0 #241c15;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform .3s cubic-bezier(.5,2.5,.7,.7), -webkit-box-shadow .3s cubic-bezier(.5,2.5,.7,.7);
+    transition: -webkit-transform .3s cubic-bezier(.5,2.5,.7,.7), -webkit-box-shadow .3s cubic-bezier(.5,2.5,.7,.7);
+    -o-transition: transform .3s cubic-bezier(.5, 2.5, .7, .7), box-shadow .3s cubic-bezier(.5, 2.5, .7, .7);
+    transition: transform .3s cubic-bezier(.5,2.5,.7,.7), box-shadow .3s cubic-bezier(.5,2.5,.7,.7);
+    transition: transform .3s cubic-bezier(.5,2.5,.7,.7), box-shadow .3s cubic-bezier(.5,2.5,.7,.7), -webkit-transform .3s cubic-bezier(.5,2.5,.7,.7), -webkit-box-shadow .3s cubic-bezier(.5,2.5,.7,.7);
+}
+.link-mc2:hover {
+    background: #ffe01b !important;
+    color: #241c15 !important;
+    border-color: inherit !important;
+    
+    -webkit-box-shadow: 0 0 0 0 #241c15,0 .375em 0 0 #241c15 !important;
+    box-shadow: 0 0 0 0 #241c15,0 .375em 0 0 #241c15 !important;
+    -webkit-transform: translateY(calc(-1*.375em)) !important;
+    -ms-transform: translateY(calc(-1*.375em)) !important;
+    transform: translateY(calc(-1*.375em)) !important;
+}
+.link-mc2.bg-white {
+    background: #ffffff !important;
+}
+
+
+.chimp-badge {
+    width: 20px;
+    height: 20px;
+}
+.mailchimp-reports-content-container label {
+    margin-bottom: .8rem;
+}
+.mailchimp-reports-top-cards-container {
+    gap: .35rem;
+}
+.mailchimp-reports-top-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: .35rem .5rem;
+    flex: 1 0 0;
+    min-width: fit-content;
+
+    /* flex-direction: row;
+    justify-content: space-between; */
+    gap: .25rem;
+}
+.mailchimp-reports-top-card .card-title {
+    gap: .5rem;
+    /* line-height: 1; */
+}
+.mailchimp-reports-top-card .card-title.help-tooltip .card-title-label {
+    padding-bottom: 3px;
+    /* border-bottom: 2px dashed #007c89; */
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: #007c89;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+.mailchimp-reports-top-card .card-body {
+    padding: .1rem 0;
+
+    flex-grow: 0;
+}
+@media (max-width: 992px) {
+    .mailchimp-reports-top-card .card-body {
+        padding: .5rem 0;
+    }
+}
+.mailchimp-reports-top-card .card-body strong {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.email-performance-note {
+    font-style: italic;
+    margin-top: .5rem;
+    text-align: center !important;
+}
+
+/* .mailchimp-reports-content-container .mailchimp-report {
+    gap: .25rem .25rem;
+    padding: 0;
+} */
+.mailchimp-reports-content-container .mailchimp-report:hover {
+    background-color: rgb(255 249 232);
+}
+/* .mailchimp-reports-content-container .mailchimp-report-container:nth-child(even) {
+    background-color: #f8f8f8;
+} */
+.mailchimp-reports-content-container .mailchimp-report-container hr {
+    display: none;
+}
+.campaign-general-info {
+    /* flex-basis: 300px; */
+    flex-grow: 1;
+
+    border-right: 1px solid #e0e0e0;
+}
+.campaign-title,
+.campaign-subject-line:first-child {
+    font-weight: 600;
+    /* font-size: 1rem; */
+}
+.campaign-subject-line:not(:first-child) {
+    font-style: italic;
+}
+.campaign-list-name span {
+    background: #efeeea;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: inline-block;
+}
+.campaign-email-performance-info {
+    gap: 0;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    flex-wrap: nowrap;
+}
+/* .performance-values {
+    font-size: 1.1rem;
+} */
+.campaign-email-performance-info-labels-container {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    border-bottom-width: 0px;
+}
+.campaign-email-performance-info-labels-container .performance-title, 
+.campaign-email-performance-info-item {
+    gap: 0;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+    border-radius: 0;
+    padding: 2px;
+    flex: 1 0 0;
+    text-align: center;
+}
+.campaign-email-performance-info-labels-container .performance-title {
+    background: #ececec;
+    cursor: initial;
+    font-weight: 700 !important;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.campaign-email-performance-info-item:hover {
+    border: 1px dashed #d7d7d7;
+}
+.mailchimp-reports-content-container .mailchimp-report:hover .percentage,
+.mailchimp-reports-content-container .mailchimp-report:not(:hover) .percentage ~ .value {
+    display: none;
+}
+.campaign-email-performance-info-item .performance-title {
+    font-size: .85rem;
+}
+.mailchimp-reports-content-container .mailchimp-report:not(:hover) .performance-title {
+    color: #707070;
+}
+
+.mailchimp-report > i,
+.campaign-title,
+.campaign-subject-line:first-child {
+    /* color: #007c89; */
+    background: #f4f8fb;
+    padding: .25rem .25rem;
+}
+.mailchimp-report > i {
+    font-size: 1rem;
+    /* align-self: center; */
+
+    border-left: 1px solid #e0e0e0;
+    
+}
+.mailchimp-report-container:first-child .mailchimp-report > i,
+.mailchimp-report-container:first-child .campaign-general-info {
+    border-top: 1px solid #e0e0e0;
+}
+
+/* hide unnecessary information */
+.card-average-unsubscribe-rate,
+.mailchimp-reports-top-card .card-body small,
+.campaign-subject-line:not(:first-child),
+.campaign-list-name,
+.campaign-send-time,
+.campaign-email-performance-info-labels-container .performance-title.revenue,
+.campaign-email-performance-info-item.total-revenue,
+.campaign-email-performance-info-item .performance-title,
+.mailchimp-report-container:nth-child(3) ~ .mailchimp-report-container {
+    display: none;
+} 

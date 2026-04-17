@@ -1,0 +1,5 @@
+"Category ID";"Active (0 = No, 1 = Yes)";"Name";"Parent Category ID";"Parent Category Name";"Description";"Rewritten URL";"Meta Title";"Meta Keywords";"Meta Description";"Position";"Image URL";"Creation Date";"Group Names (x,y,z...)";"Group Reductions (x,y,z...)"
+"1";"1";"Root";"0";"";"";"root";"";"";"";"0";"";"2025-11-17 11:01:00";"Customer,Guest,Visitor";""
+"2";"1";"Home";"1";"Root";"";"home";"";"";"";"0";"";"2025-11-17 11:01:00";"Visitor,Customer,Guest";""
+"3";"1";"Editor's Choice";"2";"";"<p>Discover our favorites fashionable discoveries, a selection of cool items to integrate in your wardrobe. Compose a unique style with personality which matches your own.</p>";"Editor's Choice";"";"";"";"0";"https://rh.rightart.co.uk/pics/cover.jpg";"2025-11-17 11:02:11";"Visitor,Customer,Guest";""
+"4";"1";"Style";"2";"";"<p>T-shirts, sweaters, hoodies and men's accessories. From basics to original creations, for every style. </p>";"Style";"";"";"";"0";"https://rh.rightart.co.uk/pics/cover.jpg";"2025-11-17 11:02:12";"Visitor,Customer,Guest";""

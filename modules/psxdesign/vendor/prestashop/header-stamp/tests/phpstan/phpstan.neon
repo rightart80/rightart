@@ -1,0 +1,7 @@
+parameters:
+  paths:
+    - ../../src
+    - ../../bin/header-stamp
+  level: 8
+  inferPrivatePropertyTypeFromConstructor: true
+  ignoreErrors:

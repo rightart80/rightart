@@ -1,0 +1,27 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  
+  #header #header-container #header-favorites-icon {
+
+    text-decoration: none;
+    z-index: 90;
+     width: 0;
+    right: 120px;
+    top: 35px;
+    background-position: -43px -226px;
+    cursor: pointer;
+    transform: scale(.7); ///
+    background-image: $shop-icone;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    position: absolute;
+    display: block;
+    height: 50px;
+    width: 40px;
+    transition: top 180ms linear;
+    padding: 5px 0;
+    background-clip: content-box;
+
+  }
+
+}

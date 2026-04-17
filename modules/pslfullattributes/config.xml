@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>pslfullattributes</name>
+    <displayName><![CDATA[Shape attribute in product listing]]></displayName>
+    <version><![CDATA[1.0.5]]></version>
+    <description><![CDATA[Adds the Shape combination of the default product combination to the product listing array.]]></description>
+    <author><![CDATA[Custom]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>0</need_instance>
+</module>

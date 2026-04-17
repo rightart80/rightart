@@ -1,0 +1,311 @@
+//description page and fixed sidebar
+
+@media screen and (min-width: 767px) {
+
+
+    #main.category {
+        border-left: 251px solid #e9ebec;
+        padding-left: 20px;
+        position: relative;
+        display: block;
+
+        #left-col {
+            width: 251px;
+            padding: 0 0 10px;
+            margin-left: -271px;
+            float: left;
+            display: block;
+            unicode-bidi: isolate;
+
+
+        }
+
+        #left-col.fixed {
+
+            top: 50px;
+            height: 327px;
+            float: none;
+            position: fixed;
+            overflow: hidden;
+            width: 251px;
+            padding: 0 0 10px;
+            margin-left: -271px;
+
+            display: block;
+            unicode-bidi: isolate;
+        }
+
+        .scroll {
+            font-family: "Open Sans", sans-serif;
+            line-height: 1.3333;
+            color: #363738;
+        }
+
+        #left-col.fixed #scroll {
+            bottom: 0;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            -ms-overflow-style: none;
+            width: 150%;
+            height: 100%;
+        }
+
+        #filters {
+            padding: 0 0 10px;
+            width: 251px;
+        }
+
+        #sidebar-squares {
+            padding: 0 0 10px;
+            width: 251px;
+        }
+    }
+
+
+
+
+
+
+    /////////// category header image
+    #js-product-list-header {
+        width: 100%;
+        height: 0;
+        padding: 0 0 44.68085%;
+        margin-bottom: 30px;
+        position: relative;
+
+    }
+
+    #js-product-list-header .cover-image {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        image-rendering: -webkit-optimize-contrast;
+
+
+    }
+}
+
+//// category header text
+
+#category-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 15;
+    text-align: right;
+}
+
+
+#category-header:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgba(54, 55, 56, .8);
+    color: #fff;
+    font-size: 59px;
+    padding: 2% 3.5% 2.5%;
+    font-weight: 300;
+    line-height: 1;
+    font-family: "Titillium Web", sans-serif;
+
+    span {
+        color: #fff;
+    }
+}
+
+////category description collapse
+
+#main.category #description {
+
+
+    /* Limit to roughly 6 lines */
+    #description-canvas.collapsed {
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+
+}
+
+#left-col.fixed {
+    position: fixed;
+    /* top: header height etc. */
+}
+
+#left-col.bottom-fixed {
+    position: absolute;
+    /* pinned via parent layout */
+}
+
+////////
+/// 
+.subcategories-list .subcategory-item.is-hidden {
+    display: none;
+}
+
+
+
+
+
+//////////// sub category styles
+
+//// subcategory load more button
+/// 
+/// 
+#main.category #subcategories {
+    padding: 0px;
+}
+
+
+.subcategories-list .subcategory-item.is-hidden {
+    display: none;
+}
+
+
+
+
+
+
+#main.category #subcategories h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 16px 0px;
+    font-family: "Titillium Web", sans-serif;
+    color: inherit;
+}
+
+
+
+
+#main.category #subcategories h2 .subcategories-expander.opened,
+#main.category #subcategories h2 .subcategories-expander {
+    margin-left: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+}
+
+#main.category #subcategories h2 .subcategories-expander.opened::after {
+    bottom: 4px;
+    position: absolute;
+    right: -25px;
+    border-color: rgb(0, 0, 0) transparent;
+    border-style: solid;
+    border-width: 16px 8px 0px;
+    content: "";
+}
+
+#main.category #subcategories h2 .subcategories-expander::after {
+    bottom: 4px;
+    position: absolute;
+    right: -25px;
+    border-color: transparent rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 8px 0px 8px 16px;
+    // color: rgb(54, 55, 56);
+    content: "";
+}
+
+
+
+
+
+
+
+///catagories list
+/// 
+#subcategories-list {
+    margin-right: -1px;
+    overflow: hidden;
+
+    .subcategory-item {
+        display: block;
+        float: left;
+        // width: 25%;
+        padding-bottom: 25%;
+        position: relative;
+
+    }
+
+    .subcategory-image {
+        padding: 0px;
+    }
+
+    .subcategory-url {
+        position: absolute;
+        top: -1px;
+        right: 0px;
+        bottom: 0px;
+        left: -1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(255, 255, 255);
+        border-image: initial;
+    }
+
+    .img-fluid {
+        width: 100%;
+        height: 100%;
+        image-rendering: -webkit-optimize-contrast;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+
+    span {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: rgba(54, 55, 56, 0.8);
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        text-align: right;
+        letter-spacing: 0.0625em;
+        transition: background-color 90ms linear;
+        font-size: 18px;
+        padding: 12px 39px 12px 12px;
+    }
+
+    span::after {
+        content: "";
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        height: 42px;
+        width: 40px;
+        background-position: -168px -145px;
+        background-image: url('https://rh.rightart.co.uk/images/common-sprite.png');
+            background-repeat: no-repeat;
+    background-size: 250px;
+    
+    }
+
+    .subcategory-url::after
+    {
+            content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 89%;
+    }
+}

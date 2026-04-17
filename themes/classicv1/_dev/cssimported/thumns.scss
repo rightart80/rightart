@@ -1,0 +1,74 @@
+
+/* =========================================================
+   FIX: Product page thumbnails (5 thumbs) — aesthetic layout
+   Desktop: vertical rail (1 column)
+   Mobile:  5 in a row (scroll on small phones)
+   ========================================================= */
+
+/* DESKTOP: keep the left rail, but make it 1 column (not 5 columns!) */
+@media (min-width: 871px){
+  #product-thumbnails{
+    display: flex !important;
+    flex-direction: column;
+    gap: 12px;
+
+    overflow: visible !important; /* stop clipping shadows */
+    padding-right: 12px;
+  }
+
+  /* Thumb cards */
+  #product-thumbnails section{
+    width: 100%;
+    aspect-ratio: 16 / 10;  /* shorter = 5 thumbs fit better */
+    border-radius: 14px;
+    border: 1px solid rgba(0,0,0,.10);
+    background: #fff;
+    overflow: hidden;
+
+    box-shadow: 0 1px 2px rgba(0,0,0,.06);
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  }
+
+  #product-thumbnails section:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0,0,0,.14);
+    border-color: rgba(0,0,0,.16);
+  }
+
+  #product-thumbnails section.is-active{
+    border-color: rgba(59,130,246,.75);
+    box-shadow: 0 0 0 3px rgba(59,130,246,.20), 0 10px 24px rgba(0,0,0,.14);
+  }
+}
+
+/* TABLET/MOBILE: show 5 thumbs in a row under the image */
+@media (max-width: 870px){
+  #product-thumbnails{
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
+    overflow: visible !important;
+    padding-right: 0;
+    margin-top: 10px;
+  }
+
+  #product-thumbnails section{
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+  }
+}
+
+/* SMALL PHONES: keep 5 thumbs but allow smooth horizontal scroll */
+@media (max-width: 520px){
+  #product-thumbnails{
+    grid-template-columns: repeat(5, minmax(84px, 1fr));
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 6px;
+  }
+  #product-thumbnails section{
+    scroll-snap-align: start;
+  }
+}
