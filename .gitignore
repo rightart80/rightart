@@ -3,3 +3,5 @@ var/logs/
 themes/classic/_dev/node_modules/
 themes/classicold/_dev/node_modules/
 *.zip
+# Added by code-review-graph
+.code-review-graph/
