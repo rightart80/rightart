@@ -1,0 +1,5 @@
+var/cache/dev/
+var/logs/
+themes/classic/_dev/node_modules/
+themes/classicold/_dev/node_modules/
+*.zip
