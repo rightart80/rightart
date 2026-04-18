@@ -73,16 +73,17 @@
 /* right col: in sticky we want 8/12 visually */
 
 
-/* sticky icon column: becomes visible, takes 2/12 and 50px height */
+/* sticky icon column: absolute so it doesn't push menu to a second row */
 #header-container.is-sticky .Sticky-header-icone {
   display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 14%;
   align-items: center;
   justify-content: flex-end;
-  height: 50px;
-  padding-top: 0;
-  padding-bottom: 0;
   background-color: #e9ebec;
-  width: 14%;
   padding: 0;
 }
 
@@ -556,16 +557,17 @@
   /* right col: in sticky we want 8/12 visually */
  
 
-  /* sticky icon column: becomes visible, takes 2/12 and 50px height */
+  /* sticky icon column: absolute so it doesn't push menu to a second row */
   #header-container.is-sticky .Sticky-header-icone {
     display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 14%;
     align-items: center;
     justify-content: flex-end;
-    height: 50px;
-    padding-top: 0;
-    padding-bottom: 0;
     background-color: #e9ebec;
-    width: 14%;
     padding: 0;
   }
 
