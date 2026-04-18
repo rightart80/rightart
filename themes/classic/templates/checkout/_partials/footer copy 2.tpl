@@ -53,7 +53,7 @@
       </a>
 
       <span class="footer-item-2">
-        © 2027 RightArt.
+        © 2026 RightArt.
         <br>All rights reserved.
       </span>
 
