@@ -76,6 +76,8 @@
   <link rel="shortcut icon" type="image/x-icon" href="{$shop.favicon}?{$shop.favicon_update_time}">
 {/block}
 
+<link rel="preload" href="/themes/classic/assets/css/12a47ed5fd5585f0f422.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
 {block name='stylesheets'}
   {include file="_partials/stylesheets.tpl" stylesheets=$stylesheets}
 {/block}
