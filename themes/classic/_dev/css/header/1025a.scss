@@ -173,11 +173,6 @@
     z-index: 1002;
   }
 
-  #header-container #search_widget {
-    // min-width: 550px !important;
-
-    min-width: calc(min(100vw, 1441px) * 0.45);
-  }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px)  {

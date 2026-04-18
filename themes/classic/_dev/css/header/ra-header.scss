@@ -390,7 +390,8 @@
   }
 
   #header-container #search_widget {
-    min-width: 550px ;
+    flex: 1 0 300px;
+    max-width: 50%;
   }
 
   #menue-row .ets_mm_megamenu_content {
