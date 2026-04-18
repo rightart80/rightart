@@ -37,8 +37,12 @@
 @import "components/main";
 @import "components/notifications";
 @import "components/progressbar";
+// Header breakpoint tiers (see partials/_variables.scss for $bp-* values):
+//   Large  ($bp-large-min  1441px+)       → 1440a.scss
+//   Laptop ($bp-laptop-min 1025–1440px)   → 1025a.scss
+//   Tablet+Phone (0–$bp-tablet-max 1024px)→ 768a.scss
+//   Base desktop (768px+, sticky logic)   → ra-header.scss
 @import "header/1440a";
-@import "header/1281a";
 @import "header/1025a";
 @import "header/768a";
 @import "header/ra-header";

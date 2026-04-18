@@ -69,3 +69,15 @@ $shop-icone: url('https://rh.rightart.co.uk/images/common-sprite.png');
 $shop-icone2: url('https://rh.rightart.co.uk/images/common-sprite-2.svg');
 $image-base-url: "https://rh.rightart.co.uk/images/";
 
+// ─── Viewport Breakpoints (single source of truth) ───────────────────────────
+// Phone   : 0 – 767px
+// Tablet  : 768px – 1024px
+// Laptop  : 1025px – 1440px
+// Large   : 1441px+
+$bp-phone-max:  767px;
+$bp-tablet-min: 768px;
+$bp-tablet-max: 1024px;
+$bp-laptop-min: 1025px;
+$bp-laptop-max: 1440px;
+$bp-large-min:  1441px;
+

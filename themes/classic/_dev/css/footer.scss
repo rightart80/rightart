@@ -233,6 +233,7 @@
 
 
 
+// Tablet + above ($bp-tablet-min: 768px) — multi-column footer layout
 @media (min-width: 768px) {
 
     /* Let footer container handle horizontal padding, not link-container */
@@ -806,6 +807,7 @@
 
 
 
+// Phone only ($bp-phone-max: 767px) — stacked single-column footer
 @media (max-width: 767px) {
 
 

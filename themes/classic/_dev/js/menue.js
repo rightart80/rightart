@@ -1,5 +1,8 @@
-// seach icone clicked destop
+// Viewport breakpoints — must stay aligned with CSS $bp-* variables in _variables.scss
+var BP_TABLET_MAX  = 1024;   // max-width for phone + tablet (CSS $bp-tablet-max)
+var BP_LAPTOP_MIN  = 1025;   // min-width for laptop + large  (CSS $bp-laptop-min)
 
+// seach icone clicked destop
 
   document.addEventListener('DOMContentLoaded', function () {
     const icon   = document.getElementById('header-search-icon');
@@ -103,7 +106,7 @@
 /////////
 (function () {
   // Mobile breakpoint
-  const mobileQuery = window.matchMedia('(max-width: 1024px)');
+  const mobileQuery = window.matchMedia('(max-width: ' + BP_TABLET_MAX + 'px)');
 
   let mobileInitialized = false;
   let searchIcon, headerTop, widget, closeBtn;
@@ -324,8 +327,8 @@ document.addEventListener('DOMContentLoaded', function () {
   function handleScroll () {
     var width = window.innerWidth || document.documentElement.clientWidth;
 
-    // 🔹 MOBILE / TABLET (< 1025px) → no sticky logic, no padding
-    if (width < 1025) {
+    // 🔹 MOBILE / TABLET (< BP_LAPTOP_MIN) → no sticky logic, no padding
+    if (width < BP_LAPTOP_MIN) {
       headerContainer.classList.remove('is-sticky');
       mainContent.style.paddingTop = '';
       if (stickyIcon) {
@@ -530,7 +533,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function updateHeaderClass() {
     var width = window.innerWidth;
 
-    if (width >= 1025) {
+    if (width >= BP_LAPTOP_MIN) {
       headerContainer.classList.add('desktop-header');
       headerContainer.classList.remove('mobile-header');
     } else {
