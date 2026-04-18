@@ -338,18 +338,17 @@ document.addEventListener('DOMContentLoaded', function () {
     var y = window.pageYOffset || document.documentElement.scrollTop;
 
     if (y > stickyStart) {
-      if (!headerContainer.classList.contains('is-sticky')) {
-        headerContainer.classList.add('is-sticky');
-
-        // add padding so content doesn’t slide under header
-
-        var extraOffset = 60;
-mainContent.style.paddingTop = (headerHeight + extraOffset) + 'px';
-        // mainContent.style.paddingTop = headerHeight + 'px';
+      if (!headerContainer.classList.contains(‘is-sticky’)) {
+        headerContainer.classList.add(‘is-sticky’);
 
         if (stickyIcon) {
-          stickyIcon.classList.remove('d-none');
+          stickyIcon.classList.remove(‘d-none’);
         }
+
+        // Measure height AFTER sticky CSS collapses nav/search-row
+        requestAnimationFrame(function () {
+          mainContent.style.paddingTop = headerContainer.offsetHeight + ‘px’;
+        });
       }
     } else {
       if (headerContainer.classList.contains('is-sticky')) {
