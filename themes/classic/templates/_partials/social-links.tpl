@@ -47,7 +47,7 @@
 
 
 <p class="footer-legal">
-  © 2024–2025 Right Art Limited United Kingdom. Use of this web site constitutes acceptance of the
+  © 2026–2027 Right Art Limited United Kingdom. Use of this web site constitutes acceptance of the
   <a href="/terms-and-conditions-of-use" title="Read our Terms and Conditions" target="_blank" > Terms of Use &amp; Terms of Sale (UK)</a>
   and
   <a href="/privacy-policy" title="Read our Privacy Policy" target="_blank">Privacy Policy</a>
