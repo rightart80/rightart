@@ -167,13 +167,7 @@
 }
 
 #menue-row {
-  position: sticky;
-  top: 0;
-  /* Stick to top when reached */
   z-index: 1000;
-  /* Stay above other elements */
-  background: #fff;
-  /* Optional: avoid transparency issues */
 }
 
 /////////fixed size icon
@@ -656,13 +650,7 @@
   }
 
   #menue-row {
-    position: sticky;
-    top: 0;
-    /* Stick to top when reached */
     z-index: 1000;
-    /* Stay above other elements */
-    background: #fff;
-    /* Optional: avoid transparency issues */
   }
 
   /////////fixed size icon

@@ -310,9 +310,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Checkout/order pages have a different flow; sticky collapsing here hides/pushes content.
   var bodyId = document.body ? document.body.id : '';
   if (bodyId === 'checkout' || bodyId === 'order-confirmation') {
-    headerContainer.classList.remove('is-sticky', 'width-change');
-    headerRight.classList.remove('col-md-8');
-    headerRight.classList.add('col-md-10');
+    headerContainer.classList.remove('is-sticky');
     if (stickyIcon) {
       stickyIcon.classList.add('d-none');
     }
@@ -323,78 +321,22 @@ document.addEventListener('DOMContentLoaded', function () {
   var headerHeight = headerContainer.offsetHeight;
   var stickyStart  = headerContainer.offsetTop + headerHeight;
 
-  // 🔹 how many pixels BEFORE sticky to shrink columns
-  var shiftOffsetBefore = 40;  // col-md-10 -> col-md-8 happens 40px before sticky
-  // 🔹 how many pixels BEFORE sticky to grow back when scrolling up
-  var shiftOffsetAfter  = 80;  // col-md-8 -> col-md-10 happens 80px before sticky (closer to top)
-
-  var colShrinkAt = stickyStart - shiftOffsetBefore;
-  var colExpandAt = stickyStart - shiftOffsetAfter;
-
   function handleScroll () {
     var width = window.innerWidth || document.documentElement.clientWidth;
 
     // 🔹 MOBILE / TABLET (< 1025px) → no sticky logic, no padding
     if (width < 1025) {
-      // clean desktop sticky state if any
       headerContainer.classList.remove('is-sticky');
       mainContent.style.paddingTop = '';
-
-headerRight.classList.remove('col-md-8');
-headerRight.classList.remove('col-md-10');
-
-
       if (stickyIcon) {
         stickyIcon.classList.add('d-none');
       }
-      return; // stop here for small screens
+      return;
     }
 
-    // 🔹 DESKTOP (≥ 768px) → normal sticky behavior
+    // 🔹 DESKTOP (≥ 1025px) → sticky behavior
     var y = window.pageYOffset || document.documentElement.scrollTop;
 
-    
-    /* ------------------------------------------
-   1) COLUMN WIDTH LOGIC + WIDTH-CHANGE CLASS
-------------------------------------------- */
-
-if (y > colShrinkAt) {
-  // make it 8 BEFORE sticky
-  headerRight.classList.remove('col-md-10');
-  headerRight.classList.add('col-md-8');
-
-  headerContainer.classList.add('width-change');  // add class
-} 
-else if (y < colExpandAt) {
-  // make it 10 again AFTER going further up
-  headerRight.classList.remove('col-md-8');
-  headerRight.classList.add('col-md-10');
-
-  headerContainer.classList.remove('width-change');  // remove class
-}
-
-    
-    
-    /* ------------------------------------------
-       1) COLUMN WIDTH LOGIC (pre/post sticky)
-       - shrink a bit BEFORE sticky
-       - grow back a bit AFTER sticky is gone
-    ------------------------------------------- */
-
-    // if (y > colShrinkAt) {
-    //   // make it 8 BEFORE sticky kicks in
-    //   headerRight.classList.remove('col-md-10');
-    //   headerRight.classList.add('col-md-8');
-    // } else if (y < colExpandAt) {
-    //   // make it 10 again only after scrolling further up
-    //   headerRight.classList.remove('col-md-8');
-    //   headerRight.classList.add('col-md-10');
-    // }
-    // between colExpandAt and colShrinkAt we keep the last state (nice hysteresis)
-
-    /* ------------------------------------------
-       2) STICKY logic (unchanged except col classes removed)
-    ------------------------------------------- */
     if (y > stickyStart) {
       if (!headerContainer.classList.contains('is-sticky')) {
         headerContainer.classList.add('is-sticky');
@@ -427,11 +369,6 @@ mainContent.style.paddingTop = (headerHeight + extraOffset) + 'px';
   window.addEventListener('resize', function () {
     headerHeight = headerContainer.offsetHeight;
     stickyStart  = headerContainer.offsetTop + headerHeight;
-
-    // 🔁 recompute thresholds on resize
-    colShrinkAt = stickyStart - shiftOffsetBefore;
-    colExpandAt = stickyStart - shiftOffsetAfter;
-
     handleScroll();
   });
 

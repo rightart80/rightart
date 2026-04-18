@@ -60,9 +60,7 @@ display:block;
  #header-container.is-sticky .header-right-col {
     padding-top: 0;
     padding-bottom: 0;
-    /* fallback in case Bootstrap flex is not enough */
-    // flex: 0 0 66.6667%;
-    width: 68%;
+    width: 86%;
   }
 
 
