@@ -331,6 +331,11 @@
     padding: 10px 0px 30px 40px;
   }
 
+  #header-container #search_widget {
+    flex: 1 0 300px;
+    max-width: 60%;
+  }
+
   #menue-row .ets_mm_megamenu_content {
     border: none !important;
   }
