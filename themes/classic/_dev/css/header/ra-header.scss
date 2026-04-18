@@ -85,6 +85,15 @@
   justify-content: flex-end;
   background-color: #e9ebec;
   padding: 0;
+  z-index: 1001;
+}
+
+/* Icons must sit above the mega menu (z-index:1000) and be explicitly positioned */
+#header-container.is-sticky #header-search-icon,
+#header-container.is-sticky #header-favorites-icon,
+#header-container.is-sticky #header-cart-icon {
+  top: 5px;
+  z-index: 1002;
 }
 
 /* Hide everything except the menu row when sticky */

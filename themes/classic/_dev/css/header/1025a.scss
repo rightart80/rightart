@@ -53,6 +53,8 @@
   #header-container.is-sticky #header-search-icon {
     opacity: 1;
     width: 40px;
+    top: 5px;
+    z-index: 1002;
   }
 
   #header-container.is-sticky .header-right-col {
@@ -129,6 +131,8 @@
 
   #header-container.is-sticky #header-favorites-icon {
     display: block;
+    top: 5px;
+    z-index: 1002;
   }
 
   #header-container.is-sticky #header-favorites-icon-full {
@@ -165,6 +169,8 @@
   #header-container.is-sticky #header-cart-icon {
     width: 40px;
     display: block;
+    top: 5px;
+    z-index: 1002;
   }
 
   #header-container #search_widget {
