@@ -76,6 +76,9 @@
   <link rel="shortcut icon" type="image/x-icon" href="{$shop.favicon}?{$shop.favicon_update_time}">
 {/block}
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap">
 <link rel="preload" href="/themes/classic/assets/css/12a47ed5fd5585f0f422.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
 {block name='stylesheets'}
